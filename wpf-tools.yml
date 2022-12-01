@@ -36,11 +36,10 @@ jobs:
         platform: '$(buildPlatform)'
         configuration: '$(buildConfiguration)'
     
-  - task: DotNetCoreCLI@2
-    displayName: 'Run the tool'
+  - task: CmdLine@1
     inputs:
-        command: run
-        custom: tool
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\console-app-project\bin\Debug\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/trunk/work_area Desktop-test-project/carousel-test development syncfusion-licensing,null;shared-wpf,null'
     
   - task: PublishBuildArtifacts@1
