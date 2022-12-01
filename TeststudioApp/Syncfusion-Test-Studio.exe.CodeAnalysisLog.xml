@@ -1,0 +1,471 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio\2017\professional\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="15.0">
+ <Targets>
+  <Target Name="C:\Users\MahalakshmiVenkatesa\Desktop\TestStudio\bin\Debug\Syncfusion-Test-Studio.exe">
+   <Modules>
+    <Module Name="syncfusion-test-studio.exe">
+     <Messages>
+      <Message TypeName="MarkAssembliesWithNeutralResourcesLanguage" Category="Microsoft.Performance" CheckId="CA1824" Status="Active" Created="2020-01-31 13:41:54Z" FixCategory="NonBreaking">
+       <Issue Certainty="95" Level="Warning">Because assembly 'Syncfusion-Test-Studio.exe' contains a ResX-based resource file, mark it with the NeutralResourcesLanguage attribute, specifying the language of the resources within the assembly. This could improve lookup performance the first time a resource is retrieved.</Issue>
+      </Message>
+     </Messages>
+     <Namespaces>
+      <Namespace Name="Syncfusion.TestStudio">
+       <Types>
+        <Type Name="App" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#IsValidPath(System.String)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2020-01-31 13:41:54Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\MahalakshmiVenkatesa\Desktop\TestStudio" File="App.xaml.cs" Line="89">'App.IsValidPath(string)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2020-01-31 13:41:54Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\MahalakshmiVenkatesa\Desktop\TestStudio" File="App.xaml.cs" Line="89">The 'this' parameter (or 'Me' in Visual Basic) of 'App.IsValidPath(string)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Start(System.String[])" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2020-01-31 13:41:54Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\MahalakshmiVenkatesa\Desktop\TestStudio" File="App.xaml.cs" Line="42">The 'this' parameter (or 'Me' in Visual Basic) of 'App.Start(string[])' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ErrorLog" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Messages>
+          <Message TypeName="AvoidUninstantiatedInternalClasses" Category="Microsoft.Performance" CheckId="CA1812" Status="Active" Created="2020-01-31 13:41:54Z" FixCategory="NonBreaking">
+           <Issue Certainty="75" Level="Warning">'ErrorLog' is an internal class that is apparently never instantiated. If so, remove the code from the assembly. If this class is intended to contain only static methods, consider adding a private constructor to prevent the compiler from generating a default constructor.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="GlobalHook" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#CallNextHookEx(System.Int32,System.Int32,System.Int32,System.IntPtr)" Kind="Method" Static="True" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message Id="0" TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901" Status="Active" Created="2020-01-31 13:41:54Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error">As it is declared in your code, parameter 'idHook' of P/Invoke 'GlobalHook.CallNextHookEx(int, int, int, IntPtr)' will be 4 bytes wide on 64-bit platforms. This is not correct, as the actual native declaration of this API indicates it should be 8 bytes wide on 64-bit platforms. Consult the MSDN Platform SDK documentation for help determining what data type should be used instead of 'int'.</Issue>
+            </Message>
+            <Message Id="2" TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901" Status="Active" Created="2020-01-31 13:41:54Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error">As it is declared in your code, parameter 'wParam' of P/Invoke 'GlobalHook.CallNextHookEx(int, int, int, IntPtr)' will be 4 bytes wide on 64-bit platforms. This is not correct, as the actual native declaration of this API indicates it should be 8 bytes wide on 64-bit platforms. Consult the MSDN Platform SDK documentation for help determining what data type should be used instead of 'int'.</Issue>
+            </Message>
+            <Message Id="return" TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901" Status="Active" Created="2020-01-31 13:41:54Z" FixCategory="NonBreaking">
+             <Issue Name="Return" Certainty="95" Level="Error">As it is declared in your code, the return type of P/Invoke 'GlobalHook.CallNextHookEx(int, int, int, IntPtr)' will be 4 bytes wide on 64-bit platforms. This is not correct, as the actual native declaration of this API indicates it should be 8 bytes wide on 64-bit platforms. Consult the MSDN Platform SDK documentation for help determining what data type should be used instead of 'int'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SetWindowsHookEx(System.Int32,Syncfusion.TestStudio.GlobalHook+HookProc,System.IntPtr,System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="return" TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901" Status="Active" Created="2020-01-31 13:41:54Z" FixCategory="NonBreaking">
+             <Issue Name="Return" Certainty="95" Level="Error">As it is declared in your code, the return type of P/Invoke 'GlobalHook.SetWindowsHookEx(int, GlobalHook.HookProc, IntPtr, int)' will be 4 bytes wide on 64-bit platforms. This is not correct, as the actual native declaration of this API indicates it should be 8 bytes wide on 64-bit platforms. Consult the MSDN Platform SDK documentation for help determining what data type should be used instead of 'int'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="KeyboardSimulator" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#keybd_event(System.Byte,System.Byte,System.Int32,System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="3" TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901" Status="Active" Created="2020-01-31 13:41:54Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error">As it is declared in your code, parameter 'extraInfo' of P/Invoke 'KeyboardSimulator.keybd_event(byte, byte, int, int)' will be 4 bytes wide on 64-bit platforms. This is not correct, as the actual native declaration of this API indicates it should be 8 bytes wide on 64-bit platforms. Consult the MSDN Platform SDK documentation for help determining what data type should be used instead of 'int'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="MainWindow" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#chooseApplication(System.String)" Kind="Method" Static="False" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message Id="projectName" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2020-01-31 13:41:54Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\MahalakshmiVenkatesa\Desktop\TestStudio" File="MainWindow.xaml.cs" Line="146">'MainWindow.chooseApplication(string)' declares a variable, 'projectName', of type 'string', which is never used or is only assigned to. Use this variable or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#gridLengthConverter" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2020-01-31 13:41:54Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">It appears that field 'MainWindow.gridLengthConverter' is never used or is only ever assigned to. Use this field or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#nodeItem_MouseUp(System.Object,System.Windows.Input.MouseButtonEventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2020-01-31 13:41:54Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\MahalakshmiVenkatesa\Desktop\TestStudio" File="MainWindow.xaml.cs" Line="444">'MainWindow.nodeItem_MouseUp(object, MouseButtonEventArgs)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SelectedItemImageChanged(System.String,Syncfusion.TestStudio.TestResult)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="TestForEmptyStringsUsingStringLength" Category="Microsoft.Performance" CheckId="CA1820" Status="Active" Created="2020-01-31 13:41:54Z" FixCategory="NonBreaking">
+             <Issue Name="IsNullOrEmpty" Certainty="95" Level="Warning" Path="C:\Users\MahalakshmiVenkatesa\Desktop\TestStudio" File="MainWindow.xaml.cs" Line="325">Replace the call to 'string.operator ==(string, string)' in 'MainWindow.SelectedItemImageChanged(string, TestResult)' with a call to 'String.IsNullOrEmpty'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SetItemSource(System.String)" Kind="Method" Static="False" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2020-01-31 13:41:54Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\MahalakshmiVenkatesa\Desktop\TestStudio" File="MainWindow.xaml.cs" Line="189">'MainWindow.SetItemSource(string)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#treeView_MouseRightButtonDown(System.Object,System.Windows.Input.MouseButtonEventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="submodel" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2020-01-31 13:41:54Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\MahalakshmiVenkatesa\Desktop\TestStudio" File="MainWindow.xaml.cs" Line="233">'MainWindow.treeView_MouseRightButtonDown(object, MouseButtonEventArgs)' declares a variable, 'submodel', of type 'SubTest', which is never used or is only assigned to. Use this variable or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="MouseHook" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#WheelDelta(Syncfusion.TestStudio.GlobalHook+MouseLLHookStruct)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2020-01-31 13:41:54Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\MahalakshmiVenkatesa\Desktop\TestStudio\Interaction\Mouse" File="MouseHook.cs" Line="56">The 'this' parameter (or 'Me' in Visual Basic) of 'MouseHook.WheelDelta(GlobalHook.MouseLLHookStruct)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="MouseSimulator" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#mouse_event(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="4" TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901" Status="Active" Created="2020-01-31 13:41:54Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error">As it is declared in your code, parameter 'extraInfo' of P/Invoke 'MouseSimulator.mouse_event(int, int, int, int, int)' will be 4 bytes wide on 64-bit platforms. This is not correct, as the actual native declaration of this API indicates it should be 8 bytes wide on 64-bit platforms. Consult the MSDN Platform SDK documentation for help determining what data type should be used instead of 'int'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ViewModel" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#_RunTestScript(System.Object)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCastUnnecessarily" Category="Microsoft.Performance" CheckId="CA1800" Status="Active" Created="2020-01-31 13:41:54Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="95" Level="Warning" Path="C:\Users\MahalakshmiVenkatesa\Desktop\TestStudio\ViewModel" File="ViewModel.cs" Line="1900">'model', a parameter, is cast to type 'SubModel' multiple times in method 'ViewModel._RunTestScript(object)'. Cache the result of the 'as' operator or direct cast in order to eliminate the redundant castclass instruction.</Issue>
+             <Issue Name="Parameter" Certainty="95" Level="Warning" Path="C:\Users\MahalakshmiVenkatesa\Desktop\TestStudio\ViewModel" File="ViewModel.cs" Line="1961">'model', a parameter, is cast to type 'SubModel' multiple times in method 'ViewModel._RunTestScript(object)'. Cache the result of the 'as' operator or direct cast in order to eliminate the redundant castclass instruction.</Issue>
+             <Issue Name="Parameter" Certainty="95" Level="Warning" Path="C:\Users\MahalakshmiVenkatesa\Desktop\TestStudio\ViewModel" File="ViewModel.cs" Line="1959">'model', a parameter, is cast to type 'SubModel' multiple times in method 'ViewModel._RunTestScript(object)'. Cache the result of the 'as' operator or direct cast in order to eliminate the redundant isint instruction.</Issue>
+             <Issue Name="Parameter" Certainty="95" Level="Warning" Path="C:\Users\MahalakshmiVenkatesa\Desktop\TestStudio\ViewModel" File="ViewModel.cs" Line="1929">'model', a parameter, is cast to type 'SubTest' multiple times in method 'ViewModel._RunTestScript(object)'. Cache the result of the 'as' operator or direct cast in order to eliminate the redundant castclass instruction.</Issue>
+             <Issue Name="Parameter" Certainty="95" Level="Warning" Path="C:\Users\MahalakshmiVenkatesa\Desktop\TestStudio\ViewModel" File="ViewModel.cs" Line="1972">'model', a parameter, is cast to type 'SubTest' multiple times in method 'ViewModel._RunTestScript(object)'. Cache the result of the 'as' operator or direct cast in order to eliminate the redundant castclass instruction.</Issue>
+             <Issue Name="Parameter" Certainty="95" Level="Warning" Path="C:\Users\MahalakshmiVenkatesa\Desktop\TestStudio\ViewModel" File="ViewModel.cs" Line="1970">'model', a parameter, is cast to type 'SubTest' multiple times in method 'ViewModel._RunTestScript(object)'. Cache the result of the 'as' operator or direct cast in order to eliminate the redundant isint instruction.</Issue>
+            </Message>
+            <Message Id="imageName" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2020-01-31 13:41:54Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\MahalakshmiVenkatesa\Desktop\TestStudio\ViewModel" File="ViewModel.cs" Line="1843">'ViewModel._RunTestScript(object)' declares a variable, 'imageName', of type 'string', which is never used or is only assigned to. Use this variable or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#BgWorker_DoWork(System.Object,System.ComponentModel.DoWorkEventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="ex1" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2020-01-31 13:41:54Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\MahalakshmiVenkatesa\Desktop\TestStudio\ViewModel" File="ViewModel.cs" Line="1677">'ViewModel.BgWorker_DoWork(object, DoWorkEventArgs)' declares a variable, 'ex1', of type 'Exception', which is never used or is only assigned to. Use this variable or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GenerateDifferenceImage()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2020-01-31 13:41:54Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\MahalakshmiVenkatesa\Desktop\TestStudio\ViewModel" File="ViewModel.cs" Line="2995">The 'this' parameter (or 'Me' in Visual Basic) of 'ViewModel.GenerateDifferenceImage()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+            <Message Id="diff" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2020-01-31 13:41:54Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\MahalakshmiVenkatesa\Desktop\TestStudio\ViewModel" File="ViewModel.cs" Line="3019">'ViewModel.GenerateDifferenceImage()' declares a variable, 'diff', of type 'double', which is never used or is only assigned to. Use this variable or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GenerateLogFile(System.Xml.XmlDocument)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2020-01-31 13:41:54Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\MahalakshmiVenkatesa\Desktop\TestStudio\ViewModel" File="ViewModel.cs" Line="1793">The 'this' parameter (or 'Me' in Visual Basic) of 'ViewModel.GenerateLogFile(XmlDocument)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#IsDiffered(System.Windows.Media.ImageSource,System.Windows.Media.ImageSource)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2020-01-31 13:41:54Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\MahalakshmiVenkatesa\Desktop\TestStudio\ViewModel" File="ViewModel.cs" Line="2938">'ViewModel.IsDiffered(ImageSource, ImageSource)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#lastTimeRecorded" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2020-01-31 13:41:54Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">It appears that field 'ViewModel.lastTimeRecorded' is never used or is only ever assigned to. Use this field or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#loadTestResult(System.String,Syncfusion.TestStudio.Model)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2020-01-31 13:41:54Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\MahalakshmiVenkatesa\Desktop\TestStudio\ViewModel" File="ViewModel.cs" Line="1056">The 'this' parameter (or 'Me' in Visual Basic) of 'ViewModel.loadTestResult(string, Model)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#mouseHook_MouseWheel(System.Object,System.Windows.Forms.MouseEventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2020-01-31 13:41:54Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\MahalakshmiVenkatesa\Desktop\TestStudio\ViewModel" File="ViewModel.cs" Line="2431">'ViewModel.mouseHook_MouseWheel(object, MouseEventArgs)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#PauseRecordAction(System.Object)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2020-01-31 13:41:54Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\MahalakshmiVenkatesa\Desktop\TestStudio\ViewModel" File="ViewModel.cs" Line="2114">Object 'textWriter' can be disposed more than once in method 'ViewModel.PauseRecordAction(object)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 2114</Issue>
+            </Message>
+            <Message Id="handle" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2020-01-31 13:41:54Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\MahalakshmiVenkatesa\Desktop\TestStudio\ViewModel" File="ViewModel.cs" Line="2099">'ViewModel.PauseRecordAction(object)' declares a variable, 'handle', of type 'IntPtr', which is never used or is only assigned to. Use this variable or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#RunApplication(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="proc" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2020-01-31 13:41:54Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\MahalakshmiVenkatesa\Desktop\TestStudio\ViewModel" File="ViewModel.cs" Line="3062">'ViewModel.RunApplication(string)' declares a variable, 'proc', of type 'Process', which is never used or is only assigned to. Use this variable or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#RunSeparateTestScripts(System.Object)" Kind="Method" Static="False" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCastUnnecessarily" Category="Microsoft.Performance" CheckId="CA1800" Status="Active" Created="2020-01-31 13:41:54Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="95" Level="Warning" Path="C:\Users\MahalakshmiVenkatesa\Desktop\TestStudio\ViewModel" File="ViewModel.cs" Line="1557">'obj', a parameter, is cast to type 'SubModel' multiple times in method 'ViewModel.RunSeparateTestScripts(object)'. Cache the result of the 'as' operator or direct cast in order to eliminate the redundant castclass instruction.</Issue>
+             <Issue Name="Parameter" Certainty="95" Level="Warning" Path="C:\Users\MahalakshmiVenkatesa\Desktop\TestStudio\ViewModel" File="ViewModel.cs" Line="1547">'obj', a parameter, is cast to type 'SubModel' multiple times in method 'ViewModel.RunSeparateTestScripts(object)'. Cache the result of the 'as' operator or direct cast in order to eliminate the redundant isint instruction.</Issue>
+             <Issue Name="Parameter" Certainty="95" Level="Warning" Path="C:\Users\MahalakshmiVenkatesa\Desktop\TestStudio\ViewModel" File="ViewModel.cs" Line="1552">'obj', a parameter, is cast to type 'SubModel' multiple times in method 'ViewModel.RunSeparateTestScripts(object)'. Cache the result of the 'as' operator or direct cast in order to eliminate the redundant isint instruction.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#RunSubTestCases(System.Collections.ObjectModel.ObservableCollection`1&lt;Syncfusion.TestStudio.SubTest&gt;)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="failedSubscripts" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2020-01-31 13:41:54Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\MahalakshmiVenkatesa\Desktop\TestStudio\ViewModel" File="ViewModel.cs" Line="1701">'ViewModel.RunSubTestCases(ObservableCollection&lt;SubTest&gt;)' declares a variable, 'failedSubscripts', of type 'ObservableCollection&lt;string&gt;', which is never used or is only assigned to. Use this variable or remove it.</Issue>
+            </Message>
+            <Message Id="parentMacro" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2020-01-31 13:41:54Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\MahalakshmiVenkatesa\Desktop\TestStudio\ViewModel" File="ViewModel.cs" Line="1699">'ViewModel.RunSubTestCases(ObservableCollection&lt;SubTest&gt;)' declares a variable, 'parentMacro', of type 'RecordActionMacro', which is never used or is only assigned to. Use this variable or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#RunTestScripts(System.Object)" Kind="Method" Static="False" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message Id="reportPath" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2020-01-31 13:41:54Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\MahalakshmiVenkatesa\Desktop\TestStudio\ViewModel" File="ViewModel.cs" Line="1278">'ViewModel.RunTestScripts(object)' declares a variable, 'reportPath', of type 'string', which is never used or is only assigned to. Use this variable or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SHChangeNotify(System.Int32,System.UInt32,System.IntPtr,System.IntPtr)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2020-01-31 13:41:54Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">'ViewModel.SHChangeNotify(int, uint, IntPtr, IntPtr)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#StopRecordAction(System.Object)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="handle" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2020-01-31 13:41:54Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\MahalakshmiVenkatesa\Desktop\TestStudio\ViewModel" File="ViewModel.cs" Line="2268">'ViewModel.StopRecordAction(object)' declares a variable, 'handle', of type 'IntPtr', which is never used or is only assigned to. Use this variable or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ViewModel+User32" Kind="Class" Accessibility="Private" ExternallyVisible="False">
+         <Members>
+          <Member Name="#FindWindow(System.String,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2020-01-31 13:41:54Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">'ViewModel.User32.FindWindow(string, string)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+            <Message Id="0" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2020-01-31 13:41:54Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="75" Level="Error">To reduce security risk, marshal parameter 'lpClassName' as Unicode, by setting DllImport.CharSet to CharSet.Unicode, or by explicitly marshaling the parameter as UnmanagedType.LPWStr. If you need to marshal this string as ANSI or system-dependent, set BestFitMapping=false; for added security, also set ThrowOnUnmappableChar=true.</Issue>
+            </Message>
+            <Message Id="1" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2020-01-31 13:41:54Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="75" Level="Error">To reduce security risk, marshal parameter 'lpWindowName' as Unicode, by setting DllImport.CharSet to CharSet.Unicode, or by explicitly marshaling the parameter as UnmanagedType.LPWStr. If you need to marshal this string as ANSI or system-dependent, set BestFitMapping=false; for added security, also set ThrowOnUnmappableChar=true.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetDC(System.IntPtr)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2020-01-31 13:41:54Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">'ViewModel.User32.GetDC(IntPtr)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetForegroundWindow()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2020-01-31 13:41:54Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">'ViewModel.User32.GetForegroundWindow()' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetWindowRect(System.IntPtr,Syncfusion.TestStudio.ViewModel+User32+RECT&amp;)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="return" TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901" Status="Active" Created="2020-01-31 13:41:54Z" FixCategory="NonBreaking">
+             <Issue Name="Return" Certainty="95" Level="Error">As it is declared in your code, the return type of P/Invoke 'ViewModel.User32.GetWindowRect(IntPtr, ref ViewModel.User32.RECT)' will be 8 bytes wide on 64-bit platforms. This is not correct, as the actual native declaration of this API indicates it should be 4 bytes wide on 64-bit platforms. Consult the MSDN Platform SDK documentation for help determining what data type should be used instead of 'IntPtr'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ReleaseDC(System.IntPtr,System.IntPtr)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="return" TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901" Status="Active" Created="2020-01-31 13:41:54Z" FixCategory="NonBreaking">
+             <Issue Name="Return" Certainty="95" Level="Error">As it is declared in your code, the return type of P/Invoke 'ViewModel.User32.ReleaseDC(IntPtr, IntPtr)' will be 8 bytes wide on 64-bit platforms. This is not correct, as the actual native declaration of this API indicates it should be 4 bytes wide on 64-bit platforms. Consult the MSDN Platform SDK documentation for help determining what data type should be used instead of 'IntPtr'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ShowWindow(System.IntPtr,System.Int32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2020-01-31 13:41:54Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">'ViewModel.User32.ShowWindow(IntPtr, int)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811">
+   <Name>Avoid uncalled private code</Name>
+   <Description>There is uncalled code that is not externally visible and is not a known runtime entry point. If this violation fires in error, please send a problem report to the Visual Studio Code Analysis team.</Description>
+   <Resolution Name="Default">{0} appears to have no upstream public or protected callers.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182264.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="15.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidUninstantiatedInternalClasses" Category="Microsoft.Performance" CheckId="CA1812">
+   <Name>Avoid uninstantiated internal classes</Name>
+   <Description>An internal class was detected that is apparently never instantiated. This rule does not attempt to detect late-bound creation and will generate false positives if instances of a type are only created in this way (for example, by means of Activator.CreateInstance or by passing the type as an argument to a TypeConverter constructor).</Description>
+   <Resolution Name="Default">{0} is an internal class that is apparently never instantiated. If so, remove the code from the assembly. If this class is intended to contain only static methods, consider adding a private constructor to prevent the compiler from generating a default constructor.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182265.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="15.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823">
+   <Name>Avoid unused private fields</Name>
+   <Description>Private fields were detected that do not appear to be accessed within the assembly. If this violation fires in error, please send a problem report to the Visual Studio Code Analysis team.</Description>
+   <Resolution Name="Default">It appears that field {0} is never used or is only ever assigned to. Use this field or remove it.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms245042.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="15.0.0.0" />
+  </Rule>
+  <Rule TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202">
+   <Name>Do not dispose objects multiple times</Name>
+   <Description>A correctly implemented Dispose method can be called multiple times without throwing an exception. However, this is not guaranteed and to avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.</Description>
+   <Resolution Name="Default">Object {0} can be disposed more than once in method {1}. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 2114</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182334.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="15.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotCastUnnecessarily" Category="Microsoft.Performance" CheckId="CA1800">
+   <Name>Do not cast unnecessarily</Name>
+   <Description>Avoid duplicate casts where possible, since there is a cost associated with them.</Description>
+   <Resolution Name="Parameter">{0}, a parameter, is cast to type {1} multiple times in method {2}. Cache the result of the 'as' operator or direct cast in order to eliminate the redundant {3} instruction.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182271.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="15.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkAssembliesWithNeutralResourcesLanguage" Category="Microsoft.Performance" CheckId="CA1824">
+   <Name>Mark assemblies with NeutralResourcesLanguageAttribute</Name>
+   <Description>The NeutralResourcesLanguage attribute informs the ResourceManager of the language used to render the neutral culture's resources for an assembly. When looking up resources in the same culture as the neutral resources language, the ResourceManager automatically uses the resources located in the main assembly, instead of searching for a satellite assembly with the current user interface culture for the current thread. This will improve lookup performance for the first resource you load and can reduce your working set.</Description>
+   <Resolution Name="Default">Because assembly {0} contains a ResX-based resource file, mark it with the NeutralResourcesLanguage attribute, specifying the language of the resources within the assembly. This could improve lookup performance the first time a resource is retrieved.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb385967.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="15.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822">
+   <Name>Mark members as static</Name>
+   <Description>Methods which do not access instance data or call instance methods can be marked as static (Shared in Visual Basic). After doing so, the compiler will emit non-virtual call sites to these members which will prevent a check at runtime for each call that ensures the current object pointer is non-null. This can result in a measurable performance gain for performance-sensitive code. In some cases, the failure to access the current object instance represents a correctness issue.</Description>
+   <Resolution Name="Default">The 'this' parameter (or 'Me' in Visual Basic) of {0} is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms245046.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="15.0.0.0" />
+  </Rule>
+  <Rule TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901">
+   <Name>P/Invoke declarations should be portable</Name>
+   <Description>.</Description>
+   <Resolution Name="Parameter">As it is declared in your code, parameter {0} of P/Invoke {1} will be {2} bytes wide on {3} platforms. This is not correct, as the actual native declaration of this API indicates it should be {4} bytes wide on {3} platforms. Consult the MSDN Platform SDK documentation for help determining what data type should be used instead of {5}.</Resolution>
+   <Resolution Name="Return">As it is declared in your code, the return type of P/Invoke {0} will be {1} bytes wide on {2} platforms. This is not correct, as the actual native declaration of this API indicates it should be {3} bytes wide on {2} platforms. Consult the MSDN Platform SDK documentation for help determining what data type should be used instead of {4}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182284(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="portabilityrules.dll" Version="15.0.0.0" />
+  </Rule>
+  <Rule TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804">
+   <Name>Remove unused locals</Name>
+   <Description>Remove locals that are not used or are only assigned to in method implementations.</Description>
+   <Resolution Name="Default">{0} declares a variable, {1}, of type {2}, which is never used or is only assigned to. Use this variable or remove it.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182278.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="15.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101">
+   <Name>Specify marshaling for P/Invoke string arguments</Name>
+   <Description>When marshaling strings as ANSI (or as Auto on Win9x), some characters may be changed. If best-fit mapping is on, strings that appear different in Unicode will be marshaled to identical ANSI strings, which may lead to incorrect security decisions. Turning best-fit mapping off reduces this risk, as all characters without equivalents are mapped to '?'. Also, note that CharSet.Ansi is the default setting for all string marshaling; Unicode marshaling must be specified explicitly, either as a CharSet setting of DllImport or StructLayout, or as a MarshalAs attribute with a Unicode (or system-dependent) UnmanagedType.</Description>
+   <Resolution Name="Parameter">To reduce security risk, marshal parameter {0} as Unicode, by setting DllImport.CharSet to CharSet.Unicode, or by explicitly marshaling the parameter as UnmanagedType.LPWStr. If you need to marshal this string as ANSI or system-dependent, set BestFitMapping=false; for added security, also set ThrowOnUnmappableChar=true.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182319.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Error</MessageLevel>
+   <File Name="globalizationrules.dll" Version="15.0.0.0" />
+  </Rule>
+  <Rule TypeName="TestForEmptyStringsUsingStringLength" Category="Microsoft.Performance" CheckId="CA1820">
+   <Name>Test for empty strings using string length</Name>
+   <Description>To test for empty strings, check if String.Length is equal to zero. Constructs such as "".Equals(someString) and String.Empty.Equals(someString) are less efficient than testing the string length. Replace these with checks for someString.Length == 0.</Description>
+   <Resolution Name="IsNullOrEmpty">Replace the call to {0} in {1} with a call to 'String.IsNullOrEmpty'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182279.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="15.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>
