@@ -20,12 +20,12 @@ namespace UIAutomationConsole
 
             try
             {
-                if (args.Length > 0)
+                if (args.Length <= 0)
                 {
-                    SvnRootPath = args[0];
-                    TestProjectPath = args[1];
-                    SourceBranch = args[2];
-                    Sources = args[3];
+                    SvnRootPath = "https://svn.syncfusion.com/svn/studio/trunk/work_area" ;
+                    TestProjectPath = "Desktop-test-project/toolbaradv-test-complete";
+                    SourceBranch = "development";
+                    Sources = "syncfusion-licensing,null;shared-wpf,null;tools-wpf,null";
 
                     Logger.LogWriter(SvnRootPath, 2);
                     Logger.LogWriter(TestProjectPath, 2);
@@ -78,7 +78,7 @@ namespace UIAutomationConsole
                             }
 
                             Console.WriteLine(repository + "------Cloning has be started");
-                            string command = "git clone -b" + " " + branch + " " + "https://" + "Jebaraj-M" + ":" + "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" + "@github.com/" + "essential-studio/" + repository + ".git";
+                            string command = "git clone -b" + " " + branch + " " + "https://" + "Jebaraj-M" + ":" + "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" + "@github.com/" + "essential-studio/" + repository + ".git";
                             System.Diagnostics.ProcessStartInfo sourceCloneProcStartInfo = new System.Diagnostics.ProcessStartInfo("cmd", "/c " + command);
                             sourceCloneProcStartInfo.RedirectStandardOutput = true;
                             sourceCloneProcStartInfo.UseShellExecute = false;
