@@ -20,12 +20,12 @@ namespace UIAutomationConsole
 
             try
             {
-                if (args.Length <= 0)
+                if (args.Length > 0)
                 {
-                    SvnRootPath = "https://svn.syncfusion.com/svn/studio/trunk/work_area" ;
-                    TestProjectPath = "Desktop-test-project/toolbaradv-test-complete";
-                    SourceBranch = "development";
-                    Sources = "syncfusion-licensing,null;shared-wpf,null;tools-wpf,null";
+                    SvnRootPath = args[0];
+                    TestProjectPath = args[1];
+                    SourceBranch = args[2];
+                    Sources = args[3];
 
                     Logger.LogWriter(SvnRootPath, 2);
                     Logger.LogWriter(TestProjectPath, 2);
