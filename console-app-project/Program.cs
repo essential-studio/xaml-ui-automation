@@ -78,7 +78,7 @@ namespace UIAutomationConsole
                             }
 
                             Console.WriteLine(repository + "------Cloning has be started");
-                            string command = "git clone -b" + " " + branch + " " + "https://" + "Jebaraj-M" + ":" + "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" + "@github.com/" + "essential-studio/" + repository + ".git";
+                            string command = "git clone -b" + " " + branch + " " + "https://" + "SubashiniMahendran" + ":" + "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" + "@github.com/" + "essential-studio/" + repository + ".git";
                             System.Diagnostics.ProcessStartInfo sourceCloneProcStartInfo = new System.Diagnostics.ProcessStartInfo("cmd", "/c " + command);
                             sourceCloneProcStartInfo.RedirectStandardOutput = true;
                             sourceCloneProcStartInfo.UseShellExecute = false;
