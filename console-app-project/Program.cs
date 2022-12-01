@@ -180,7 +180,7 @@ namespace UIAutomationConsole
                     {
                         Directory.CreateDirectory(subfolderPathNew);
                         Console.WriteLine("-----TestProject checkout");
-                        string command = string.Format("svn checkout" + " {0} {1} --username " + "subashini.mahendran" + " --password " + "subashini@123", SvnRootPath, subfolderPathNew);
+                        string command = string.Format("svn checkout" + " {0} {1} --username " + "subashini.mahendran" + " --password " + "subashini@123", SvnRootPath + "/" + TestProjectPath, subfolderPathNew);
                     System.Diagnostics.ProcessStartInfo sourceCloneProcStartInfo1 = new System.Diagnostics.ProcessStartInfo("cmd", "/c " + command);
                         sourceCloneProcStartInfo1.RedirectStandardOutput = true;
                         sourceCloneProcStartInfo1.UseShellExecute = false;
