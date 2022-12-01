@@ -6,11 +6,6 @@
 trigger:
 - development
 
-variables:
-  solution: '**/*.sln'
-  buildPlatform: 'Any CPU'
-  buildConfiguration: 'Release'
-
 jobs:
 - job: CarouselTest
   timeoutInMinutes: 0
@@ -23,23 +18,11 @@ jobs:
         displaySettings: 'specific'
         width: '1366'
         height: '768'
-  
-  - task: NuGetToolInstaller@1
 
-  - task: NuGetCommand@2
-    inputs:
-       restoreSolution: '$(solution)'
-       
-  - task: VSBuild@1
-    inputs:
-        solution: '$(solution)'
-        platform: '$(buildPlatform)'
-        configuration: '$(buildConfiguration)'
-    
   - task: CmdLine@1
     inputs:
         filename: 'UIAutomationConsole.exe'
-        workingFolder: '$(Build.SourcesDirectory)\console-app-project\bin\Release\net6.0\'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/trunk/work_area Desktop-test-project/carousel-test development syncfusion-licensing,null;shared-wpf,null'
     
   - task: PublishBuildArtifacts@1
