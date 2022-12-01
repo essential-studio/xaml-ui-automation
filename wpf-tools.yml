@@ -4,7 +4,12 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
 
 trigger:
-- master
+- development
+
+variables:
+  solution: '**/*.sln'
+  buildPlatform: 'Any CPU'
+  buildConfiguration: 'Release'
 
 jobs:
 - job: CarouselTest
@@ -19,10 +24,17 @@ jobs:
         width: '1366'
         height: '768'
 
-  - task: CmdLine@1
+  - task: VSBuild@1
     inputs:
-        filename: 'UIAutomationConsole.exe'
-        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        solution: '$(solution)'
+        platform: '$(buildPlatform)'
+        configuration: '$(buildConfiguration)'
+    
+  - task: DotNetCoreCLI@2
+    displayName: 'Run the tool'
+    inputs:
+        command: run
+        custom: tool
         arguments: 'https://svn.syncfusion.com/svn/studio/trunk/work_area Desktop-test-project/carousel-test development syncfusion-licensing,null;shared-wpf,null'
     
   - task: PublishBuildArtifacts@1
