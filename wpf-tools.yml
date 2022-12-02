@@ -7,7 +7,7 @@ trigger:
 - development
 
 jobs:
-- job: CarouselTest
+- job: CarouselTestStudio
   timeoutInMinutes: 0
   pool:
     name: "Desktop-xaml-vmss"
@@ -23,12 +23,14 @@ jobs:
     inputs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
-        arguments: 'https://svn.syncfusion.com/svn/studio/trunk/work_area Desktop-test-project/carousel-test development syncfusion-licensing,null;shared-wpf,null'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WPF/Carousel_Jira_2020 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null'
     
   - task: PublishBuildArtifacts@1
     inputs:
         pathtoPublish: 'D:\AutomationReports\' 
-        ArtifactName: carousel-test
+        ArtifactName: Carousel_Jira_2020
 
 - job: CarouselTestComplete
   timeoutInMinutes: 0
@@ -46,12 +48,14 @@ jobs:
     inputs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
-        arguments: 'https://svn.syncfusion.com/svn/studio/trunk/work_area Desktop-test-project/carousel-test-complete development syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;shared-base,null;shared-windows,null;sfshared-xaml,null'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/carousel 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;shared-base,null;shared-windows,null;sfshared-xaml,null'
     
   - task: PublishBuildArtifacts@1
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
-        ArtifactName: carousel-test-complete
+        ArtifactName: carousel
 
 - job: CardviewTestComplete
   timeoutInMinutes: 0
@@ -69,12 +73,14 @@ jobs:
     inputs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
-        arguments: 'https://svn.syncfusion.com/svn/studio/trunk/work_area Desktop-test-project/cardview-test-complete development syncfusion-licensing,null;shared-wpf,null;tools-wpf,null'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/cardview 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null'
     
   - task: PublishBuildArtifacts@1
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
-        ArtifactName: cardview-test-complete
+        ArtifactName: cardview
 
 - job: ToolbaradvTestComplete
   timeoutInMinutes: 0
@@ -92,9 +98,11 @@ jobs:
     inputs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
-        arguments: 'https://svn.syncfusion.com/svn/studio/trunk/work_area Desktop-test-project/toolbaradv-test-complete development syncfusion-licensing,null;shared-wpf,null;tools-wpf,null'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/toolbaradv 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null'
     
   - task: PublishBuildArtifacts@1
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
-        ArtifactName: toolbaradv-test-complete
+        ArtifactName: toolbaradv
