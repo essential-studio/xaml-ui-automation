@@ -7,32 +7,7 @@ trigger:
 - none
 
 jobs:
-- job: CarouselTestStudio
-  timeoutInMinutes: 0
-  pool:
-    name: "Desktop-xaml-vmss"
-
-  steps:
-  - task: ScreenResolutionUtility@1
-    inputs:
-        displaySettings: 'specific'
-        width: '1366'
-        height: '768'
-
-  - task: CmdLine@1
-    inputs:
-        filename: 'UIAutomationConsole.exe'
-        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
-        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WPF/Carousel_Jira_2020 
-                    development 
-                    syncfusion-licensing,null;shared-wpf,null'
-    
-  - task: PublishBuildArtifacts@1
-    inputs:
-        pathtoPublish: 'D:\AutomationReports\' 
-        ArtifactName: Carousel_Jira_2020
-
-- job: CarouselTestComplete
+- job: cardview
   timeoutInMinutes: 0
   pool:
     name: "Desktop-xaml-vmss"
@@ -48,41 +23,16 @@ jobs:
     inputs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
-        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/carousel 
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/cardview
                     development 
-                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;shared-base,null;shared-windows,null;sfshared-xaml,null'
-    
-  - task: PublishBuildArtifacts@1
-    inputs:
-        pathtoPublish: 'D:\AutomationReports\'
-        ArtifactName: carousel
-
-- job: CardviewTestComplete
-  timeoutInMinutes: 0
-  pool:
-    name: "Desktop-xaml-vmss"
-
-  steps:
-  - task: ScreenResolutionUtility@1
-    inputs:
-        displaySettings: 'specific'
-        width: '1920'
-        height: '1080'
-
-  - task: CmdLine@1
-    inputs:
-        filename: 'UIAutomationConsole.exe'
-        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
-        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/cardview 
-                    development 
-                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null'
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
     
   - task: PublishBuildArtifacts@1
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: cardview
 
-- job: ToolbaradvTestComplete
+- job: buttonadv
   timeoutInMinutes: 0
   pool:
     name: "Desktop-xaml-vmss"
@@ -98,11 +48,11 @@ jobs:
     inputs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
-        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/toolbaradv 
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/buttonadv 
                     development 
-                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null'
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
     
   - task: PublishBuildArtifacts@1
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
-        ArtifactName: toolbaradv
+        ArtifactName: buttonadv
