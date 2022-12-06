@@ -25,7 +25,7 @@ jobs:
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfDataGrid_WF/BusyIndicator_Jira2019
                     development 
-                    syncfusion-licensing,null;shared-base,null;core-winforms,null;datagrid-winforms,null;data-xaml,null;sfinput-winforms,null;listview-winforms,null;gridcommon-xaml,null;gridconverter-xaml,null;xlsio,null;pdf,null;syncfusion.office2016theme.winforms,null'
+                    syncfusion-licensing,null;shared-base,null;core-winforms,null;data-xaml,null;gridcommon-xaml,null;sfinput-winforms,null;datasource-xaml,null;listview-winforms,null;datagrid-winforms,null;compression,null;xlsio,null;pdf,null;gridconverter-xaml,null;syncfusion.office2016theme.winforms,null'
     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -50,7 +50,7 @@ jobs:
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfDataGrid_WF/SfComboBox_Jira_2019 
                     development 
-                    syncfusion-licensing,null;shared-base,null;core-winforms,null;datagrid-winforms,null;data-xaml,null;sfinput-winforms,null;listview-winforms,null;gridcommon-xaml,null;gridconverter-xaml,null;xlsio,null;pdf,null;syncfusion.office2016theme.winforms,null'
+                    syncfusion-licensing,null;shared-base,null;core-winforms,null;data-xaml,null;gridcommon-xaml,null;sfinput-winforms,null;datasource-xaml,null;listview-winforms,null;datagrid-winforms,null;compression,null;xlsio,null;pdf,null;gridconverter-xaml,null;syncfusion.office2016theme.winforms,null'
     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -75,7 +75,7 @@ jobs:
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfDataGrid_WF/SfDataGrid_Jira_2019 
                     development 
-                    syncfusion-licensing,null;shared-base,null;core-winforms,null;datagrid-winforms,null;data-xaml,null;sfinput-winforms,null;listview-winforms,null;gridcommon-xaml,null;gridconverter-xaml,null;xlsio,null;pdf,null;syncfusion.office2016theme.winforms,null'
+                    syncfusion-licensing,null;shared-base,null;core-winforms,null;data-xaml,null;gridcommon-xaml,null;sfinput-winforms,null;datasource-xaml,null;listview-winforms,null;datagrid-winforms,null;compression,null;xlsio,null;pdf,null;gridconverter-xaml,null;syncfusion.office2016theme.winforms,null'
     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -100,7 +100,7 @@ jobs:
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfDataGrid_WF/SfDataGrid_jira_2019-2 
                     development 
-                    syncfusion-licensing,null;shared-base,null;core-winforms,null;datagrid-winforms,null;data-xaml,null;sfinput-winforms,null;listview-winforms,null;gridcommon-xaml,null;gridconverter-xaml,null;xlsio,null;pdf,null;syncfusion.office2016theme.winforms,null'
+                    syncfusion-licensing,null;shared-base,null;core-winforms,null;data-xaml,null;gridcommon-xaml,null;sfinput-winforms,null;datasource-xaml,null;listview-winforms,null;datagrid-winforms,null;compression,null;xlsio,null;pdf,null;gridconverter-xaml,null;syncfusion.office2016theme.winforms,null'
     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -125,7 +125,7 @@ jobs:
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfDataGrid_WF/SfDataGrid_jira_2019-3 
                     development 
-                    syncfusion-licensing,null;shared-base,null;core-winforms,null;datagrid-winforms,null;data-xaml,null;sfinput-winforms,null;listview-winforms,null;gridcommon-xaml,null;gridconverter-xaml,null;xlsio,null;pdf,null;syncfusion.office2016theme.winforms,null'
+                    syncfusion-licensing,null;shared-base,null;core-winforms,null;data-xaml,null;gridcommon-xaml,null;sfinput-winforms,null;datasource-xaml,null;listview-winforms,null;datagrid-winforms,null;compression,null;xlsio,null;pdf,null;gridconverter-xaml,null;syncfusion.office2016theme.winforms,null'
     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -150,7 +150,7 @@ jobs:
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfDataGrid_WF/SfDataGrid_jira_2019-4 
                     development 
-                    syncfusion-licensing,null;shared-base,null;core-winforms,null;datagrid-winforms,null;data-xaml,null;sfinput-winforms,null;listview-winforms,null;gridcommon-xaml,null;gridconverter-xaml,null;xlsio,null;pdf,null;syncfusion.office2016theme.winforms,null'
+                    syncfusion-licensing,null;shared-base,null;core-winforms,null;data-xaml,null;gridcommon-xaml,null;sfinput-winforms,null;datasource-xaml,null;listview-winforms,null;datagrid-winforms,null;compression,null;xlsio,null;pdf,null;gridconverter-xaml,null;syncfusion.office2016theme.winforms,null'
     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -175,7 +175,7 @@ jobs:
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfDataGrid_WF/SfDataGrid_Jira_2021 
                     development 
-                    syncfusion-licensing,null;shared-base,null;core-winforms,null;datagrid-winforms,null;data-xaml,null;sfinput-winforms,null;listview-winforms,null;gridcommon-xaml,null;gridconverter-xaml,null;xlsio,null;pdf,null;syncfusion.office2016theme.winforms,null'
+                    syncfusion-licensing,null;shared-base,null;core-winforms,null;data-xaml,null;gridcommon-xaml,null;sfinput-winforms,null;datasource-xaml,null;listview-winforms,null;datagrid-winforms,null;compression,null;xlsio,null;pdf,null;gridconverter-xaml,null;syncfusion.office2016theme.winforms,null'
     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -200,7 +200,7 @@ jobs:
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfDataGrid_WF/SfDataPager_Jira_2019 
                     development 
-                    syncfusion-licensing,null;shared-base,null;core-winforms,null;datagrid-winforms,null;data-xaml,null;sfinput-winforms,null;listview-winforms,null;gridcommon-xaml,null;gridconverter-xaml,null;xlsio,null;pdf,null;syncfusion.office2016theme.winforms,null'
+                    syncfusion-licensing,null;shared-base,null;core-winforms,null;data-xaml,null;gridcommon-xaml,null;sfinput-winforms,null;datasource-xaml,null;listview-winforms,null;datagrid-winforms,null;compression,null;xlsio,null;pdf,null;gridconverter-xaml,null;syncfusion.office2016theme.winforms,null'
     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -225,7 +225,7 @@ jobs:
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfDataGrid_WF/SfForm_Jira_2019 
                     development 
-                    syncfusion-licensing,null;shared-base,null;core-winforms,null;datagrid-winforms,null;data-xaml,null;sfinput-winforms,null;listview-winforms,null;gridcommon-xaml,null;gridconverter-xaml,null;xlsio,null;pdf,null;syncfusion.office2016theme.winforms,null'
+                    syncfusion-licensing,null;shared-base,null;core-winforms,null;data-xaml,null;gridcommon-xaml,null;sfinput-winforms,null;datasource-xaml,null;listview-winforms,null;datagrid-winforms,null;compression,null;xlsio,null;pdf,null;gridconverter-xaml,null;syncfusion.office2016theme.winforms,null'
     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -250,7 +250,7 @@ jobs:
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfDataGrid_WF/SfScrollFrame_Jira_2019 
                     development 
-                    syncfusion-licensing,null;shared-base,null;core-winforms,null;datagrid-winforms,null;data-xaml,null;sfinput-winforms,null;listview-winforms,null;gridcommon-xaml,null;gridconverter-xaml,null;xlsio,null;pdf,null;syncfusion.office2016theme.winforms,null'
+                    syncfusion-licensing,null;shared-base,null;core-winforms,null;data-xaml,null;gridcommon-xaml,null;sfinput-winforms,null;datasource-xaml,null;listview-winforms,null;datagrid-winforms,null;compression,null;xlsio,null;pdf,null;gridconverter-xaml,null;syncfusion.office2016theme.winforms,null'
     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -275,7 +275,7 @@ jobs:
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfDataGrid_WF/TabbedForm_Jira_2019 
                     development 
-                    syncfusion-licensing,null;shared-base,null;core-winforms,null;datagrid-winforms,null;data-xaml,null;sfinput-winforms,null;listview-winforms,null;gridcommon-xaml,null;gridconverter-xaml,null;xlsio,null;pdf,null;syncfusion.office2016theme.winforms,null'
+                    syncfusion-licensing,null;shared-base,null;core-winforms,null;data-xaml,null;gridcommon-xaml,null;sfinput-winforms,null;datasource-xaml,null;listview-winforms,null;datagrid-winforms,null;compression,null;xlsio,null;pdf,null;gridconverter-xaml,null;syncfusion.office2016theme.winforms,null'
     
   - task: PublishBuildArtifacts@1
     inputs:
