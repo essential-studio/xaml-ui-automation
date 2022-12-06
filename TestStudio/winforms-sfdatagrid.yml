@@ -82,7 +82,7 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: SfDataGrid_Jira_2019
 
-- job: SfDataGrid_jira_2019-2
+- job: SfDataGrid_jira_2019_2
   timeoutInMinutes: 0
   pool:
     name: "Desktop-xaml-vmss"
@@ -105,9 +105,9 @@ jobs:
   - task: PublishBuildArtifacts@1
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
-        ArtifactName: SfDataGrid_jira_2019-2
+        ArtifactName: SfDataGrid_jira_2019_2
 
-- job: SfDataGrid_jira_2019-3
+- job: SfDataGrid_jira_2019_3
   timeoutInMinutes: 0
   pool:
     name: "Desktop-xaml-vmss"
@@ -130,9 +130,9 @@ jobs:
   - task: PublishBuildArtifacts@1
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
-        ArtifactName: SfDataGrid_jira_2019-3
+        ArtifactName: SfDataGrid_jira_2019_3
 
-- job: SfDataGrid_jira_2019-4
+- job: SfDataGrid_jira_2019_4
   timeoutInMinutes: 0
   pool:
     name: "Desktop-xaml-vmss"
@@ -155,7 +155,7 @@ jobs:
   - task: PublishBuildArtifacts@1
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
-        ArtifactName: SfDataGrid_jira_2019-4
+        ArtifactName: SfDataGrid_jira_2019_4
 
 - job: SfDataGrid_Jira_2021
   timeoutInMinutes: 0
