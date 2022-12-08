@@ -23,8 +23,7 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfDataGrid_WF/BusyIndicator_Jira2019
-                    development 
-                    syncfusion-licensing,null;democommon-windows,null;shared-base,null;shared-windows,null;grid-windows,null;spellchecker-base,null;tools-windows,null;grouping-base,null;grid-grouping-windows,null;core-winforms,null;data-xaml,null;gridcommon-xaml,null;sfinput-winforms,null;datasource-xaml,null;listview-winforms,null;datagrid-winforms,null;compression,null;xlsio,null;pdf,null;gridconverter-xaml,null;syncfusion.office2016theme.winforms,null'
+                    development'
     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -48,8 +47,7 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfDataGrid_WF/SfComboBox_Jira_2019 
-                    development 
-                    syncfusion-licensing,null;democommon-windows,null;shared-base,null;shared-windows,null;grid-windows,null;spellchecker-base,null;tools-windows,null;grouping-base,null;grid-grouping-windows,null;core-winforms,null;data-xaml,null;gridcommon-xaml,null;sfinput-winforms,null;datasource-xaml,null;listview-winforms,null;datagrid-winforms,null;compression,null;xlsio,null;pdf,null;gridconverter-xaml,null;syncfusion.office2016theme.winforms,null'
+                    development'
     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -73,9 +71,8 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfDataGrid_WF/SfDataGrid_Jira_2019 
-                    development 
-                    syncfusion-licensing,null;democommon-windows,null;shared-base,null;shared-windows,null;grid-windows,null;spellchecker-base,null;tools-windows,null;grouping-base,null;grid-grouping-windows,null;core-winforms,null;data-xaml,null;gridcommon-xaml,null;sfinput-winforms,null;datasource-xaml,null;listview-winforms,null;datagrid-winforms,null;compression,null;xlsio,null;pdf,null;gridconverter-xaml,null;syncfusion.office2016theme.winforms,null'
-    
+                    development' 
+                    
   - task: PublishBuildArtifacts@1
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
@@ -98,9 +95,8 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfDataGrid_WF/SfDataGrid_jira_2019-2 
-                    development 
-                    syncfusion-licensing,null;democommon-windows,null;shared-base,null;shared-windows,null;grid-windows,null;spellchecker-base,null;tools-windows,null;grouping-base,null;grid-grouping-windows,null;core-winforms,null;data-xaml,null;gridcommon-xaml,null;sfinput-winforms,null;datasource-xaml,null;listview-winforms,null;datagrid-winforms,null;compression,null;xlsio,null;pdf,null;gridconverter-xaml,null;syncfusion.office2016theme.winforms,null'
-    
+                    development'
+                    
   - task: PublishBuildArtifacts@1
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
@@ -123,9 +119,8 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfDataGrid_WF/SfDataGrid_jira_2019-3 
-                    development 
-                    syncfusion-licensing,null;democommon-windows,null;shared-base,null;shared-windows,null;grid-windows,null;spellchecker-base,null;tools-windows,null;grouping-base,null;grid-grouping-windows,null;core-winforms,null;data-xaml,null;gridcommon-xaml,null;sfinput-winforms,null;datasource-xaml,null;listview-winforms,null;datagrid-winforms,null;compression,null;xlsio,null;pdf,null;gridconverter-xaml,null;syncfusion.office2016theme.winforms,null'
-    
+                    development'
+                    
   - task: PublishBuildArtifacts@1
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
@@ -148,9 +143,8 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfDataGrid_WF/SfDataGrid_jira_2019-4 
-                    development 
-                    syncfusion-licensing,null;democommon-windows,null;shared-base,null;shared-windows,null;grid-windows,null;spellchecker-base,null;tools-windows,null;grouping-base,null;grid-grouping-windows,null;core-winforms,null;data-xaml,null;gridcommon-xaml,null;sfinput-winforms,null;datasource-xaml,null;listview-winforms,null;datagrid-winforms,null;compression,null;xlsio,null;pdf,null;gridconverter-xaml,null;syncfusion.office2016theme.winforms,null'
-    
+                    development'
+                    
   - task: PublishBuildArtifacts@1
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
@@ -173,9 +167,8 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfDataGrid_WF/SfDataGrid_Jira_2021 
-                    development 
-                    syncfusion-licensing,null;democommon-windows,null;shared-base,null;shared-windows,null;grid-windows,null;spellchecker-base,null;tools-windows,null;grouping-base,null;grid-grouping-windows,null;core-winforms,null;data-xaml,null;gridcommon-xaml,null;sfinput-winforms,null;datasource-xaml,null;listview-winforms,null;datagrid-winforms,null;compression,null;xlsio,null;pdf,null;gridconverter-xaml,null;syncfusion.office2016theme.winforms,null'
-    
+                    development'
+                    
   - task: PublishBuildArtifacts@1
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
@@ -198,9 +191,8 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfDataGrid_WF/SfDataPager_Jira_2019 
-                    development 
-                    syncfusion-licensing,null;democommon-windows,null;shared-base,null;shared-windows,null;grid-windows,null;spellchecker-base,null;tools-windows,null;grouping-base,null;grid-grouping-windows,null;core-winforms,null;data-xaml,null;gridcommon-xaml,null;sfinput-winforms,null;datasource-xaml,null;listview-winforms,null;datagrid-winforms,null;compression,null;xlsio,null;pdf,null;gridconverter-xaml,null;syncfusion.office2016theme.winforms,null'
-    
+                    development'
+                    
   - task: PublishBuildArtifacts@1
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
@@ -223,9 +215,8 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfDataGrid_WF/SfForm_Jira_2019 
-                    development 
-                    syncfusion-licensing,null;democommon-windows,null;shared-base,null;shared-windows,null;grid-windows,null;spellchecker-base,null;tools-windows,null;grouping-base,null;grid-grouping-windows,null;core-winforms,null;data-xaml,null;gridcommon-xaml,null;sfinput-winforms,null;datasource-xaml,null;listview-winforms,null;datagrid-winforms,null;compression,null;xlsio,null;pdf,null;gridconverter-xaml,null;syncfusion.office2016theme.winforms,null'
-    
+                    development' 
+                    
   - task: PublishBuildArtifacts@1
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
@@ -248,9 +239,8 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfDataGrid_WF/SfScrollFrame_Jira_2019 
-                    development 
-                    syncfusion-licensing,null;democommon-windows,null;shared-base,null;shared-windows,null;grid-windows,null;spellchecker-base,null;tools-windows,null;grouping-base,null;grid-grouping-windows,null;core-winforms,null;data-xaml,null;gridcommon-xaml,null;sfinput-winforms,null;datasource-xaml,null;listview-winforms,null;datagrid-winforms,null;compression,null;xlsio,null;pdf,null;gridconverter-xaml,null;syncfusion.office2016theme.winforms,null'
-    
+                    development'
+                    
   - task: PublishBuildArtifacts@1
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
@@ -273,9 +263,8 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfDataGrid_WF/TabbedForm_Jira_2019 
-                    development 
-                    syncfusion-licensing,null;democommon-windows,null;shared-base,null;shared-windows,null;grid-windows,null;spellchecker-base,null;tools-windows,null;grouping-base,null;grid-grouping-windows,null;core-winforms,null;data-xaml,null;gridcommon-xaml,null;sfinput-winforms,null;datasource-xaml,null;listview-winforms,null;datagrid-winforms,null;compression,null;xlsio,null;pdf,null;gridconverter-xaml,null;syncfusion.office2016theme.winforms,null'
-    
+                    development'
+                    
   - task: PublishBuildArtifacts@1
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
