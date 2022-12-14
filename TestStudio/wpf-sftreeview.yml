@@ -1,0 +1,487 @@
+# ASP.NET Core (.NET Framework) 
+# Build and test ASP.NET Core projects targeting the full .NET Framework.
+# Add steps that publish symbols, save build artifacts, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
+
+trigger: none
+
+jobs:
+- job: SfTreeView_AutoFitContentDemo
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfTreeView_WPF/SfTreeView_AutoFitContentDemo
+                    development'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: SfTreeView_AutoFitContentDemo
+
+- job: SfTreeView_AutoFitEditingDemo
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfTreeView_WPF/SfTreeView_AutoFitEditingDemo 
+                    development'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: SfTreeView_AutoFitEditingDemo
+
+- job: SfTreeView_BoundDemo
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfTreeView_WPF/SfTreeView_BoundDemo 
+                    development' 
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: SfTreeView_BoundDemo
+
+- job: SfTreeView_BoundDemo_DiffTypes
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfTreeView_WPF/SfTreeView_BoundDemo_DiffTypes 
+                    development'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: SfTreeView_BoundDemo_DiffTypes
+
+- job: SfTreeView_BoundmodeEditingDemo
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfTreeView_WPF/SfTreeView_BoundmodeEditingDemo 
+                    development'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: SfTreeView_BoundmodeEditingDemo
+
+- job: SfTreeView_BugReport_TestCases
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfTreeView_WPF/SfTreeView_BugReport_TestCases 
+                    development'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: SfTreeView_BugReport_TestCases
+
+- job: SfTreeView_CheckBoxModeDemo
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfTreeView_WPF/SfTreeView_CheckBoxModeDemo 
+                    development'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: SfTreeView_CheckBoxModeDemo
+
+- job: SfTreeView_ContextMenu
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfTreeView_WPF/SfTreeView_ContextMenu 
+                    development'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: SfTreeView_ContextMenu
+
+- job: SfTreeView_DragandDrop
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfTreeView_WPF/SfTreeView_DragandDrop 
+                    development' 
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: SfTreeView_DragandDrop
+
+- job: SfTreeView_EditingDemo
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfTreeView_WPF/SfTreeView_EditingDemo 
+                    development'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: SfTreeView_EditingDemo
+
+- job: SfTreeView_HierarchyPropertyDescriptorDemo
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfTreeView_WPF/SfTreeView_HierarchyPropertyDescriptorDemo 
+                    development'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: SfTreeView_HierarchyPropertyDescriptorDemo
+
+- job: SfTreeView_HorizontalScrolling
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfTreeView_WPF/SfTreeView_HorizontalScrolling 
+                    development'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: SfTreeView_HorizontalScrolling
+
+- job: SfTreeView_ListCollectionViewBindingDemo
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfTreeView_WPF/SfTreeView_ListCollectionViewBindingDemo 
+                    development'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: SfTreeView_ListCollectionViewBindingDemo
+
+- job: SfTreeView_LoadOnDemandDemo
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfTreeView_WPF/SfTreeView_LoadOnDemandDemo 
+                    development'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: SfTreeView_LoadOnDemandDemo
+
+- job: SfTreeView_NodewithImageDemo
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfTreeView_WPF/SfTreeView_NodewithImageDemo 
+                    development'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: SfTreeView_NodewithImageDemo
+
+- job: SfTreeView_RealTimeUpdates
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfTreeView_WPF/SfTreeView_RealTimeUpdates 
+                    development'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: SfTreeView_RealTimeUpdates
+
+- job: SfTreeView_RootLine
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfTreeView_WPF/SfTreeView_RootLine 
+                    development'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: SfTreeView_RootLine
+
+- job: SfTreeView_SelectedStateMapping
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfTreeView_WPF/SfTreeView_SelectedStateMapping 
+                    development'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: SfTreeView_SelectedStateMapping
+
+- job: SfTreeView_UnboundDemo
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfTreeView_WPF/SfTreeView_UnboundDemo 
+                    development'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: SfTreeView_UnboundDemo
+
+- job: SfTreeViewUnboundModeEditing
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfTreeView_WPF/SfTreeViewUnboundModeEditing 
+                    development'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: SfTreeViewUnboundModeEditing
