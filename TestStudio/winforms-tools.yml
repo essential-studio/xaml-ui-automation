@@ -1,0 +1,1932 @@
+# ASP.NET Core (.NET Framework) 
+# Build and test ASP.NET Core projects targeting the full .NET Framework.
+# Add steps that publish symbols, save build artifacts, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
+
+trigger: none
+
+jobs:
+- job: Autocomplete_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/Autocomplete_Jira_2019
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: Autocomplete_Jira_2019
+
+- job: AutoLabel_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/AutoLabel_Jira_2019 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: AutoLabel_Jira_2019
+
+- job: ButtonAdv_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/ButtonAdv_Jira_2019 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null' 
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: ButtonAdv_Jira_2019
+
+- job: Carousel_Jira_2020
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/Carousel_Jira_2020 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: Carousel_Jira_2020
+
+- job: CheckBoxAdv_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/CheckBoxAdv_Jira_2019 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: CheckBoxAdv_Jira_2019
+
+- job: ColorPickerButton_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/ColorPickerButton_Jira_2019 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: ColorPickerButton_Jira_2019
+
+- job: ColorPickerUIAdv_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/ColorPickerUIAdv_Jira_2019 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: ColorPickerUIAdv_Jira_2019
+
+- job: ColorUIControl_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/ColorUIControl_Jira_2019 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: ColorUIControl_Jira_2019
+
+- job: ComboBoxAdv_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/ComboBoxAdv_Jira_2019 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null' 
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: ComboBoxAdv_Jira_2019
+
+- job: Combodropdown_jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/Combodropdown_jira_2019 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: Combodropdown_jira_2019
+
+- job: CommandBarController_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/CommandBarController_Jira_2019 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: CommandBarController_Jira_2019
+
+- job: CurrencyEdit_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/CurrencyEdit_Jira_2019
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: CurrencyEdit_Jira_2019
+
+- job: DateTimeEdit_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/DateTimeEdit_Jira_2019 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: DateTimeEdit_Jira_2019
+
+- job: DateTimePickerAdv_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/DateTimePickerAdv_Jira_2019 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null' 
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: DateTimePickerAdv_Jira_2019
+
+- job: DigitalGauge_jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/DigitalGauge_jira_2019 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: DigitalGauge_jira_2019
+
+- job: DockingManager_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/DockingManager_Jira_2019 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: DockingManager_Jira_2019
+
+- job: DomainUpDownExt_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/DomainUpDownExt_Jira_2019 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: DomainUpDownExt_Jira_2019
+
+- job: DoubleTextBox_Jira_2020
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/DoubleTextBox_Jira_2020 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: DoubleTextBox_Jira_2020
+
+- job: EditControl_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/EditControl_Jira_2019 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: EditControl_Jira_2019
+
+- job: FontListBox_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/FontListBox_Jira_2019 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null' 
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: FontListBox_Jira_2019
+
+- job: GradientPanelExt_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/GradientPanelExt_Jira_2019 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: GradientPanelExt_Jira_2019
+
+- job: GroupView_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/GroupView_Jira_2019 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: GroupView_Jira_2019
+
+- job: ImageStreamer_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/ImageStreamer_Jira_2019
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: ImageStreamer_Jira_2019
+
+- job: InputControls_HighContrastSupport
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/InputControls_HighContrastSupport 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: InputControls_HighContrastSupport
+
+- job: InputControls_Office2019ThemeSupport
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/InputControls_Office2019ThemeSupport 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null' 
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: InputControls_Office2019ThemeSupport
+
+- job: LinearGauge_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/LinearGauge_Jira_2019 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: LinearGauge_Jira_2019
+
+- job: MainFrameBarManager_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/MainFrameBarManager_Jira_2019 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: MainFrameBarManager_Jira_2019
+
+- job: MessageBoxAdv_Jira_2020
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/MessageBoxAdv_Jira_2020 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: MessageBoxAdv_Jira_2020
+
+- job: MetroForm_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/MetroForm_Jira_2019 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: MetroForm_Jira_2019
+
+- job: MultiColumnComboBox_Jira_2020
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/MultiColumnComboBox_Jira_2020 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: MultiColumnComboBox_Jira_2020
+
+- job: MultiColumnTreeView_HighContrastSupport
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/MultiColumnTreeView_HighContrastSupport 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null' 
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: MultiColumnTreeView_HighContrastSupport
+
+- job: MultiColumnTreeView_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/MultiColumnTreeView_Jira_2019 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: MultiColumnTreeView_Jira_2019
+
+- job: MultiColumnTreeview_Office2019ThemeSupport
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/MultiColumnTreeview_Office2019ThemeSupport 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: MultiColumnTreeview_Office2019ThemeSupport
+
+- job: MultiSelectionComboBox_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/MultiSelectionComboBox_Jira_2019
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: MultiSelectionComboBox_Jira_2019
+
+- job: NavigationDrawer_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/NavigationDrawer_Jira_2019 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: NavigationDrawer_Jira_2019
+
+- job: NavigationView_FontIcon
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/NavigationView_FontIcon 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null' 
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: NavigationView_FontIcon
+
+- job: NumericUpDownExt_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/NumericUpDownExt_Jira_2019 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: NumericUpDownExt_Jira_2019
+
+- job: PercentTextBox_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/PercentTextBox_Jira_2019 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: PercentTextBox_Jira_2019
+
+- job: PopupMenu_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/PopupMenu_Jira_2019 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: PopupMenu_Jira_2019
+
+- job: ProgressBarAdv_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/ProgressBarAdv_Jira_2019 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: ProgressBarAdv_Jira_2019
+
+- job: RadialGauge_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/RadialGauge_Jira_2019 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: RadialGauge_Jira_2019
+
+- job: RadialMenu_Jira_2021
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/RadialMenu_Jira_2021 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null' 
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: RadialMenu_Jira_2021
+
+- job: RadialSlider_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/RadialSlider_Jira_2019 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: RadialSlider_Jira_2019
+
+- job: RangeSlider_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/RangeSlider_Jira_2019 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: RangeSlider_Jira_2019
+
+- job: RatingControl_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/RatingControl_Jira_2019
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: RatingControl_Jira_2019
+
+- job: Ribbon_HighContrastSupport
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/Ribbon_HighContrastSupport 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: Ribbon_HighContrastSupport
+
+- job: Ribbon_Office2019ThemeSupport
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/Ribbon_Office2019ThemeSupport 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null' 
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: Ribbon_Office2019ThemeSupport
+
+- job: Ribbon_Standardize_features_Jira
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/Ribbon_Standardize_features_Jira 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: Ribbon_Standardize_features_Jira
+
+- job: RibbonControlAdv_BackStage_Jira
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/RibbonControlAdv_BackStage_Jira 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: RibbonControlAdv_BackStage_Jira
+
+- job: RibbonControlAdv_ImageMode
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/RibbonControlAdv_ImageMode 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: RibbonControlAdv_ImageMode
+
+- job: RibbonControlAdv_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/RibbonControlAdv_Jira_2019 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: RibbonControlAdv_Jira_2019
+
+- job: SelfAutomationConsoleUtility
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/SelfAutomationConsoleUtility 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: SelfAutomationConsoleUtility
+
+- job: SfButtonAdv_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/SfButtonAdv_Jira_2019 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null' 
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: SfButtonAdv_Jira_2019
+
+- job: SfCalendar_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/SfCalendar_Jira_2019 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: SfCalendar_Jira_2019
+
+- job: SfComboBox_Testcases
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/SfComboBox_Testcases 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: SfComboBox_Testcases
+
+- job: SfDateTimeEdit_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/SfDateTimeEdit_Jira_2019
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: SfDateTimeEdit_Jira_2019
+
+- job: SfListView_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/SfListView_Jira_2019 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: SfListView_Jira_2019
+
+- job: SNumericTextBox_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/SNumericTextBox_Jira_2019 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null' 
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: SNumericTextBox_Jira_2019
+
+- job: SpellCheckerAdv_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/SpellCheckerAdv_Jira_2019 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: SpellCheckerAdv_Jira_2019
+
+- job: SplashPanel_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/SplashPanel_Jira_2019 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: SplashPanel_Jira_2019
+
+- job: SplitButton_Jira_2020
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/SplitButton_Jira_2020 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: SplitButton_Jira_2020
+
+- job: SplitContainerAdv_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/SplitContainerAdv_Jira_2019 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: SplitContainerAdv_Jira_2019
+
+- job: StatusStripEx_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/StatusStripEx_Jira_2019 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: StatusStripEx_Jira_2019
+
+- job: SuperToolTip_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/SuperToolTip_Jira_2019 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null' 
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: SuperToolTip_Jira_2019
+
+- job: TabbedMDIManager_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/TabbedMDIManager_Jira_2019 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: TabbedMDIManager_Jira_2019
+
+- job: TabControlAdv_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/TabControlAdv_Jira_2019 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: TabControlAdv_Jira_2019
+
+- job: TextBoxExt_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/TextBoxExt_Jira_2019
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: TextBoxExt_Jira_2019
+
+- job: TrackBarEx_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/TrackBarEx_Jira_2019 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: TrackBarEx_Jira_2019
+
+- job: TreeNavigator_HighContrastSupport
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/TreeNavigator_HighContrastSupport 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null' 
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: TreeNavigator_HighContrastSupport
+
+- job: TreeNavigator_Jira2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/TreeNavigator_Jira2019 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: TreeNavigator_Jira2019
+
+- job: TreeNavigator_Office2019ThemeSupport
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/TreeNavigator_Office2019ThemeSupport 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: TreeNavigator_Office2019ThemeSupport
+
+- job: TreeViewAdv_DataBinding_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/TreeViewAdv_DataBinding_Jira_2019 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: TreeViewAdv_DataBinding_Jira_2019
+
+- job: TreeViewAdv_HighContrastSupport
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/TreeViewAdv_HighContrastSupport 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: TreeViewAdv_HighContrastSupport
+
+- job: TreeViewAdv_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/TreeViewAdv_Jira_2019 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: TreeViewAdv_Jira_2019
+
+- job: TreeViewAdv_Office2019ThemeSupport
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/TreeViewAdv_Office2019ThemeSupport 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null' 
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: TreeViewAdv_Office2019ThemeSupport
+
+- job: XPTaskBar_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/XPTaskBar_Jira_2019 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: XPTaskBar_Jira_2019
+
+- job: XPToolBar_Jira_2021
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/XPToolBar_Jira_2021 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: XPToolBar_Jira_2021

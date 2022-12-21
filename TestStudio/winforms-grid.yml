@@ -1,0 +1,157 @@
+# ASP.NET Core (.NET Framework) 
+# Build and test ASP.NET Core projects targeting the full .NET Framework.
+# Add steps that publish symbols, save build artifacts, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
+
+trigger: none
+
+jobs:
+- job: GGC_Jira_MT_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Grid_WF/GGC_Jira_MT_2019
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: GGC_Jira_MT_2019
+
+- job: GridControl_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Grid_WF/GridControl_Jira_2019 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: GridControl_Jira_2019
+
+- job: GridGrouping_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Grid_WF/GridGrouping_Jira_2019 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null' 
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: GridGrouping_Jira_2019
+
+- job: GridGroupingControl_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Grid_WF/GridGroupingControl_Jira_2019 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: GridGroupingControl_Jira_2019
+
+- job: ScheduleControl_Jira_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Grid_WF/ScheduleControl_Jira_2019 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: ScheduleControl_Jira_2019
+
+- job: WF_CR_2019
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Grid_WF/WF_CR_2019 
+                    development
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: WF_CR_2019
