@@ -7,7 +7,7 @@ trigger:
 - none
 
 jobs:
-- job: cardview
+- job: autocomplete
   timeoutInMinutes: 0
   pool:
     name: "Desktop-xaml-vmss"
@@ -23,16 +23,116 @@ jobs:
     inputs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
-        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/cardview
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/autocomplete
                     development 
                     syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
     
   - task: PublishBuildArtifacts@1
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
-        ArtifactName: cardview
+        ArtifactName: autocomplete
 
-- job: buttonadv
+- job: BackStage_BuildSample 
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/BackStage_BuildSample 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: BackStage_BuildSample 
+        
+- job: BackStage_RibbonStability  
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/BackStage_RibbonStability 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: BackStage_RibbonStability 
+
+- job: BackstageCommandButton_RibbonStability  
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/BackstageCommandButton_RibbonStability 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: BackstageCommandButton_RibbonStability         
+
+- job: BackStageTab_RibbonStability  
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/BackStageTab_RibbonStability 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: BackStageTab_RibbonStability
+
+- job: buttonadv   
   timeoutInMinutes: 0
   pool:
     name: "Desktop-xaml-vmss"
@@ -55,4 +155,2830 @@ jobs:
   - task: PublishBuildArtifacts@1
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
-        ArtifactName: buttonadv
+        ArtifactName: buttonadv 
+
+- job: calendaredit   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/calendaredit 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: calendaredit 
+
+- job: cardview   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/cardview 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: cardview         
+
+- job: carousel   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/carousel 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: carousel 
+
+- job: chromelesswindow   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/chromelesswindow 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: chromelesswindow         
+
+- job: ChromelessWindow_FeatureMatrix   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/ChromelessWindow_FeatureMatrix 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: ChromelessWindow_FeatureMatrix 
+
+- job: coloredit   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/coloredit 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: coloredit 
+
+- job: ColorEdit_BuildSample   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/ColorEdit_BuildSample 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: ColorEdit_BuildSample 
+
+- job: colorpicker   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/colorpicker 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: colorpicker 
+
+- job: ColorPicker_BuildSample   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/ColorPicker_BuildSample 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: ColorPicker_BuildSample 
+
+- job: colorpickerpalette   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/colorpickerpalette 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: colorpickerpalette 
+
+- job: ColorPickerPalette_BuildSample   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/ColorPickerPalette_BuildSample 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: ColorPickerPalette_BuildSample 
+
+- job: comboboxadv   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/comboboxadv 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: comboboxadv 
+
+- job: ContextTab_RibbonStability  
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/ContextTab_RibbonStability 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: ContextTab_RibbonStability
+
+- job: cops_CR_Automation   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/cops_CR_Automation 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: cops_CR_Automation 
+
+- job: currencytextbox   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/currencytextbox 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: currencytextbox 
+
+- job: CustomizeQATwindow_RibbonStability  
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/CustomizeQATwindow_RibbonStability 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: CustomizeQATwindow_RibbonStability
+
+- job: CustomizeRibbon_RibbonStability   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/CustomizeRibbon_RibbonStability 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: CustomizeRibbon_RibbonStability 
+
+- job: datetimeedit   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/datetimeedit 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: datetimeedit 
+
+- job: dockingmanager  
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/dockingmanager 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: dockingmanager
+
+- job: DockingManager_FeatureMatrix   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/DockingManager_FeatureMatrix 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: DockingManager_FeatureMatrix 
+
+- job: DockingManagerMVVMCaliburnDemo_BuildSample  
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/DockingManagerMVVMCaliburnDemo_BuildSample 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: DockingManagerMVVMCaliburnDemo_BuildSample
+
+- job: DockingManagerWPF1_FeatureMatrix   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/DockingManagerWPF1_FeatureMatrix 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: DockingManagerWPF1_FeatureMatrix 
+
+- job: documentcontainer   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/documentcontainer 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: documentcontainer 
+
+- job: doubletextbox   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/doubletextbox 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: doubletextbox 
+
+- job: Doubletextbox_FeatureMatrix   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/Doubletextbox_FeatureMatrix 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: Doubletextbox_FeatureMatrix 
+
+- job: DoubletextboxWPF1_FeatureMatrix   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/DoubletextboxWPF1_FeatureMatrix 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: DoubletextboxWPF1_FeatureMatrix 
+
+- job: dropdownbuttonadv   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/dropdownbuttonadv 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: dropdownbuttonadv 
+
+- job: editcontrol   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/editcontrol 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: editcontrol 
+
+- job: EXAPT_CR_Automation   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/EXAPT_CR_Automation 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: EXAPT_CR_Automation 
+
+- job: GettingStarted_FeatureMatrix   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/GettingStarted_FeatureMatrix 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: GettingStarted_FeatureMatrix 
+
+- job: groupbar  
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/groupbar 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: groupbar 
+
+- job: hierarchynavigator   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/hierarchynavigator 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: hierarchynavigator 
+
+- job: hubtile  
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/hubtile 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: hubtile 
+
+- job: integertextbox   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/integertextbox 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: integertextbox 
+
+- job: maskedtextbox   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/maskedtextbox 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: maskedtextbox 
+
+- job: menuadv   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/menuadv 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: menuadv 
+
+- job: Office2013_BuildSample 
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/Office2013_BuildSample 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: Office2013_BuildSample
+
+- job: percenttextbox   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/percenttextbox 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: percenttextbox 
+
+- job: PortfolioAnalyzerDemo_BuildSample   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/PortfolioAnalyzerDemo_BuildSample 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: PortfolioAnalyzerDemo_BuildSample 
+
+- job: propertygrid   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/propertygrid 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: propertygrid 
+
+- job: PropertyMethodsEvents_RibbonStability   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/PropertyMethodsEvents_RibbonStability 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: PropertyMethodsEvents_RibbonStability 
+
+- job: QuickAccessToolBar_RibbonStability   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/QuickAccessToolBar_RibbonStability 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: QuickAccessToolBar_RibbonStability 
+
+- job: rangeslidercontrol  
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/rangeslidercontrol 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: rangeslidercontrol
+
+- job: RealTimeSample_RibbonStability   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/RealTimeSample_RibbonStability 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: RealTimeSample_RibbonStability 
+
+- job: Resizing_RibbonStability   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/Resizing_RibbonStability 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: Resizing_RibbonStability 
+
+- job: ribbon   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/ribbon 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: ribbon 
+
+- job: Ribbon_FeatureMatrix   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/Ribbon_FeatureMatrix 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: Ribbon_FeatureMatrix 
+
+- job: RibbonBar_RibbonStability   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/RibbonBar_RibbonStability 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: RibbonBar_RibbonStability 
+
+- job: RibbonContextMenu_RibbonStability  
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/RibbonContextMenu_RibbonStability 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: RibbonContextMenu_RibbonStability
+
+- job: RibbonTab_RibbonStability   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/RibbonTab_RibbonStability 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: RibbonTab_RibbonStability 
+
+- job: sfaccordion   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/sfaccordion 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: sfaccordion 
+
+- job: SfAccordion_BuildSample  
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/SfAccordion_BuildSample 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: SfAccordion_BuildSample
+
+- job: sfbusyindicator   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/sfbusyindicator 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: sfbusyindicator 
+
+- job: sfcolorpalette   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/sfcolorpalette 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: sfcolorpalette 
+
+- job: SfDatePicker_BuildSample   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/SfDatePicker_BuildSample 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: SfDatePicker_BuildSample 
+
+- job: sfdomainupdown   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/sfdomainupdown 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: sfdomainupdown 
+
+- job: sfgridsplitter   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/sfgridsplitter 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: sfgridsplitter 
+
+- job: SfGridSplitter_BuildSample   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/SfGridSplitter_BuildSample 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: SfGridSplitter_BuildSample 
+
+- job: sfmaskededit   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/sfmaskededit 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: sfmaskededit 
+
+- job: sfspellchecker   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/sfspellchecker 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: sfspellchecker 
+
+- job: SfSpellChecker_BuildSample   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/SfSpellChecker_BuildSample 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: SfSpellChecker_BuildSample 
+
+- job: sftextboxext   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/sftextboxext 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: sftextboxext 
+
+ - job: sftimepicker   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/sftimepicker 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: sftimepicker 
+
+- job: SfTimePicker_BuildSample   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/SfTimePicker_BuildSample 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: SfTimePicker_BuildSample 
+
+- job: sftreenavigator   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/sftreenavigator 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: sftreenavigator 
+
+- job: skinmanager   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/skinmanager 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: skinmanager 
+
+- job: splitbuttonadv   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/splitbuttonadv 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: splitbuttonadv 
+
+- job: tabcontrolext   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/tabcontrolext 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: tabcontrolext 
+
+- job: tabnavigation   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/tabnavigation 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: tabnavigation 
+
+- job: tabsplitter   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/tabsplitter 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: tabsplitter 
+
+- job: taskbar  
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/taskbar 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: taskbar 
+
+- job: Themes_RibbonStability   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/Themes_RibbonStability 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: Themes_RibbonStability 
+
+- job: tileviewcontrol   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/tileviewcontrol 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: tileviewcontrol 
+
+- job: timespanedit   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/timespanedit 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: timespanedit 
+
+- job: toolbaradv  
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/toolbaradv 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: toolbaradv
+
+- job: treeviewadv  
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/treeviewadv
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: treeviewadv
+
+- job: TreeViewAdv_FeatureMatrix   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/TreeViewAdv_FeatureMatrix 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: TreeViewAdv_FeatureMatrix 
+
+- job: updown   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/updown 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: updown 
+
+- job: Updown_FeatureMatrix   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/Updown_FeatureMatrix 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: Updown_FeatureMatrix 
+
+- job: UpdownWPF1_FeatureMatrix   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/UpdownWPF1_FeatureMatrix 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: UpdownWPF1_FeatureMatrix 
+
+- job: wizardcontrol   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1920'
+        height: '1080'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/wizardcontrol 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: wizardcontrol 
+
+- job: DockingWPF1  
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1280'
+        height: '1024'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/DockingWPF1
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: DockingWPF1
+
+- job: DockingWPF2   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1280'
+        height: '1024'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/DockingWPF2 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: DockingWPF2 
+
+- job: DockingWPF3   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1280'
+        height: '1024'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/DockingWPF3 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: DockingWPF3 
+
+- job: DockingWPF4   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1280'
+        height: '1024'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/DockingWPF4 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: DockingWPF4 
+
+- job: DockingWPF5   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1280'
+        height: '1024'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/DockingWPF5 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: DockingWPF5 
+
+- job: DockingWPF6   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1280'
+        height: '1024'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/DockingWPF6 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: DockingWPF6 
+
+- job: DockingWPF7   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1280'
+        height: '1024'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/DockingWPF7 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: DockingWPF7 
+
+- job: DockingWPF8   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1280'
+        height: '1024'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/DockingWPF8 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: DockingWPF8 
+
+- job: DockingWPF9  
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1280'
+        height: '1024'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/DockingWPF9 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: DockingWPF9
+
+- job: DocumentContainerWPF1   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1280'
+        height: '1024'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/DocumentContainerWPF1 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: DocumentContainerWPF1 
+
+- job: DocumentContainerWPF2  
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1280'
+        height: '1024'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/DocumentContainerWPF2 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: DocumentContainerWPF2 
+
+- job: EditorsWPF1  
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1280'
+        height: '1024'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/EditorsWPF1 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: EditorsWPF1
+
+- job: EditorsWPF2   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1280'
+        height: '1024'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/EditorsWPF2 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: EditorsWPF2 
+
+- job: FidelityWPF   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1280'
+        height: '1024'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/FidelityWPF 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: FidelityWPF 
+
+- job: FidelityWPF1   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1280'
+        height: '1024'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/FidelityWPF1 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: FidelityWPF1 
+
+- job: RibbonWPF1  
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1280'
+        height: '1024'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/RibbonWPF1 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: RibbonWPF1
+
+- job: RibbonWPF2   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1280'
+        height: '1024'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/RibbonWPF2 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: RibbonWPF2 
+
+- job: RibbonWPF3   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1280'
+        height: '1024'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/RibbonWPF3 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: RibbonWPF3 
+
+- job: RibbonWPF4   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1280'
+        height: '1024'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/RibbonWPF4 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: RibbonWPF4 
+
+- job: sfnavigationdrawer   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1280'
+        height: '1024'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/sfnavigationdrawer 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: sfnavigationdrawer 
+
+- job: sfradialmenu   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1280'
+        height: '1024'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/sfradialmenu 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: sfradialmenu 
+
+- job: sfrating  
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1280'
+        height: '1024'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/sfrating 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: sfrating
+
+- job: TabControlWPF1   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1280'
+        height: '1024'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/TabControlWPF1 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: TabControlWPF1 
+
+- job: TestBed_DockingWPF1   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1280'
+        height: '1024'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/TestBed_DockingWPF1 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: TestBed_DockingWPF1 
+
+- job: ToolsWPF1   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1280'
+        height: '1024'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/ToolsWPF1 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: ToolsWPF1 
+
+- job: ToolsWPF2   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1280'
+        height: '1024'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/ToolsWPF2 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: ToolsWPF2 
+
+- job: ToolsWPF3   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1280'
+        height: '1024'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/ToolsWPF3 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: ToolsWPF3 
+
+- job: ToolsWPF4 
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1280'
+        height: '1024'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/ToolsWPF4 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: ToolsWPF4
+
+- job: ToolsWPF5   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1280'
+        height: '1024'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/ToolsWPF5 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: ToolsWPF5 
+
+- job: TreeViewWPF1   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1280'
+        height: '1024'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/TreeViewWPF1 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: TreeViewWPF1 
+
+- job: TreeViewWPF2   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1280'
+        height: '1024'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/TreeViewWPF2 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: TreeViewWPF2 
+
+- job: TreeViewWPF3   
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1280'
+        height: '1024'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/Tools_WPF/TreeViewWPF3 
+                    development 
+                    syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;sfshared-xaml,null;edit-wpf,null;propertygrid-wpf,null;sfbusyindicator-xaml,null;sfinput-xaml,null;sfradialmenu-xaml,null;sfrichtextribbon-wpf,null;sfskinmanager-wpf,null;sftreenavigator-xaml,null;themes-wpf,null'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: TreeViewWPF3 
+
