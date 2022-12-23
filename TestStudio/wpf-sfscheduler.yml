@@ -47,7 +47,9 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/company/trunk/work_area/SfScheduler/TestAutomation/2021_Volume2_SchedulerFeatures 
-                    development'
+                    development
+                    null
+                    false'
     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -71,7 +73,9 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/company/trunk/work_area/SfScheduler/TestAutomation/2021_Volume3_SchedulerFeatures 
-                    development' 
+                    development
+                    null
+                    false'
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -455,7 +459,9 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/company/trunk/work_area/SfScheduler/TestAutomation/MonthCellAppointmentRendering 
-                    development'
+                    development
+                    null
+                    false'
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -623,7 +629,9 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/company/trunk/work_area/SfScheduler/TestAutomation/SchedulerResource 
-                    development'
+                    development
+                    null
+                    false'
                     
   - task: PublishBuildArtifacts@1
     inputs:
