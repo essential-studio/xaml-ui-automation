@@ -357,440 +357,6 @@
             Bottom of the Progress Bar
             </summary>
         </member>
-        <member name="T:Syncfusion.Windows.Controls.Tools.AutomationPeer.ButtonAdvAutomationPeer">
-            <property name="flag" value="Finished" />
-            <summary>
-            Class that provides UI Automation support.
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.ButtonAdvAutomationPeer.#ctor(Syncfusion.Windows.Tools.Controls.ButtonAdv)">
-            <summary>
-            Initializes a new instance of the <see cref="T:Syncfusion.Windows.Controls.Tools.AutomationPeer.ButtonAdvAutomationPeer"/> class.
-            </summary>
-            <param name="control">The control.</param>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.ButtonAdvAutomationPeer.GetAutomationIdCore">
-            <summary>
-            Provides the peer's behavior when a UI Automation client calls 
-            GetAutomationId or an equivalent UI Automation client API.
-            </summary>
-            <returns>The automation identifier.</returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.ButtonAdvAutomationPeer.GetClassNameCore">
-            <summary>
-            Gets the name of the <see cref="T:System.Windows.UIElement"/> that is associated with this <see cref="T:System.Windows.Automation.Peers.UIElementAutomationPeer"/>. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName"/>.
-            </summary>
-            <returns>
-            An <see cref="F:System.String.Empty"/> string.
-            </returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.ButtonAdvAutomationPeer.GetAutomationControlTypeCore">
-            <summary>
-            Gets the control type for the <see cref="T:System.Windows.UIElement"/> that is associated with this <see cref="T:System.Windows.Automation.Peers.UIElementAutomationPeer"/>. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType"/>.
-            </summary>
-            <returns>
-            The <see cref="F:System.Windows.Automation.Peers.AutomationControlType.Custom"/> enumeration value.
-            </returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.ButtonAdvAutomationPeer.GetNameCore">
-            <summary>
-            Provides the peer's behavior when a UI Automation client calls
-            GetName or an equivalent UI Automation client API.
-            </summary>
-            <returns>The name as used by assistive technoloGetClassNameCoreies and other UI Automation clients.</returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.ButtonAdvAutomationPeer.GetHelpTextCore">
-            <summary>
-            Provides the peer's behavior when a UI Automation client calls 
-            GetHelpText or an equivalent UI Automation client API.
-            </summary>
-            <returns>The help text.</returns>
-        </member>
-        <member name="P:Syncfusion.Windows.Controls.Tools.AutomationPeer.ButtonAdvAutomationPeer.MyOwner">
-            <summary>
-            Gets owner object.
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.DropDownButtonAdvAutomationPeer.GetClassNameCore">
-            <summary>
-            Gets the name of the <see cref="T:System.Windows.UIElement"/> that is associated with this <see cref="T:System.Windows.Automation.Peers.UIElementAutomationPeer"/>. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName"/>.
-            </summary>
-            <returns>
-            An <see cref="F:System.String.Empty"/> string.
-            </returns>
-        </member>
-        <member name="P:Syncfusion.Windows.Controls.Tools.AutomationPeer.DropDownButtonAdvAutomationPeer.MyOwner">
-            <summary>
-            Gets owner object.
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.DropDownMenuGroupAutomationPeer.GetClassNameCore">
-            <summary>
-            Gets the name of the <see cref="T:System.Windows.UIElement"/> that is associated with this <see cref="T:System.Windows.Automation.Peers.UIElementAutomationPeer"/>. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName"/>.
-            </summary>
-            <returns>
-            An <see cref="F:System.String.Empty"/> string.
-            </returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.DropDownMenuGroupAutomationPeer.GetAutomationIdCore">
-            <summary>
-            
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.DropDownMenuGroupAutomationPeer.GetAutomationControlTypeCore">
-            <summary>
-            Gets the control type for the <see cref="T:System.Windows.UIElement"/> that is associated with this <see cref="T:System.Windows.Automation.Peers.UIElementAutomationPeer"/>. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType"/>.
-            </summary>
-            <returns>
-            The <see cref="F:System.Windows.Automation.Peers.AutomationControlType.Custom"/> enumeration value.
-            </returns>
-        </member>
-        <member name="P:Syncfusion.Windows.Controls.Tools.AutomationPeer.DropDownMenuGroupAutomationPeer.MyOwner">
-            <summary>
-            Gets owner object.
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.DropDownMenuItemAutomationPeer.GetClassNameCore">
-            <summary>
-            Gets the name of the <see cref="T:System.Windows.UIElement"/> that is associated with this <see cref="T:System.Windows.Automation.Peers.UIElementAutomationPeer"/>. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName"/>.
-            </summary>
-            <returns>
-            An <see cref="F:System.String.Empty"/> string.
-            </returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.DropDownMenuItemAutomationPeer.GetAutomationIdCore">
-            <summary>
-            
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.DropDownMenuItemAutomationPeer.GetAutomationControlTypeCore">
-            <summary>
-            Gets the control type for the <see cref="T:System.Windows.UIElement"/> that is associated with this <see cref="T:System.Windows.Automation.Peers.UIElementAutomationPeer"/>. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType"/>.
-            </summary>
-            <returns>
-            The <see cref="F:System.Windows.Automation.Peers.AutomationControlType.Custom"/> enumeration value.
-            </returns>
-        </member>
-        <member name="P:Syncfusion.Windows.Controls.Tools.AutomationPeer.DropDownMenuItemAutomationPeer.MyOwner">
-            <summary>
-            Gets owner object.
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.SplitButtonAutomationPeer.GetClassNameCore">
-            <summary>
-            Gets the name of the <see cref="T:System.Windows.UIElement"/> that is associated with this <see cref="T:System.Windows.Automation.Peers.UIElementAutomationPeer"/>. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName"/>.
-            </summary>
-            <returns>
-            An <see cref="F:System.String.Empty"/> string.
-            </returns>
-        </member>
-        <member name="P:Syncfusion.Windows.Controls.Tools.AutomationPeer.SplitButtonAutomationPeer.MyOwner">
-            <summary>
-            Gets owner object.
-            </summary>
-        </member>
-        <member name="T:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditAutomationPeer">
-            <summary>
-            Represents a class that provides UI Automation support for <see cref="T:Syncfusion.Windows.Shared.CalendarEdit"/>
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditAutomationPeer.#ctor(Syncfusion.Windows.Shared.CalendarEdit)">
-            <summary>
-            Initializes a new instance of the <see cref="T:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditAutomationPeer"/> class.
-            </summary>
-            <param name="owner">Owning <see cref="T:Syncfusion.Windows.Shared.CalendarEdit"/></param>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)">
-            <summary>
-            Gets the control pattern that is associated with the specified System.Windows.Automation.Peers.PatternInterface.
-            </summary>
-            <param name="patternInterface">A value from the System.Windows.Automation.Peers.PatternInterface enumeration.</param>
-            <returns>The object that supports the specified pattern, or null if unsupported.</returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditAutomationPeer.GetAutomationControlTypeCore">
-            <summary>
-            Gets the control type for the element that is associated with the UI Automation peer.
-            </summary>
-            <returns>The control type.</returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditAutomationPeer.GetClassNameCore">
-            <summary>
-            Called by GetClassName that gets a human readable name that, in addition to AutomationControlType, 
-            differentiates the control represented by this AutomationPeer.
-            </summary>
-            <returns>The string that contains the name.</returns>
-        </member>
-        <!-- Badly formed XML comment ignored for member "M:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditAutomationPeer.GetChildrenCore" -->
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditAutomationPeer.System#Windows#Automation#Provider#IGridProvider#GetItem(System.Int32,System.Int32)">
-            <summary>
-            Retrieves the UI Automation provider for the specified cell.
-            </summary>
-            <param name="row">The ordinal number of the row of interest.</param>
-            <param name="column">The ordinal number of the column of interest.</param>
-            <returns>The UI Automation provider for the specified cell.</returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditAutomationPeer.System#Windows#Automation#Provider#IMultipleViewProvider#GetSupportedViews">
-            <summary>
-            Retrieves a collection of control-specific view identifiers.
-            </summary>
-            <returns> A collection of values that identifies the views available for a UI Automation</returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditAutomationPeer.System#Windows#Automation#Provider#IMultipleViewProvider#GetViewName(System.Int32)">
-            <summary>
-            Retrieves the name of a control-specific view.
-            </summary>
-            <returns> A localized name for the view.</returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditAutomationPeer.System#Windows#Automation#Provider#IMultipleViewProvider#SetCurrentView(System.Int32)">
-            <summary>
-            Sets the current <see cref="T:Syncfusion.Windows.Shared.CalendarEdit"/>-specific view.
-            </summary>
-            <param name="viewId"> A view identifier.</param>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditAutomationPeer.System#Windows#Automation#Provider#ISelectionProvider#GetSelection">
-            <summary>
-            Retrieves a UI Automation provider for each child element that is selected.
-            </summary>
-            <returns> A collection of UI Automation providers.</returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditAutomationPeer.System#Windows#Automation#Provider#ITableProvider#GetColumnHeaders">
-            <summary>
-            Gets a collection of UI Automation providers that represents all the column headers in a table.
-            </summary>
-            <returns>A collection of UI Automation providers.</returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditAutomationPeer.System#Windows#Automation#Provider#ITableProvider#GetRowHeaders">
-            <summary>
-            Gets a collection of UI Automation providers that represents all the row headers in a table.
-            </summary>
-            <returns>A collection of UI Automation providers.</returns>
-        </member>
-        <member name="P:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditAutomationPeer.OwningCalendar">
-            <summary>
-            Gets the <see cref="T:Syncfusion.Windows.Shared.CalendarEdit"/>  object.
-            </summary>
-        </member>
-        <member name="P:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditAutomationPeer.OwningGrid">
-            <summary>
-            Gets the <see cref="T:Syncfusion.Windows.Shared.CalendarEditGrid"/> based on its view mode
-            </summary>
-        </member>
-        <member name="P:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditAutomationPeer.System#Windows#Automation#Provider#IGridProvider#ColumnCount">
-            <summary>
-             Gets the total number of columns in a grid.
-            </summary>
-        </member>
-        <member name="P:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditAutomationPeer.System#Windows#Automation#Provider#IGridProvider#RowCount">
-            <summary>
-             Gets the total number of rows in a grid.
-            </summary>
-        </member>
-        <member name="P:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditAutomationPeer.System#Windows#Automation#Provider#IMultipleViewProvider#CurrentView">
-            <summary>
-            Gets the current control-specific view.
-            </summary>
-        </member>
-        <member name="P:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditAutomationPeer.System#Windows#Automation#Provider#ISelectionProvider#CanSelectMultiple">
-            <summary>
-            Gets a value that specifies whether the UI Automation provider allows more than
-            one child element to be selected concurrently.
-            </summary>
-            <returns> true if multiple selection is allowed; otherwise false.</returns>
-        </member>
-        <member name="P:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditAutomationPeer.System#Windows#Automation#Provider#ISelectionProvider#IsSelectionRequired">
-            <summary>
-            Gets a value that specifies whether the UI Automation provider requires at least one child element to be selected.
-            </summary>
-            <returns>true if selection is required; otherwise false.</returns>
-        </member>
-        <member name="P:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditAutomationPeer.System#Windows#Automation#Provider#ITableProvider#RowOrColumnMajor">
-            <summary>
-             Contains values that specify whether data in a table should be read primarily by row or by column.
-            </summary>
-        </member>
-        <member name="T:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditNavigatorAutomationPeer">
-            <summary>
-            Represents a class that provides UI Automation support for <see cref="T:Syncfusion.Windows.Shared.NavigateButton"/>
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditNavigatorAutomationPeer.#ctor(Syncfusion.Windows.Shared.NavigateButton)">
-            <summary>
-            Initializes a new instance of the <see cref="T:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditNavigatorAutomationPeer"/> class.
-            </summary>
-            <param name="owner"><see cref="T:Syncfusion.Windows.Shared.NavigateButton"/></param>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditNavigatorAutomationPeer.GetAutomationIdCore">
-            <summary>
-            Provides the peer's behavior when a UI Automation client calls 
-            GetAutomationId or an equivalent UI Automation client API.
-            </summary>
-            <returns>The automation identifier.</returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditNavigatorAutomationPeer.GetClassNameCore">
-            <summary>
-            Gets the name of the <see cref="T:System.Windows.UIElement"/> that is associated with this <see cref="T:System.Windows.Automation.Peers.UIElementAutomationPeer"/>. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName"/>.
-            </summary>
-            <returns>
-            An <see cref="F:System.String.Empty"/> string.
-            </returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditNavigatorAutomationPeer.GetAutomationControlTypeCore">
-            <summary>
-            Gets the control type for the <see cref="T:System.Windows.UIElement"/> that is associated with this <see cref="T:System.Windows.Automation.Peers.UIElementAutomationPeer"/>. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType"/>.
-            </summary>
-            <returns>
-            The <see cref="F:System.Windows.Automation.Peers.AutomationControlType.Custom"/> enumeration value.
-            </returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditNavigatorAutomationPeer.GetNameCore">
-            <summary>
-            Provides the peer's behavior when a UI Automation client calls
-            GetName or an equivalent UI Automation client API.
-            </summary>
-            <returns>The name as used by assistive technoloGetClassNameCoreies and other UI Automation clients.</returns>
-        </member>
-        <!-- Badly formed XML comment ignored for member "P:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditNavigatorAutomationPeer.MyOwner" -->
-        <member name="T:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditHeaderAutomationPeer">
-            <summary>
-            Represents a class that provides UI Automation support for <see cref="T:Syncfusion.Windows.Shared.MonthButton"/>
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditHeaderAutomationPeer.#ctor(Syncfusion.Windows.Shared.MonthButton)">
-            <summary>
-            Initializes a new instance of the <see cref="T:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditHeaderAutomationPeer"/> class.
-            </summary>
-            <param name="owner"><see cref="T:Syncfusion.Windows.Shared.MonthButton"/></param>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditHeaderAutomationPeer.GetAutomationIdCore">
-            <summary>
-            Provides the peer's behavior when a UI Automation client calls 
-            GetAutomationId or an equivalent UI Automation client API.
-            </summary>
-            <returns>The automation identifier.</returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditHeaderAutomationPeer.GetClassNameCore">
-            <summary>
-            Provides the peer's behavior when a UI Automation client calls
-            GetName or an equivalent UI Automation client API.
-            </summary>
-            <returns>The name as used by assistive technoloGetClassNameCoreies and other UI Automation clients.</returns>.
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditHeaderAutomationPeer.GetAutomationControlTypeCore">
-            <summary>
-            Gets the control type for the <see cref="T:System.Windows.UIElement"/> that is associated with this <see cref="T:System.Windows.Automation.Peers.UIElementAutomationPeer"/>. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType"/>.
-            </summary>
-            <returns>
-            The <see cref="F:System.Windows.Automation.Peers.AutomationControlType.Custom"/> enumeration value.
-            </returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditHeaderAutomationPeer.GetNameCore">
-            <summary>
-            Provides the peer's behavior when a UI Automation client calls 
-            GetAutomationId or an equivalent UI Automation client API.
-            </summary>
-            <returns>The automation identifier.</returns>
-        </member>
-        <!-- Badly formed XML comment ignored for member "P:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditHeaderAutomationPeer.MyOwner" -->
-        <member name="T:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditCellAutomationPeer">
-            <summary>
-            Represents a class that provides UI Automation support for <see cref="T:Syncfusion.Windows.Shared.Cell"/>
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditCellAutomationPeer.#ctor(Syncfusion.Windows.Shared.Cell)">
-            <summary>
-            Initializes a new instance of the <see cref="T:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditCellAutomationPeer"/> class.
-            </summary>
-            <param name="owner">Owning Calendar</param>
-        </member>
-        <member name="F:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditCellAutomationPeer.Calendar">
-            <summary>
-            Holds the <see cref="T:Syncfusion.Windows.Shared.CalendarEdit"/>instance.
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditCellAutomationPeer.GetAutomationIdCore">
-            <summary>
-            Provides the peer's behavior when a UI Automation client calls 
-            GetAutomationId or an equivalent UI Automation client API.
-            </summary>
-            <returns>The automation identifier.</returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditCellAutomationPeer.GetClassNameCore">
-            <summary>
-            Gets the name of the <see cref="T:System.Windows.UIElement"/> that is associated with this <see cref="T:System.Windows.Automation.Peers.UIElementAutomationPeer"/>. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName"/>.
-            </summary>
-            <returns>
-            An <see cref="F:System.String.Empty"/> string.
-            </returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditCellAutomationPeer.GetAutomationControlTypeCore">
-            <summary>
-            Gets the control type for the <see cref="T:System.Windows.UIElement"/> that is associated with this <see cref="T:System.Windows.Automation.Peers.UIElementAutomationPeer"/>. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType"/>.
-            </summary>
-            <returns>
-            The <see cref="F:System.Windows.Automation.Peers.AutomationControlType.Custom"/> enumeration value.
-            </returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditCellAutomationPeer.GetNameCore">
-            <summary>
-            Provides the peer's behavior when a UI Automation client calls 
-            GetAutomationId or an equivalent UI Automation client API.
-            </summary>
-            <returns>The automation identifier.</returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditCellAutomationPeer.GetHelpTextCore">
-            <summary>
-            Gets the help text for the <see cref="T:Syncfusion.Windows.Controls.Primitives.CalendarDayButton"/> and <see cref="T:Syncfusion.Windows.Controls.Primitives.CalendarButton"/>
-            </summary>
-        </member>
-        <!-- Badly formed XML comment ignored for member "P:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditCellAutomationPeer.MyOwner" -->
-        <member name="T:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditDayNamesAutomationPeer">
-            <summary>
-            Represents a class that provides UI Automation support for <see cref="T:Syncfusion.Windows.Shared.DayNameCell"/>
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditDayNamesAutomationPeer.#ctor(Syncfusion.Windows.Shared.DayNameCell)">
-            <summary>
-            Initializes a new instance of the <see cref="T:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditDayNamesAutomationPeer"/> class.
-            </summary>
-            <param name="owner">Owning Calendar</param>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditDayNamesAutomationPeer.GetAutomationIdCore">
-            <summary>
-            Provides the peer's behavior when a UI Automation client calls 
-            GetAutomationId or an equivalent UI Automation client API.
-            </summary>
-            <returns>The automation identifier.</returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditDayNamesAutomationPeer.GetClassNameCore">
-            <summary>
-            Gets the name of the <see cref="T:System.Windows.UIElement"/> that is associated with this <see cref="T:System.Windows.Automation.Peers.UIElementAutomationPeer"/>. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName"/>.
-            </summary>
-            <returns>
-            An <see cref="F:System.String.Empty"/> string.
-            </returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditDayNamesAutomationPeer.GetAutomationControlTypeCore">
-            <summary>
-            Gets the control type for the <see cref="T:System.Windows.UIElement"/> that is associated with this <see cref="T:System.Windows.Automation.Peers.UIElementAutomationPeer"/>. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType"/>.
-            </summary>
-            <returns>
-            The <see cref="F:System.Windows.Automation.Peers.AutomationControlType.Custom"/> enumeration value.
-            </returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditDayNamesAutomationPeer.GetNameCore">
-            <summary>
-            Provides the peer's behavior when a UI Automation client calls 
-            GetAutomationId or an equivalent UI Automation client API.
-            </summary>
-            <returns>The automation identifier.</returns>
-        </member>
-        <member name="P:Syncfusion.Windows.Controls.Tools.AutomationPeer.CalendarEditDayNamesAutomationPeer.MyOwner">
-            <summary>
-            Gets the <see cref="T:Syncfusion.Windows.Shared.DayNameCell"/> object.
-            </summary>
-        </member>
         <member name="T:Syncfusion.Windows.Shared.SpecialDate">
             <summary>
             Special Day class
@@ -816,14 +382,6 @@
             Invoked when Special Dates collection changed.
             </summary>
             <param name="e">Notify collection chnaged event</param>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.ComboBoxAdvAutomationPeer.GetClassNameCore">
-            <summary>
-            Gets the name of the <see cref="T:System.Windows.UIElement"/> that is associated with this <see cref="T:System.Windows.Automation.Peers.UIElementAutomationPeer"/>. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName"/>.
-            </summary>
-            <returns>
-            An <see cref="F:System.String.Empty"/> string.
-            </returns>
         </member>
         <member name="P:Syncfusion.Windows.Shared.ComboBoxAdvAutomationPeer.MyOwner">
             <property name="flag" value="Finished" />
@@ -862,160 +420,6 @@
         <member name="T:Syncfusion.Windows.Shared.ComboBoxItemAdvDataAutomationPeer">
             <summary>
             
-            </summary>
-        </member>
-        <member name="T:Syncfusion.Windows.Controls.Tools.AutomationPeer.DateTimeEditAutomationPeer">
-            <summary>
-            Represents a class that provides UI Automation support for <see cref="T:Syncfusion.Windows.Shared.DateTimeEdit"/> control.
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.DateTimeEditAutomationPeer.#ctor(Syncfusion.Windows.Shared.DateTimeEdit)">
-            <summary>
-            Initializes a new instance of the <see cref="T:Syncfusion.Windows.Controls.Tools.AutomationPeer.DateTimeEditAutomationPeer"/> class.
-            </summary>
-            <param name="control">The <see cref="T:Syncfusion.Windows.Shared.DateTimeEdit"/> control.</param>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.DateTimeEditAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)">
-            <summary>
-            Gets the control pattern that is associated with the specified System.Windows.Automation.Peers.PatternInterface.
-            </summary>
-            <param name="patternInterface">A value from the System.Windows.Automation.Peers.PatternInterface enumeration.</param>
-            <returns>The object that supports the specified pattern, or null if unsupported.</returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.DateTimeEditAutomationPeer.GetAutomationIdCore">
-            <summary>
-            Provides the peer's behavior when a UI Automation client calls 
-            GetAutomationId or an equivalent UI Automation client API.
-            </summary>
-            <returns>The automation identifier.</returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.DateTimeEditAutomationPeer.GetClassNameCore">
-            <summary>
-            Gets the name of the <see cref="T:Syncfusion.Windows.Shared.DateTimeEdit"/>  that is associated with this UIElementAutomationPeer. 
-            </summary>
-            <returns>
-            An <see cref="F:System.String.Empty"/> string.
-            </returns>
-        </member>
-        <!-- Badly formed XML comment ignored for member "M:Syncfusion.Windows.Controls.Tools.AutomationPeer.DateTimeEditAutomationPeer.GetChildrenCore" -->
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.DateTimeEditAutomationPeer.GetAutomationControlTypeCore">
-            <summary>
-            Gets the control type for the <see cref="T:Syncfusion.Windows.Shared.DateTimeEdit"/>  that is associated with this UIElementAutomationPeer.
-            </summary>
-            <returns>
-            The <see cref="F:System.Windows.Automation.Peers.AutomationControlType.Custom"/> enumeration value.
-            </returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.DateTimeEditAutomationPeer.GetNameCore">
-            <summary>
-            Provides the peer's behavior when a UI Automation client calls
-            GetName or an equivalent UI Automation client API.
-            </summary>
-            <returns>The name as used by assistive technoloGetClassNameCoreies and other UI Automation clients.</returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.DateTimeEditAutomationPeer.GetHelpTextCore">
-            <summary>
-            Provides the peer's behavior when a UI Automation client calls 
-            GetHelpText or an equivalent UI Automation client API.
-            </summary>
-            <returns>The help text.</returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.DateTimeEditAutomationPeer.GetLocalizedControlTypeCore">
-            <summary>
-            Overrides the GetLocalizedControlTypeCore method for <see cref="T:Syncfusion.Windows.Shared.DateTimeEdit"/> 
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.DateTimeEditAutomationPeer.System#Windows#Automation#Provider#IExpandCollapseProvider#Collapse">
-            <summary>
-            Hides the calendar popup
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.DateTimeEditAutomationPeer.System#Windows#Automation#Provider#IExpandCollapseProvider#Expand">
-            <summary>
-            Shows the calendar popup
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.DateTimeEditAutomationPeer.System#Windows#Automation#Provider#IValueProvider#SetValue(System.String)">
-            <summary>
-            Sets the value of a <see cref="T:Syncfusion.Windows.Shared.DateTimeEdit"/> .
-            </summary>
-            <param name="value"></param>
-        </member>
-        <member name="P:Syncfusion.Windows.Controls.Tools.AutomationPeer.DateTimeEditAutomationPeer.ExpandCollapseState">
-            <summary>
-            Gets or Sets the Expand/Collapse state of the calendar popup
-            </summary>
-        </member>
-        <member name="P:Syncfusion.Windows.Controls.Tools.AutomationPeer.DateTimeEditAutomationPeer.MyOwner">
-            <summary>
-            Gets the <see cref="T:Syncfusion.Windows.Shared.DateTimeEdit"/>  object.
-            </summary>
-        </member>
-        <member name="P:Syncfusion.Windows.Controls.Tools.AutomationPeer.DateTimeEditAutomationPeer.Value">
-            <summary>
-            Gets the value of the <see cref="T:Syncfusion.Windows.Shared.DateTimeEdit"/> 
-            </summary>
-        </member>
-        <member name="P:Syncfusion.Windows.Controls.Tools.AutomationPeer.DateTimeEditAutomationPeer.IsReadOnly">
-            <summary>
-            Gets the value indicating whether the <see cref="T:Syncfusion.Windows.Shared.DateTimeEdit"/>  is ReadOnly or not.
-            </summary>
-        </member>
-        <member name="T:Syncfusion.Windows.Shared.Controls.Editors.AutomationPeer.DoubleTextBoxAutomationPeer">
-            <summary>
-            Represents a class that provides UI Automation support for DoubleTextBox
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.Controls.Editors.AutomationPeer.DoubleTextBoxAutomationPeer.#ctor(Syncfusion.Windows.Shared.DoubleTextBox)">
-            <summary>
-            Initialize a new instance for <see cref="T:Syncfusion.Windows.Shared.Controls.Editors.AutomationPeer.DoubleTextBoxAutomationPeer"/> class.
-            </summary>
-            <param name="owner">Owner object</param>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.Controls.Editors.AutomationPeer.DoubleTextBoxAutomationPeer.GetAutomationIdCore">
-            <summary>
-            Provides the peer's behavior when a UI Automation client calls 
-            GetAutomationId or an equivalent UI Automation client API.
-            </summary>
-            <returns>The automation identifier.</returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.Controls.Editors.AutomationPeer.DoubleTextBoxAutomationPeer.GetClassNameCore">
-            <summary>
-            Gets the name of the <see cref="T:System.Windows.UIElement"/> that is associated with this <see cref="T:System.Windows.Automation.Peers.UIElementAutomationPeer"/>. 
-            This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName"/>.
-            </summary>
-            <returns> An <see cref="F:System.String.Empty"/> string.</returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.Controls.Editors.AutomationPeer.DoubleTextBoxAutomationPeer.GetNameCore">
-            <summary>
-            Provides the peer's behavior when a UI Automation client calls
-            GetName or an equivalent UI Automation client API.
-            </summary>
-            <returns>The name as used by assistive technoloGetClassNameCoreies and other UI Automation clients.</returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.Controls.Editors.AutomationPeer.DoubleTextBoxAutomationPeer.GetHelpTextCore">
-            <summary>
-            Provides the peer's behavior when a UI Automation client calls 
-            GetHelpText or an equivalent UI Automation client API.
-            </summary>
-            <returns>The help text.</returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.Controls.Editors.AutomationPeer.DoubleTextBoxAutomationPeer.GetAutomationControlTypeCore">
-            <summary>
-            Overrides the GetLocalizedControlTypeCore method for <see cref="T:Syncfusion.Windows.Shared.DoubleTextBox"/> 
-            </summary>
-            <returns>Specifies the System.Windows.Automation.ControlType that is exposed to the UI Automation client.</returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.Controls.Editors.AutomationPeer.DoubleTextBoxAutomationPeer.GetChildrenCore">
-            <summary>
-            Gets the child controls of the DoubleTextBox control.
-            </summary>
-            <returns>children control list.</returns>
-        </member>
-        <member name="P:Syncfusion.Windows.Shared.Controls.Editors.AutomationPeer.DoubleTextBoxAutomationPeer.MyOwner">
-            <summary>
-            Gets owner object.
             </summary>
         </member>
         <member name="T:Syncfusion.Windows.Shared.MenuAdv">
@@ -5894,6 +5298,11 @@
             Value that indicates whether scrolling on the horizontal axis is possible.
             </summary>
         </member>
+        <member name="F:Syncfusion.Windows.Shared.TileViewVirtualizingPanel.canScrollMinimizedItems">
+            <summary>
+            Value that indicates whether scrolling on the minimized items
+            </summary>
+        </member>
         <member name="F:Syncfusion.Windows.Shared.TileViewVirtualizingPanel.isScrollActive">
             <summary>
             Value indicates whether the scroll is active or not.
@@ -6258,78 +5667,6 @@
             <summary>
             Gets Clear button object.
             </summary>
-        </member>
-        <member name="T:Syncfusion.Windows.Shared.Controls.TimeSpanEditAutomationPeer">
-            <summary>
-            Represents a class that provides UI Automation support for <see cref="T:Syncfusion.Windows.Shared.TimeSpanEdit"/> control.
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.Controls.TimeSpanEditAutomationPeer.#ctor(Syncfusion.Windows.Shared.TimeSpanEdit)">
-            <summary>
-            Initializes a new instance of the <see cref="T:Syncfusion.Windows.Shared.Controls.TimeSpanEditAutomationPeer"/> class.
-            </summary>
-            <param name="control">The <see cref="T:Syncfusion.Windows.Shared.TimeSpanEdit"/> control.</param>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.Controls.TimeSpanEditAutomationPeer.GetAutomationIdCore">
-            <summary>
-            Provides the peer's behavior when a UI Automation client calls 
-            GetAutomationId or an equivalent UI Automation client API.
-            </summary>
-            <returns>The automation identifier.</returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.Controls.TimeSpanEditAutomationPeer.GetClassNameCore">
-            <summary>
-            Gets the name of the <see cref="T:Syncfusion.Windows.Shared.TimeSpanEdit"/>  that is associated with this UIElementAutomationPeer. 
-            </summary>
-            <returns>
-            An <see cref="F:System.String.Empty"/> string.
-            </returns>
-        </member>
-        <!-- Badly formed XML comment ignored for member "M:Syncfusion.Windows.Shared.Controls.TimeSpanEditAutomationPeer.GetChildrenCore" -->
-        <member name="M:Syncfusion.Windows.Shared.Controls.TimeSpanEditAutomationPeer.GetAutomationControlTypeCore">
-            <summary>
-            Gets the control type for the <see cref="T:Syncfusion.Windows.Shared.TimeSpanEdit"/>  that is associated with this UIElementAutomationPeer.
-            </summary>
-            <returns>
-            The <see cref="F:System.Windows.Automation.Peers.AutomationControlType.Custom"/> enumeration value.
-            </returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.Controls.TimeSpanEditAutomationPeer.GetNameCore">
-            <summary>
-            Provides the peer's behavior when a UI Automation client calls
-            GetName or an equivalent UI Automation client API.
-            </summary>
-            <returns>The name as used by assistive technoloGetClassNameCoreies and other UI Automation clients.</returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.Controls.TimeSpanEditAutomationPeer.GetHelpTextCore">
-            <summary>
-            Provides the peer's behavior when a UI Automation client calls 
-            GetHelpText or an equivalent UI Automation client API.
-            </summary>
-            <returns>The help text.</returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.Controls.TimeSpanEditAutomationPeer.System#Windows#Automation#Provider#IValueProvider#SetValue(System.String)">
-            <summary>
-            Sets the value of a <see cref="T:Syncfusion.Windows.Shared.TimeSpanEdit"/> .
-            </summary>
-            <param name="value"></param>
-        </member>
-        <member name="P:Syncfusion.Windows.Shared.Controls.TimeSpanEditAutomationPeer.MyOwner">
-            <summary>
-            Gets owner object.
-            </summary>
-        </member>
-        <member name="P:Syncfusion.Windows.Shared.Controls.TimeSpanEditAutomationPeer.System#Windows#Automation#Provider#IValueProvider#Value">
-            <summary>
-            Gets the value of a <see cref="T:Syncfusion.Windows.Shared.TimeSpanEdit"/> .
-            </summary>
-            <param name="Value"></param>
-        </member>
-        <member name="P:Syncfusion.Windows.Shared.Controls.TimeSpanEditAutomationPeer.System#Windows#Automation#Provider#IValueProvider#IsReadOnly">
-            <summary>
-            Gets the value indicating whether the <see cref="T:Syncfusion.Windows.Shared.TimeSpanEdit"/>  is ReadOnly or not.
-            </summary>
-            <param name="IsReadOnly"></param>
         </member>
         <member name="T:Syncfusion.Windows.Tools.Controls.FloatingToolBar">
             <summary>
@@ -8187,107 +7524,6 @@
             
             </summary>
         </member>
-        <member name="T:Syncfusion.Windows.Controls.Tools.AutomationPeer.UpDownAutomationPeer">
-            <property name="flag" value="Finished" />
-            <summary>
-            Represents a class that provides UI Automation support for UpDown control.
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.UpDownAutomationPeer.#ctor(Syncfusion.Windows.Shared.UpDown)">
-            <summary>
-            Initializes a new instance of the <see cref="T:Syncfusion.Windows.Controls.Tools.AutomationPeer.UpDownAutomationPeer"/> class.
-            </summary>
-            <param name="control">The control.</param>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.UpDownAutomationPeer.GetAutomationIdCore">
-            <summary>
-            Provides the peer's behavior when a UI Automation client calls 
-            GetAutomationId or an equivalent UI Automation client API.
-            </summary>
-            <returns>The automation identifier.</returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.UpDownAutomationPeer.GetChildrenCore">
-            <summary>
-            Gets the child controls of the UpDown control.
-            </summary>
-            <returns>children control list.</returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.UpDownAutomationPeer.GetClassNameCore">
-            <summary>
-            Gets the name of the <see cref="T:System.Windows.UIElement"/> that is associated with this <see cref="T:System.Windows.Automation.Peers.UIElementAutomationPeer"/>. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName"/>.
-            </summary>
-            <returns>
-            An <see cref="F:System.String.Empty"/> string.
-            </returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.UpDownAutomationPeer.GetAutomationControlTypeCore">
-            <summary>
-            Gets the control type for the <see cref="T:System.Windows.UIElement"/> that is associated with this <see cref="T:System.Windows.Automation.Peers.UIElementAutomationPeer"/>. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType"/>.
-            </summary>
-            <returns>
-            The <see cref="F:System.Windows.Automation.Peers.AutomationControlType.Custom"/> enumeration value.
-            </returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.UpDownAutomationPeer.GetNameCore">
-            <summary>
-            Provides the peer's behavior when a UI Automation client calls
-            GetName or an equivalent UI Automation client API.
-            </summary>
-            <returns>The name as used by assistive technoloGetClassNameCoreies and other UI Automation clients.</returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.UpDownAutomationPeer.GetHelpTextCore">
-            <summary>
-            Provides the peer's behavior when a UI Automation client calls 
-            GetHelpText or an equivalent UI Automation client API.
-            </summary>
-            <returns>The help text.</returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.UpDownAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)">
-            <summary>
-             Returns the patternInterface of the control
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Tools.AutomationPeer.UpDownAutomationPeer.SetValue(System.Double)">
-            <summary>
-            Sets value of the UpDown control
-            </summary>
-            <param name="value"></param>
-        </member>
-        <member name="P:Syncfusion.Windows.Controls.Tools.AutomationPeer.UpDownAutomationPeer.System#Windows#Automation#Provider#IRangeValueProvider#Value">
-            <summary>
-            Gets or sets the value of the UpDown Control
-            </summary>
-        </member>
-        <member name="P:Syncfusion.Windows.Controls.Tools.AutomationPeer.UpDownAutomationPeer.System#Windows#Automation#Provider#IRangeValueProvider#IsReadOnly">
-            <summary>
-            Gets or sets whether the control is read only.
-            </summary>
-        </member>
-        <member name="P:Syncfusion.Windows.Controls.Tools.AutomationPeer.UpDownAutomationPeer.System#Windows#Automation#Provider#IRangeValueProvider#Maximum">
-            <summary>
-            Gets the maximum value of the UpDown control
-            </summary>
-        </member>
-        <member name="P:Syncfusion.Windows.Controls.Tools.AutomationPeer.UpDownAutomationPeer.System#Windows#Automation#Provider#IRangeValueProvider#Minimum">
-            <summary>
-            Gets the minimum value of the UpDown Control
-            </summary>
-        </member>
-        <member name="P:Syncfusion.Windows.Controls.Tools.AutomationPeer.UpDownAutomationPeer.System#Windows#Automation#Provider#IRangeValueProvider#LargeChange">
-            <summary>
-            Gets the large change value of the UpDown Control
-            </summary>
-        </member>
-        <member name="P:Syncfusion.Windows.Controls.Tools.AutomationPeer.UpDownAutomationPeer.System#Windows#Automation#Provider#IRangeValueProvider#SmallChange">
-            <summary>
-            Gets the small change value of the UpDown Control
-            </summary>
-        </member>
-        <member name="P:Syncfusion.Windows.Controls.Tools.AutomationPeer.UpDownAutomationPeer.MyOwner">
-            <summary>
-            Gets owner object.
-            </summary>
-        </member>
         <member name="T:Syncfusion.Windows.Shared.Printing.PrintPageMargin">
             <summary>
             Represents the class <see cref="T:Syncfusion.Windows.Shared.Printing.PrintPageMargin"/> that contains the PageMarin informations.
@@ -8361,7 +7597,7 @@
         </member>
         <member name="T:Syncfusion.Windows.Shared.ChromelessWindow">
             <summary>
-            Represents a customizable window component that allows to modify title bar, resize border, and change the style of the entire window.
+            ChromelessWindow class provides us a new window
             </summary>
         </member>
         <member name="F:Syncfusion.Windows.Shared.ChromelessWindow.dragIsIn">
@@ -8449,11 +7685,6 @@
             Previous state for menu.
             </summary>
         </member>
-        <member name="F:Syncfusion.Windows.Shared.ChromelessWindow.suspendLocationUpdate">
-            <summary>
-            Suspend the location updates while mouse move.
-            </summary>
-        </member>
         <member name="F:Syncfusion.Windows.Shared.ChromelessWindow.m_lastTitlebarPointXTemp">
             <summary>
             lastTitlebarPoint X temporary value 
@@ -8515,11 +7746,6 @@
             Defines alignment of the Title Text.
             </summary>
         </member>
-        <member name="F:Syncfusion.Windows.Shared.ChromelessWindow.IconAlignmentProperty">
-            <summary>
-            Defines alignment of the window icon.
-            </summary>
-        </member>
         <member name="F:Syncfusion.Windows.Shared.ChromelessWindow.ResizeGripStyleProperty">
             <summary>
             Defines Style for the ResizeGrip. This is a dependency property.
@@ -8558,26 +7784,6 @@
         <member name="F:Syncfusion.Windows.Shared.ChromelessWindow.CloseButtonTemplateProperty">
             <summary>
             Identifies <see cref="P:Syncfusion.Windows.Shared.ChromelessWindow.CloseButtonTemplate"/> dependency property.
-            </summary>
-        </member>
-        <member name="F:Syncfusion.Windows.Shared.ChromelessWindow.LeftHeaderItemsSourceProperty">
-            <summary>
-            Identifies <see cref="P:Syncfusion.Windows.Shared.ChromelessWindow.LeftHeaderItemsSource"/> dependency property.
-            </summary>
-        </member>
-        <member name="F:Syncfusion.Windows.Shared.ChromelessWindow.RightHeaderItemsSourceProperty">
-            <summary>
-            Identifies <see cref="P:Syncfusion.Windows.Shared.ChromelessWindow.RightHeaderItemsSource"/> dependency property.
-            </summary>
-        </member>
-        <member name="F:Syncfusion.Windows.Shared.ChromelessWindow.LeftHeaderItemTemplateProperty">
-            <summary>
-            Identifies <see cref="P:Syncfusion.Windows.Shared.ChromelessWindow.LeftHeaderItemTemplate"/> dependency property.
-            </summary>
-        </member>
-        <member name="F:Syncfusion.Windows.Shared.ChromelessWindow.RightHeaderItemTemplateProperty">
-            <summary>
-            Identifies <see cref="P:Syncfusion.Windows.Shared.ChromelessWindow.RightHeaderItemTemplate"/> dependency property.
             </summary>
         </member>
         <member name="F:Syncfusion.Windows.Shared.ChromelessWindow.ResizeBorderBrushProperty">
@@ -9098,16 +8304,6 @@
             Gets or sets value that represents the Title text alignment.
              </summary>
         </member>
-        <member name="P:Syncfusion.Windows.Shared.ChromelessWindow.IconAlignment">
-             <summary>
-            Gets or sets value the alignment of the Chromeless Window icon.
-             </summary>
-             /// <example>
-             	<code lang="XAML"><![CDATA[        
-             IconAlignment="Left"
-             ]]></code>
-             </example>
-        </member>
         <member name="P:Syncfusion.Windows.Shared.ChromelessWindow.CornerRadius">
             <summary>
             Gets or sets value that represents the corner radius.
@@ -9128,79 +8324,6 @@
             </summary>
             <value><c>true</c> if [show icon]; otherwise, <c>false</c>.</value>
         </member>
-        <member name="P:Syncfusion.Windows.Shared.ChromelessWindow.LeftHeaderItemsSource">
-             <summary>
-             Gets or sets a collection of objects for the left header items in <see cref="T:Syncfusion.Windows.Shared.ChromelessWindow"/>
-             </summary>
-             <example>
-             	<code lang="C#"><![CDATA[        
-              this.LeftHeaderItemsSource = (this.DataContext as ViewModel).Utilities;
-             ]]></code>
-             </example>
-             <example>
-             	<code lang="C#"><![CDATA[        
-              public class MyObservableCollection : ObservableCollection<object> { }
-             ]]></code>
-             	<code lang="XAML"><![CDATA[
-             	LeftHeaderItemsSource="{DynamicResource leftHeaderItems}"
-             <local:MyObservableCollection x:Key="leftHeaderItems">
-                <syncfusion:SfTextBoxExt Watermark = "Search" />
-            </ local:MyObservableCollection>	
-             ]]></code>
-             </example>
-        </member>
-        <member name="P:Syncfusion.Windows.Shared.ChromelessWindow.RightHeaderItemsSource">
-            <summary>
-            Gets or sets a collection of objects for the right header items in <see cref="T:Syncfusion.Windows.Shared.ChromelessWindow"/>
-            </summary>
-            <example>
-            	<code lang="XAML"><![CDATA[        
-             RightHeaderItemsSource="{Binding Utilities}"
-            ]]></code>
-            </example>
-            <example>
-            <code lang="XAML"><![CDATA[
-            xmlns:listCollection="clr-namespace:System.Collections;assembly=mscorlib"
-            RightHeaderItemsSource="{DynamicResource list}" 
-            <listCollection:ArrayList x:Key="list" >
-            <syncfusion:ButtonAdv Width="24" Height="24" SmallIcon="/Images/Help.png" Click="ButtonAdv_Click" SizeMode="Small" Background="Transparent" BorderThickness="0" />
-            </listCollection:ArrayList>
-            ]]></code>
-            </example>
-        </member>
-        <member name="P:Syncfusion.Windows.Shared.ChromelessWindow.LeftHeaderItemTemplate">
-            <summary>
-            Gets or sets the data template appied to the left header items when LeftHeaderItemsSource is set in <see cref="T:Syncfusion.Windows.Shared.ChromelessWindow"/>
-            </summary>
-            <example>
-                <code lang="XAML"><![CDATA[  
-            <syncfusion:ChromelessWindow LeftHeaderItemTemplate="{DynamicResource Part_LeftItemsTemplate}">
-            <syncfusion:ChromelessWindow.Resources>
-                <DataTemplate x:Key="Part_LeftItemsTemplate">
-                    <Grid>
-                        <syncfusion:ButtonAdv SmallIcon="{Binding Path = Icon, Mode = TwoWay}" SizeMode="Small" Background="Transparent" BorderThickness="0" />
-                    </Grid>
-                </DataTemplate>
-            </syncfusion:ChromelessWindow.Resources>
-            ]]></code>
-            </example>
-        </member>
-        <member name="P:Syncfusion.Windows.Shared.ChromelessWindow.RightHeaderItemTemplate">
-            <summary>
-            Gets or sets the data template appied to the right header items when RightHeaderItemsSource is set in <see cref="T:Syncfusion.Windows.Shared.ChromelessWindow"/>
-            </summary>
-            <example>
-                <code lang="XAML"><![CDATA[  
-            <syncfusion:ChromelessWindow.RightHeaderItemTemplate>
-                <DataTemplate>
-                    <Grid>
-                        <syncfusion:ButtonAdv SmallIcon="{Binding Path = Icon, Mode = TwoWay}" Command="{Binding Path= Command, Mode=TwoWay}" SizeMode="Small" Background="Transparent" BorderThickness="0" />
-                    </Grid>
-                </DataTemplate>
-            </syncfusion:ChromelessWindow.RightHeaderItemTemplate>
-            ]]></code>
-            </example>
-        </member>
         <member name="P:Syncfusion.Windows.Shared.ChromelessWindow.ResizeGripStyle">
             <summary>
             Gets or sets Style for the ResizeGrip.
@@ -9220,18 +8343,6 @@
             <summary>
             Occurs when [is glass active changed].
             </summary>
-        </member>
-        <member name="E:Syncfusion.Windows.Shared.ChromelessWindow.ReSizeGripMouseEvent">
-            <summary>
-            Occurs when the mouse event is being resize in a grip.
-            </summary>
-        </member>
-        <member name="T:Syncfusion.Windows.Shared.ChromelessWindow.ReSizeGripMouseEventHandler">
-            <summary>
-            Represents the method that handles the <see cref="E:Syncfusion.Windows.Shared.ChromelessWindow.ReSizeGripMouseEvent"/>.
-            </summary>
-            <param name="sender">The sender contains a ChromelessWindow.</param>
-            <param name="e">The <see cref="T:Syncfusion.Windows.Shared.ReSizeGripMouseEventArgs"/> that contains the event data.</param>
         </member>
         <member name="M:Syncfusion.Windows.Shared.Printing.CustomMarginDialog.#ctor(Syncfusion.Windows.Shared.Printing.PrintOptionsControl,System.Windows.Thickness)">
             <summary>
@@ -10711,6 +9822,13 @@
             <param name="sender">Object of the sender</param>
             <param name="e">Handles Mouse Event</param>
         </member>
+        <member name="M:Syncfusion.Windows.Tools.Controls.ColorGroupItem.ColorGroupItemLostFocus(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Called when LostFocus Occurs on ColorGroupItem
+            </summary>
+            <param name="sender">Object of the sender</param>
+            <param name="e">Handles Routed Event</param>
+        </member>
         <member name="M:Syncfusion.Windows.Tools.Controls.ColorGroupItem.ColorGroupItemBorder_LostFocus(System.Object,System.Windows.RoutedEventArgs)">
             <summary>
             Called when LostFocus event occurs on border
@@ -10724,11 +9842,6 @@
             </summary>
             <param name="sender">Object of the sender</param>
             <param name="e">Handles Mouse Event</param>
-        </member>
-        <member name="M:Syncfusion.Windows.Tools.Controls.ColorGroupItem.SelectColor(System.Windows.Controls.Border)">
-            <summary>
-            Chooses the selected item color
-            </summary>
         </member>
         <member name="M:Syncfusion.Windows.Tools.Controls.ColorGroupItem.r_MouseLeave(System.Object,System.Windows.Input.MouseEventArgs)">
             <summary>
@@ -11098,21 +10211,6 @@
             
              </summary>
         </member>
-        <member name="F:Syncfusion.Windows.Tools.Controls.ColorPickerPalette.row">
-            <summary>
-            Contains the row value of ColorGroupItem collection
-            </summary>
-        </member>
-        <member name="F:Syncfusion.Windows.Tools.Controls.ColorPickerPalette.column">
-            <summary>
-            Contains the column value of ColorGroupItem collection
-            </summary>
-        </member>
-        <member name="F:Syncfusion.Windows.Tools.Controls.ColorPickerPalette.popupItemIndex">
-            <summary>
-            Contains the index value of Popup items
-            </summary>
-        </member>
         <member name="M:Syncfusion.Windows.Tools.Controls.ColorPickerPalette.#ctor">
             <summary>
             Creates the instance of ColorPickerPalette control
@@ -11126,27 +10224,6 @@
         <member name="M:Syncfusion.Windows.Tools.Controls.ColorPickerPalette.OnApplyTemplate">
             <summary>
             Applies the Template for the control
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Tools.Controls.ColorPickerPalette.OnPopupClosed(System.Object,System.EventArgs)">
-            <summary>
-            Event raised when popup is closed
-            </summary>
-            <param name="sender">The source of the event.</param>
-            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
-        </member>
-        <member name="M:Syncfusion.Windows.Tools.Controls.ColorPickerPalette.OnPreviewKeyDown(System.Windows.Input.KeyEventArgs)">
-            <summary>
-            Invoked when a System.Windows.Input.Keyboard.PreviewKeyDown attached routed event occurs.
-            </summary>
-            <param name="e">
-            Provides data for the System.Windows.UIElement.KeyUp and System.Windows.UIElement.KeyDown routed
-            events, as well as related attached and Preview events.
-            </param>
-        </member>
-        <member name="M:Syncfusion.Windows.Tools.Controls.ColorPickerPalette.SetFocus">
-            <summary>
-            Set focus on the particular element
             </summary>
         </member>
         <member name="M:Syncfusion.Windows.Tools.Controls.ColorPickerPalette.MeasureOverride(System.Windows.Size)">
@@ -11211,11 +10288,6 @@
             </summary>
             <param name="sender">Object of the Sender</param>
             <param name="e">Handles MouseButtonEvent</param>
-        </member>
-        <member name="M:Syncfusion.Windows.Tools.Controls.ColorPickerPalette.SelectAutomaticColor">
-            <summary>
-            Chooses the automatic color
-            </summary>
         </member>
         <member name="M:Syncfusion.Windows.Tools.Controls.ColorPickerPalette.m_expMoreColorsBtn_MouseLeftButtonUp(System.Object,System.Windows.Input.MouseButtonEventArgs)">
             <summary>
@@ -13784,20 +12856,6 @@
             Popup_s the on apply template.
             </summary>
         </member>
-        <member name="M:Syncfusion.Windows.Shared.DateTimeEdit.BlackoutDates_CollectionChanged(System.Object,System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
-            <summary>
-            Raises when Blackout dates collection is changed in calendar control.
-            </summary>
-            <param name="sender">The <see cref="!:Windows.Controls.Calendar.CalendarBlackoutDatesCollection"/></param>
-            <param name="e">The event</param>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.DateTimeEdit.Calendar_DayOrMonthPreviewKeyDown(System.Object,System.Windows.RoutedEventArgs)">
-            <summary>
-            Raised when the <see cref="E:System.Windows.UIElement.KeyDown"/> occurs in month view of Calendar.
-            </summary>
-            <param name="sender">The calendar</param>
-            <param name="e">The event</param>
-        </member>
         <member name="M:Syncfusion.Windows.Shared.DateTimeEdit.Clock_Loaded(System.Object,System.Windows.RoutedEventArgs)">
             <summary>
             Clock loaded event
@@ -13811,68 +12869,6 @@
             </summary>
             <param name="sender">The source of the event.</param>
             <param name="e">The <see cref="T:System.Windows.Input.MouseButtonEventArgs"/> instance containing the event data.</param>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.DateTimeEdit.GetValidDateTime">
-            <summary>
-            Helps to validate whether the entered text input is valid date time or not.
-            </summary>
-            <returns>Return the DateTime value.</returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.DateTimeEdit.GetCalendar">
-            <summary>
-            Helps to get the <see cref="T:Syncfusion.Windows.Controls.Calendar"/> in <see cref="T:Syncfusion.Windows.Shared.DateTimeEdit"/>.
-            </summary>
-            <returns>The calendar</returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.DateTimeEdit.IsBlackoutDate(System.Windows.Input.Key,System.DateTime)">
-            <summary>
-            Helps to ensure whether the date is contained in black-out dates collection in <see cref="T:Syncfusion.Windows.Controls.Calendar"/>.
-            </summary>
-            <param name="key">The key</param>
-            <param name="date">The DateTime</param>
-            <returns>The DateTime</returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.DateTimeEdit.IsValidDate">
-            <summary>
-            Helps to validate whether the entered text input is valid date time or not.
-            </summary>
-            <returns>True if the entered text is valid date time, false otherwise.</returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.DateTimeEdit.CanNavigateCalendarElement">
-            <summary>
-            Helps to ensure whether to perform navigation inside calendar control in DateTimeEdit.
-            </summary>
-            <returns>The bool value</returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.DateTimeEdit.UpdateCalendarFocus">
-            <summary>
-            Helps to update the focus to calendar when ever drop-down popup is opened in DateTimeEdit.
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.DateTimeEdit.UpdateCalendarItemFocus(Syncfusion.Windows.Controls.Calendar,System.Windows.Controls.Primitives.ToggleButton,System.Boolean)">
-            <summary>
-            Helps to update the focus to calendar item, none and previous when pressing tab key in calendar pop-up.
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.DateTimeEdit.UpdateCalendarElementFocus(System.Boolean,Syncfusion.Windows.Controls.Calendar,System.Windows.Controls.Primitives.ToggleButton,System.Windows.Controls.Primitives.ToggleButton)">
-            <summary>
-            Helps to update the focus to calendar element when pressing tab key.
-            </summary>
-            <param name="isShiftPressed">true if shift key is pressed, else false</param>
-            <param name="calendar">The calendar</param>
-            <param name="noneButton">The none button</param>
-            <param name="todayButton">The today button</param>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.DateTimeEdit.ProcessTabKey(System.Windows.Input.Key,System.Boolean)">
-            <summary>
-            Helps to update the focus inside pop-up element when pressing tab key.
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.DateTimeEdit.UpdateDateTimeValue">
-            <summary>
-            Helps to update the selected date time value when pressing ENTER, TAB key or control lost its focus, if user entered wrong input value.
-            </summary>
         </member>
         <member name="M:Syncfusion.Windows.Shared.DateTimeEdit.PART_Popup_Closed(System.Object,System.EventArgs)">
             <summary>
@@ -14006,7 +13002,7 @@
             <param name="sender">RepeatButton</param>
             <param name="e">MouseButton Event Args</param>
         </member>
-        <member name="M:Syncfusion.Windows.Shared.DateTimeEdit.Calendar_Classic_MouseButtonDown(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+        <member name="M:Syncfusion.Windows.Shared.DateTimeEdit.Calendar_Classic_MouseLeftButtonDown(System.Object,System.Windows.Input.MouseButtonEventArgs)">
             <summary>
             Handles the MouseLeftButtonDown event of the Calendar_Classic.
             </summary>
@@ -14084,17 +13080,6 @@
         <member name="M:Syncfusion.Windows.Shared.DateTimeEdit.BasePropertiesChanged">
             <summary>
             Bases the properties changed.
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.DateTimeEdit.OnCreateAutomationPeer">
-            <summary>
-            Creates an appropriate AutomationPeer for <see cref="T:Syncfusion.Windows.Shared.DateTimeEdit"/> 
-            </summary>
-            <returns>Automation peer of <see cref="T:Syncfusion.Windows.Shared.DateTimeEdit"/> </returns>
-        </member>
-        <member name="F:Syncfusion.Windows.Shared.DateTimeEdit.TodayButtonActionProperty">
-            <summary>
-            Using a DependencyProperty as the backing store for TodayButtonAction. This enables animation, styling, binding, etc...
             </summary>
         </member>
         <member name="F:Syncfusion.Windows.Shared.DateTimeEdit.IsNullProperty">
@@ -14346,6 +13331,12 @@
             </summary>
             <value>The on focus behavior.</value>
         </member>
+        <member name="P:Syncfusion.Windows.Shared.DateTimeEdit.DateTimeCalender">
+            <summary>
+            Gets or sets the date time calender.
+            </summary>
+            <value>The date time calender.</value>
+        </member>
         <member name="P:Syncfusion.Windows.Shared.DateTimeEdit.NullValue">
             <summary>
             
@@ -14361,12 +13352,6 @@
             Gets or sets the default date part.
             </summary>
             <value>The default date part.</value>
-        </member>
-        <member name="P:Syncfusion.Windows.Shared.DateTimeEdit.TodayButtonAction">
-            <summary>
-            Gets or sets a value that indicates whether to update date or both date and time value when today button is clicked in <see cref="T:Syncfusion.Windows.Shared.DateTimeEdit"/>.
-            </summary>
-            <value>The default value is <b><see cref="F:Syncfusion.Windows.Shared.TodayButtonAction.Date"/></b>.</value>
         </member>
         <member name="P:Syncfusion.Windows.Shared.DateTimeEdit.ShowMaskOnNullValue">
             <summary>
@@ -14600,44 +13585,6 @@
              <summary>
             
              </summary>
-        </member>
-        <member name="T:Syncfusion.Windows.Shared.TodayButtonAction">
-            <summary>
-            Helps to choose the Today button action when click on Today button in <see cref="T:Syncfusion.Windows.Shared.DateTimeEdit"/>.
-            </summary>
-        </member>
-        <member name="F:Syncfusion.Windows.Shared.TodayButtonAction.Date">
-            <summary>
-            Update only date value when today button is clicked.
-            </summary>
-        </member>
-        <member name="F:Syncfusion.Windows.Shared.TodayButtonAction.DateTime">
-            <summary>
-            Update both date and time value when today button is clicked.
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.KeyHandler.NavigateSelectionToNextField(System.Int32,Syncfusion.Windows.Shared.DateTimeEdit)">
-            <summary>
-            Helps to update selection when pressing left and right arrow keys in DateTimeEdit.
-            </summary>
-            <param name="index">The next selection index</param>
-            <param name="dateTimeEdit">The DateTimeEdit</param>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.KeyHandler.UpdateSelection(System.Boolean,Syncfusion.Windows.Shared.DateTimeEdit)">
-            <summary>
-            Helps to update selection when pressing arrow keys after selecting all the text in DateTimeEdit.
-            </summary>
-            <param name="isUpdateSelection">True, if need to update selection otherwise false</param>
-            <param name="dateTimeEdit">The DateTimeEdit</param>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.KeyHandler.ValidateMinMaxDateTime(System.Boolean,System.DateTime,Syncfusion.Windows.Shared.DateTimeEdit)">
-            <summary>
-            Helps to validate whether the DateTimeEdit value is greater or lesser than its minimum and maximum date time value.
-            </summary>
-            <param name="IsMaxDateValidation">ture, if we validate whether DateTimeEdit value is greater than MaxDateTime else false.</param>
-            <param name="date">The DateTimeEdit value.</param>
-            <param name="dateTimeEdit">The DateTimeEdit.</param>
-            <returns>Return the DateTime value.</returns>
         </member>
         <member name="T:Syncfusion.Windows.Shared.ICharacterProperties">
              <summary>
@@ -16096,12 +15043,6 @@
             Initializes a new instance of DoubleTextBox class
             </summary>
         </member>
-        <member name="M:Syncfusion.Windows.Shared.DoubleTextBox.DoubleTextBox_NumberFormatChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
-            <summary>
-            Raises the <see cref="!:NumberFormatChanged"/> event.
-            </summary>
-            <param name="args">The <see cref="T:System.Windows.DependencyPropertyChangedEventArgs"/> instance containing the event data.</param>
-        </member>
         <member name="M:Syncfusion.Windows.Shared.DoubleTextBox.DoubleTextBox_TextChanged(System.Object,System.Windows.Controls.TextChangedEventArgs)">
             <summary>
             Called when the DoubleTextBox text is changed.
@@ -16227,12 +15168,6 @@
             </summary>
             <param name="e">The data for the event.</param>
         </member>
-        <member name="M:Syncfusion.Windows.Shared.DoubleTextBox.OnCreateAutomationPeer">
-            <summary>
-            Returns the AutomationPeer of DoubleTextBox class.
-            </summary>
-            <returns></returns>
-        </member>
         <member name="M:Syncfusion.Windows.Shared.DoubleTextBox.FormatText">
             <summary>
             validate the format of the Text.
@@ -16268,8 +15203,11 @@
         </member>
         <member name="M:Syncfusion.Windows.Shared.DoubleTextBox.CoerceValue(System.Windows.DependencyObject,System.Object)">
             <summary>
-            Coerce the entered value if not within limits.
+            Coerce entered value if not within limits.
             </summary>
+            <param name="d"></param>
+            <param name="baseValue"></param>
+            <returns></returns>
         </member>
         <member name="M:Syncfusion.Windows.Shared.DoubleTextBox.CountDecimalDigits(System.String,System.Windows.DependencyObject)">
             <summary>
@@ -16304,24 +15242,6 @@
             <summary>
             Excute the paste command.
             </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.DoubleTextBox.MaxLengthValidation(System.Double)">
-            <summary>
-            To validate and reduce the pasted text with equivalent to the MaxLength
-            </summary>
-            <param name="value"></param>
-            <returns> validated value</returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.DoubleTextBox.UpdateNumberDecimalDigits">
-            <summary>
-            Update number decimal digits count
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.DoubleTextBox.UpdateNumberDecimalDigits(System.Int32)">
-            <summary>
-            Update number decimal digits count
-            </summary>
-            <param name="count">It contains the decimal digits count of the displayed text</param>
         </member>
         <member name="M:Syncfusion.Windows.Shared.DoubleTextBox.DoubleTextbox_Loaded(System.Object,System.Windows.RoutedEventArgs)">
             <summary>
@@ -16447,11 +15367,6 @@
             System.Windows.DependencyPropertyChangedEventArgs.
             Provides data for property changed events.
             </param>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.DoubleTextBox.CheckIsExceedDecimalDigits">
-            <summary>
-            Check whether it needs to exceed number decimal digit
-            </summary>
         </member>
         <member name="F:Syncfusion.Windows.Shared.DoubleTextBox.ScrollIntervalProperty">
             <summary>
@@ -16922,61 +15837,6 @@
             Initializes a new instance of ValueChangingEventArgs class
             </summary>
         </member>
-        <member name="F:Syncfusion.Windows.Shared.DoubleValueHandler.count">
-            <summary>
-            Contains decmil digits count
-            </summary>
-        </member>
-        <member name="F:Syncfusion.Windows.Shared.DoubleValueHandler.numberFormat">
-            <summary>
-            Provides culture-specific information for formatting and parsing numeric values
-            </summary>
-        </member>
-        <member name="F:Syncfusion.Windows.Shared.DoubleValueHandler.maskedText">
-            <summary>
-            Contains display text of DoubleTextBox
-            </summary>
-        </member>
-        <member name="F:Syncfusion.Windows.Shared.DoubleValueHandler.selectionStart">
-            <summary>
-            Contains character index for the beginning of the current selection
-            </summary>
-        </member>
-        <member name="F:Syncfusion.Windows.Shared.DoubleValueHandler.selectionEnd">
-            <summary>
-            Contains character index for the ending of the current selection
-            </summary>
-        </member>
-        <member name="F:Syncfusion.Windows.Shared.DoubleValueHandler.selectionLength">
-            <summary>
-            Contains value indicating the number of characters in the current selection
-            </summary>
-        </member>
-        <member name="F:Syncfusion.Windows.Shared.DoubleValueHandler.separatorStart">
-            <summary>
-            Contains character index for the beginning of the decimal separtor
-            </summary>
-        </member>
-        <member name="F:Syncfusion.Windows.Shared.DoubleValueHandler.separatorEnd">
-            <summary>
-            Contains character index for the ending of the decimal separtor
-            </summary>
-        </member>
-        <member name="F:Syncfusion.Windows.Shared.DoubleValueHandler.caretPosition">
-            <summary>
-            Contains insertion position index of the caret
-            </summary>
-        </member>
-        <member name="F:Syncfusion.Windows.Shared.DoubleValueHandler.unmaskedText">
-            <summary>
-            Contains display text of DoubleTextBox to perform text editing operation
-            </summary>
-        </member>
-        <member name="F:Syncfusion.Windows.Shared.DoubleValueHandler.previewValue">
-            <summary>
-            Contains the parsed value from unmasked text
-            </summary>
-        </member>
         <member name="M:Syncfusion.Windows.Shared.DoubleValueHandler.MatchWithMask(Syncfusion.Windows.Shared.DoubleTextBox,System.String)">
             <summary>
             Validate the entered text with MaskedTextBox.
@@ -16984,6 +15844,14 @@
             <param name="doubleTextBox"> It contains the DoubleTextBox instances.</param>
             <param name="text"> string contains the doubleTextBox text.</param>
             <returns> Returns the Boolean value.</returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Shared.DoubleValueHandler.ValueFromText(Syncfusion.Windows.Shared.DoubleTextBox,System.String)">
+            <summary>
+            Handle the Value From the Text in DoubleText box.
+            </summary>
+            <param name="doubleTextBox">It contains the DoubleTextBox instances.</param>
+            <param name="maskedText">String contains the DoubleTextBox text.</param>
+            <returns> Returns the double Value.</returns>
         </member>
         <!-- Badly formed XML comment ignored for member "M:Syncfusion.Windows.Shared.DoubleValueHandler.HandleKeyDown(Syncfusion.Windows.Shared.DoubleTextBox,System.Windows.Input.KeyEventArgs)" -->
         <member name="M:Syncfusion.Windows.Shared.DoubleValueHandler.HandleBackSpaceKey(Syncfusion.Windows.Shared.DoubleTextBox)">
@@ -17000,55 +15868,19 @@
             <param name="doubleTextBox">It contains the DoubleTextBox instances.</param>
             <returns>Returns the Boolean value.</returns>
         </member>
-        <member name="M:Syncfusion.Windows.Shared.DoubleValueHandler.HandleUpDownKey(Syncfusion.Windows.Shared.DoubleTextBox,System.Boolean)">
+        <member name="M:Syncfusion.Windows.Shared.DoubleValueHandler.HandleDownKey(Syncfusion.Windows.Shared.DoubleTextBox)">
             <summary>
-            Handle the UpKey or DownKey to increase or decrease the value with defined ScrollInterval.
+            Handle the DownKey to Decrease the value with defined ScrollInterval.
             </summary>
+            <param name="doubleTextBox"> It contains the DoubleTextBox instances.</param>
+            <returns> Returns Boolean value.</returns>
         </member>
-        <member name="M:Syncfusion.Windows.Shared.DoubleValueHandler.InitializeValues(Syncfusion.Windows.Shared.DoubleTextBox)">
+        <member name="M:Syncfusion.Windows.Shared.DoubleValueHandler.HandleUpKey(Syncfusion.Windows.Shared.DoubleTextBox)">
             <summary>
-            Initializes the default values to perform editing operation
+            Handle the UpKey to increase the value with defined ScrollInterval.
             </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.DoubleValueHandler.GenerateUnmaskedText(Syncfusion.Windows.Shared.DoubleTextBox,System.Boolean,System.Boolean)">
-            <summary>
-            Generate unmasked text and calculate the value of selection start, selection end, selection length, separtor start, separator end and caretposition.
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.DoubleValueHandler.CharacterValidation(Syncfusion.Windows.Shared.DoubleTextBox,System.String)">
-            <summary>
-            Validate the charcter in order to manage NumberDecimalSeparator, NumberGroupSeparator, Positive Value, Negative Value and NaN
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.DoubleValueHandler.TextEditingForMatchingMask(Syncfusion.Windows.Shared.DoubleTextBox,System.String)">
-            <summary>
-            Performs text editing for matching with mask
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.DoubleValueHandler.TextEditingForBackspace(Syncfusion.Windows.Shared.DoubleTextBox)">
-            <summary>
-            Performs text editing for backspace
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.DoubleValueHandler.TextEditingForDelete(Syncfusion.Windows.Shared.DoubleTextBox)">
-            <summary>
-            Performs text editing for delete
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.DoubleValueHandler.UpdateNumberDecimalDigits(Syncfusion.Windows.Shared.DoubleTextBox)">
-            <summary>
-            Update number decimal digits count
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.DoubleValueHandler.MinMaxValidation(Syncfusion.Windows.Shared.DoubleTextBox,System.Boolean)">
-            <summary>
-            Perform minimum and maximum validation
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.DoubleValueHandler.StringValidationOnKeyPress(Syncfusion.Windows.Shared.DoubleTextBox,System.Boolean)">
-            <summary>
-            Performs String Validation On Key Press event.
-            </summary>
+            <param name="doubleTextBox"> It contains the DoubleTextBox instances.</param>
+            <returns> Returns Boolean value.</returns>
         </member>
         <member name="T:Syncfusion.Windows.Shared.ConversionExtensions">
             <summary>
@@ -19050,13 +17882,6 @@
             Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
             </summary>
         </member>
-        <member name="M:Syncfusion.Windows.Shared.PercentTextBox.MaxLengthValidation(System.Double)">
-            <summary>
-            To validate and reduce the pasted text with equivalent to the MaxLength
-            </summary>
-            <param name="value"></param>
-            <returns> validated value</returns>
-        </member>
         <member name="M:Syncfusion.Windows.Shared.PercentTextBox.OnContextMenuOpening(System.Windows.Controls.ContextMenuEventArgs)">
             <summary>
             
@@ -19224,16 +18049,6 @@
             
              </summary>
         </member>
-        <member name="F:Syncfusion.Windows.Shared.PercentTextBox.MinPercentDecimalDigitsProperty">
-            <summary>
-            Using a DependencyProperty as the backing store for MinimumNumberDecimalDigits. This enables styling, binding, etc...
-            </summary>
-        </member>
-        <member name="F:Syncfusion.Windows.Shared.PercentTextBox.MaxPercentDecimalDigitsProperty">
-            <summary>
-            Using a DependencyProperty as the backing store for MaximumNumberDecimalDigits. This enables styling, binding, etc...
-            </summary>
-        </member>
         <member name="M:Syncfusion.Windows.Shared.PercentTextBox.OnPercentDecimalDigitsChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
              <summary>
             
@@ -19316,48 +18131,6 @@
             
              </summary>
              <param name="args"></param>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.PercentTextBox.OnMinimumNumberDecimalDigitsChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
-            <summary>
-            Called when OnMinimumNumberDecimalDigits property changed.
-            </summary>
-            <param name="obj">
-            System.Windows.DependencyObject.When MinimumNumberDecimalDigits object is changed.
-            </param>
-            <param name="args">
-            System.Windows.DependencyPropertyChangedEventArgs.
-            Provides data for property changed events.
-            </param>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.PercentTextBox.OnMinimumNumberDecimalDigitsChanged(System.Windows.DependencyPropertyChangedEventArgs)">
-            <summary>
-            Called when OnMinimumNumberDecimalDigits property changed.
-            </summary>
-            <param name="args">
-            System.Windows.DependencyPropertyChangedEventArgs.
-            Provides data for property changed events.
-            </param>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.PercentTextBox.OnMaximumNumberDecimalDigitsChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
-            <summary>
-            Called when OnMaximumNumberDecimalDigits property changed.
-            </summary>
-            <param name="obj">
-            System.Windows.DependencyObject.when MaximumNumberDecimalDigits object  is changed.
-            </param>
-            <param name="args">
-            System.Windows.DependencyPropertyChangedEventArgs.
-            Provides data for property changed events.
-            </param>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.PercentTextBox.OnMaximumNumberDecimalDigitsChanged(System.Windows.DependencyPropertyChangedEventArgs)">
-            <summary>
-            Called when OnMaximumNumberDecimalDigits property changed.
-            </summary>
-            <param name="args">
-            System.Windows.DependencyPropertyChangedEventArgs.
-            Provides data for property changed events.
-            </param>
         </member>
         <member name="M:Syncfusion.Windows.Shared.PercentTextBox.OnPercentEditModeChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
              <summary>
@@ -19568,16 +18341,6 @@
             Event that is raised when <see cref="P:Syncfusion.Windows.Shared.PercentTextBox.PercentGroupSizes"/> property is changed.
             </summary>
         </member>
-        <member name="E:Syncfusion.Windows.Shared.PercentTextBox.MinimumNumberDecimalDigitsChanged">
-            <summary>
-            Event that is raised when <see cref="P:Syncfusion.Windows.Shared.PercentTextBox.MinPercentDecimalDigits"/> property is changed.
-            </summary>
-        </member>
-        <member name="E:Syncfusion.Windows.Shared.PercentTextBox.MaximumNumberDecimalDigitsChanged">
-            <summary>
-            Event that is raised when <see cref="P:Syncfusion.Windows.Shared.PercentTextBox.MaxPercentDecimalDigits"/> property is changed.
-            </summary>
-        </member>
         <member name="P:Syncfusion.Windows.Shared.PercentTextBox.pastecommand">
              <summary>
             
@@ -19668,16 +18431,6 @@
             
              </summary>
         </member>
-        <member name="P:Syncfusion.Windows.Shared.PercentTextBox.MinPercentDecimalDigits">
-            <summary>
-            Gets or sets the minimum number decimal digits count.
-            </summary>
-        </member>
-        <member name="P:Syncfusion.Windows.Shared.PercentTextBox.MaxPercentDecimalDigits">
-            <summary>
-            Gets or sets the maximum number decimal digits count.
-            </summary>
-        </member>
         <member name="P:Syncfusion.Windows.Shared.PercentTextBox.NullValue">
              <summary>
             
@@ -19762,12 +18515,6 @@
             <summary>
             Using a DependencyProperty as the backing store for AllowNull.  This enables animation, styling, binding, etc...
             </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.TimeSpanEdit.OnCreateAutomationPeer">
-            <summary>
-            Returns the AutomationPeer of CurrencyTextBox class.
-            </summary>
-            <returns></returns>
         </member>
         <member name="M:Syncfusion.Windows.Shared.TimeSpanEdit.OnApplyTemplate">
             <summary>
@@ -20434,11 +19181,6 @@
             directly from the code.
             </summary>
         </member>
-        <member name="F:Syncfusion.Windows.Shared.CalendarEdit.isControlSelection">
-            <summary>
-            Gets or Sets the value indicating whether the date selection using the Control key
-            </summary>
-        </member>
         <member name="F:Syncfusion.Windows.Shared.CalendarEdit.m_nextButton">
             <summary>
             The <see cref="T:Syncfusion.Windows.Shared.NavigateButton"/> that is
@@ -20501,26 +19243,6 @@
         <member name="F:Syncfusion.Windows.Shared.CalendarEdit.wcellClicked">
             <summary>
             Contains true if click on week number cell has been done.
-            </summary>
-        </member>
-        <member name="F:Syncfusion.Windows.Shared.CalendarEdit.viewmode">
-            <summary>
-            Defines the viewmode property of <see cref="T:Syncfusion.Windows.Shared.CalendarEdit"/> control.
-            </summary>
-        </member>
-        <member name="F:Syncfusion.Windows.Shared.CalendarEdit.isNextModeSet">
-            <summary>
-            Contains true if next mode is set in ViewMode property of <see cref="T:Syncfusion.Windows.Shared.CalendarEdit"/> control.
-            </summary>
-        </member>
-        <member name="F:Syncfusion.Windows.Shared.CalendarEdit.calendarVisualMode">
-            <summary>
-            Contains calendarvisualmode enum vales of <see cref="T:Syncfusion.Windows.Shared.CalendarEdit"/> control.
-            </summary>
-        </member>
-        <member name="F:Syncfusion.Windows.Shared.CalendarEdit.nextMode">
-            <summary>
-            Contains next mode if flag value is set in ViewMode property of <see cref="T:Syncfusion.Windows.Shared.CalendarEdit"/> control.
             </summary>
         </member>
         <member name="F:Syncfusion.Windows.Shared.CalendarEdit.isTemplateApplied">
@@ -20641,12 +19363,6 @@
             ScrollMonth called based on the release Cell.        
             </remarks>
         </member>
-        <member name="M:Syncfusion.Windows.Shared.CalendarEdit.OnCreateAutomationPeer">
-            <summary>
-            Creates an appropriate AutomationPeer for <see cref="T:Syncfusion.Windows.Shared.CalendarEdit"/> 
-            </summary>
-            <returns>Automation peer of <see cref="T:Syncfusion.Windows.Shared.CalendarEdit"/> </returns>
-        </member>
         <member name="M:Syncfusion.Windows.Shared.CalendarEdit.SetToolTip(System.Int32,System.Int32,System.Windows.Controls.ToolTip)">
             <summary>
             Sets tooltip to the day cell.
@@ -20720,18 +19436,6 @@
             <summary>
             Changes the visual mode depending on the <see cref="P:Syncfusion.Windows.Shared.CalendarEdit.VisualModeInfo"/> property.
             </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.CalendarEdit.ChangeMode(Syncfusion.Windows.Shared.CalendarEdit.ChangeVisualModeDirection)">
-            <summary>
-            Changes the visual mode based on the direection.
-            </summary>
-            <param name="direction">Direction mode</param>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.CalendarEdit.ClearSelectedCell">
-            <summary>
-            Clears the selected day cells.
-            </summary>
-            <param name="sender"></param>
         </member>
         <member name="M:Syncfusion.Windows.Shared.CalendarEdit.ChangeVisualMode(Syncfusion.Windows.Shared.CalendarEdit.ChangeVisualModeDirection)">
             <summary>
@@ -20923,7 +19627,7 @@
             Index of the cell which date is equal to the <see cref="P:Syncfusion.Windows.Shared.CalendarEdit.Date"/> property.
             </returns>
         </member>
-        <member name="M:Syncfusion.Windows.Shared.CalendarEdit.SetFocusedCellIndex(System.Int32,System.Int32,System.Windows.Controls.Orientation,System.Boolean@)">
+        <member name="M:Syncfusion.Windows.Shared.CalendarEdit.SetFocusedCellIndex(System.Int32,System.Int32,System.Boolean@)">
             <summary>
             Calculates new focused cell index.
             </summary>
@@ -20949,11 +19653,6 @@
             
              </summary>
              <param name="e"></param>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.CalendarEdit.InitializeGrid">
-            <summary>
-            Helps to intialize the calendar grids
-            </summary>
         </member>
         <member name="M:Syncfusion.Windows.Shared.CalendarEdit.ProcessSelectedDatesCollectionChange(System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
             <summary>
@@ -21321,35 +20020,6 @@
             <param name="sender">The source of the event.</param>
             <param name="e">The <see cref="T:System.Windows.Input.MouseButtonEventArgs"/> instance containing the event data.</param>
         </member>
-        <member name="M:Syncfusion.Windows.Shared.CalendarEdit.GetNextValue(Syncfusion.Windows.Shared.CalendarVisualMode)">
-            <summary>
-            Gets the next mode if flag type value is set in ViewMode property of <see cref="T:Syncfusion.Windows.Shared.CalendarEdit"/> control.
-            </summary>
-            <param name="mode">Visual mode</param>
-            <returns>Next mode</returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.CalendarEdit.GetPreviousValue(Syncfusion.Windows.Shared.CalendarVisualMode)">
-            <summary>
-            Gets the previous mode if flag type value is set in ViewMode property of <see cref="T:Syncfusion.Windows.Shared.CalendarEdit"/> control.
-            </summary>
-            <param name="mode">Visual Mode</param>
-            <returns>Previous mode</returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.CalendarEdit.IsFlagValueSet(Syncfusion.Windows.Shared.CalendarVisualMode)">
-            <summary>
-            Checks whether flag value is set in ViewMode property of <see cref="T:Syncfusion.Windows.Shared.CalendarEdit"/> control.
-            </summary>
-            <param name="mode">Enum type</param>
-            <returns>True,if flag value is set</returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.CalendarEdit.HasFlag(System.Enum,System.Enum)">
-            <summary>
-            Checks whether one or more bit fields is set in ViewMode property of <see cref="T:Syncfusion.Windows.Shared.CalendarEdit"/> control.
-            </summary>
-            <param name="variable">Enum type</param>
-            <param name="value">value to be checked</param>
-            <returns>True,if flag type value is set</returns>
-        </member>
         <member name="M:Syncfusion.Windows.Shared.CalendarEdit.VisualModeStoryboard_OnCompleted(System.Object,System.EventArgs)">
             <summary>
             Invoked whenever visual mode storyboard animation is
@@ -21395,77 +20065,12 @@
             <param name="sender">The source of the event.</param>
             <param name="e">The <see cref="T:System.Windows.Input.KeyEventArgs"/> instance containing the event data.</param>
         </member>
-        <member name="M:Syncfusion.Windows.Shared.CalendarEdit.ProcessPageUpKey">
-            <summary>
-            Navigate to previous month or year or decade or century using PageUp key.
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.CalendarEdit.ProcessPageDownKey">
-            <summary>
-            Navigate to next month or year or decade or century using PageDown key.
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.CalendarEdit.ProcessHomeKey(Syncfusion.Windows.Shared.CalendarEditGrid,System.Int32)">
-            <summary>
-            Move to start day of month or start month of year or start year of decade or start decade of century using Home key.
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.CalendarEdit.ProcessEndKey(Syncfusion.Windows.Shared.CalendarEditGrid,System.Int32)">
-            <summary>
-            Move to end day of month or end month of year or end year of Decade or end decade of century using Home key.
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.CalendarEdit.ProcessViewNavigation(Syncfusion.Windows.Shared.Cell)">
-            <summary>
-            Navigate to next or previous view mode using keyboard interaction
-            </summary>
-            <param name="e"></param>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.CalendarEdit.CenturyOfDate(System.DateTime,System.Globalization.Calendar)">
-            <summary>
-            Helps to return the Century of current date
-            </summary>
-            <param name="date"></param>
-            <param name="calendar"></param>
-            <returns>Centry of current date</returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.CalendarEdit.DecadeOfDate(System.DateTime,System.Globalization.Calendar)">
-            <summary>
-            Helps to return the decade of current date
-            </summary>
-            <param name="date"></param>
-            <returns>decade of current date</returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.CalendarEdit.GetPreviousSelectedCell(Syncfusion.Windows.Shared.CalendarEditGrid,System.Int32)">
-            <summary>
-            Gets the previous selected cell while navigate the months using PageUp/PageDown key
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.CalendarEdit.ProcesssGridNavigation(Syncfusion.Windows.Shared.Cell,System.Windows.Input.Key)">
-            <summary>
-            Helps to change current grid to following grid when current selection reaches the trailing dates
-            </summary>
-            <returns>true; when selection reach trailing dates, Otherwise false</returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.CalendarEdit.ValidateCurrentCell(Syncfusion.Windows.Shared.Cell)">
-            <summary>
-            Helps to check whether the current date is exceeded the Minimum and maximum date.
-            </summary>
-            <param name="cell">Current cell</param>
-            <returns>true; if current date exceeded the Min/Max date, Otherwise false</returns>
-        </member>
         <member name="M:Syncfusion.Windows.Shared.CalendarEdit.YearRangeCell_OnMouseLeftButtonUp(System.Object,System.Windows.Input.MouseButtonEventArgs)">
             <summary>
             Handles the OnMouseLeftButtonUp event of the YearRangeCell control.
             </summary>
             <param name="sender">The source of the event.</param>
             <param name="e">The <see cref="T:System.Windows.Input.MouseButtonEventArgs"/> instance containing the event data.</param>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.CalendarEdit.CanScrollToView">
-            <summary>
-            Handles the navigation between one mode to other.
-            </summary>
-            <returns>True,if navigation is enabled in ViewMode</returns>
         </member>
         <member name="M:Syncfusion.Windows.Shared.CalendarEdit.YearRangeCell_OnMouseLeftButtonDown(System.Object,System.Windows.Input.MouseButtonEventArgs)">
             <summary>
@@ -21523,14 +20128,6 @@
             <param name="sender">The source of the event.</param>
             <param name="e">The <see cref="T:System.Windows.Input.MouseButtonEventArgs"/> containing the event
             data.</param>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.CalendarEdit.GetMonth(System.Int32,System.Int32)">
-            <summary>
-            Gets the specified month based on selected weeknumber.
-            </summary>
-            <param name="Year">Visible Year</param>
-            <param name="Week">Selected Week</param>
-            <returns>Month</returns>
         </member>
         <member name="M:Syncfusion.Windows.Shared.CalendarEdit.OnWeekNumberCellPanelClick(Syncfusion.Windows.Shared.WeekNumberCellPanel)">
             <summary>
@@ -22092,6 +20689,12 @@
             </summary>
             <param name="d">The source of the event.</param>
             <param name="e">The <see cref="T:System.Windows.DependencyPropertyChangedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Shared.CalendarEdit.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+             <summary>
+            
+             </summary>
+             <param name="e"></param>
         </member>
         <member name="M:Syncfusion.Windows.Shared.CalendarEdit.OnCoerceDate(System.Windows.DependencyObject,System.Object)">
             <summary>
@@ -23471,11 +22074,6 @@
             Gets or sets the calendar visual mode.
             </summary>
         </member>
-        <member name="P:Syncfusion.Windows.Shared.CalendarEdit.ViewMode">
-            <summary>
-            Gets or sets the view mode of <see cref="T:Syncfusion.Windows.Shared.CalendarEdit"/> control.
-            </summary>
-        </member>
         <member name="P:Syncfusion.Windows.Shared.CalendarEdit.VisualModeInfo">
             <summary>
             Gets or sets current and previous visual mode.
@@ -23498,16 +22096,6 @@
         <member name="P:Syncfusion.Windows.Shared.CalendarEdit.TooltipDates">
             <summary>
             Gets tooltip from the date.
-            </summary>
-        </member>
-        <member name="P:Syncfusion.Windows.Shared.CalendarEdit.IsNextModeSet">
-            <summary>
-            Defines whether next mode is set in ViewMode property of <see cref="T:Syncfusion.Windows.Shared.CalendarEdit"/> control.
-            </summary>
-        </member>
-        <member name="P:Syncfusion.Windows.Shared.CalendarEdit.NextMode">
-            <summary>
-            Contains the next mode if flag type value is set in ViewMode property of <see cref="T:Syncfusion.Windows.Shared.CalendarEdit"/> control.
             </summary>
         </member>
         <member name="P:Syncfusion.Windows.Shared.CalendarEdit.Calendar">
@@ -24781,11 +23369,6 @@
             <param name="rowsCount">Number of rows.</param>
             <param name="columnsCount">Number of columns.</param>
         </member>
-        <member name="M:Syncfusion.Windows.Shared.CalendarEditGrid.CalendarEditGrid_Loaded(System.Object,System.Windows.RoutedEventArgs)">
-            <summary>
-            Handles the Loaded event of the <see cref="T:Syncfusion.Windows.Shared.CalendarEditGrid"/> control.
-            </summary>
-        </member>
         <member name="M:Syncfusion.Windows.Shared.CalendarEditGrid.SetIsSelected(Syncfusion.Windows.Shared.VisibleDate)">
             <summary>
             Sets the selected element.
@@ -25015,12 +23598,6 @@
             <summary>
             Raises the Highlight event.
             </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.DayCell.OnCreateAutomationPeer">
-            <summary>
-            Creates an appropriate AutomationPeer for <see cref="T:Syncfusion.Windows.Shared.CalendarEdit"/> 
-            </summary>
-            <returns>Automation peer of <see cref="T:Syncfusion.Windows.Shared.CalendarEdit"/> </returns>
         </member>
         <member name="E:Syncfusion.Windows.Shared.DayCell.Highlight">
             <summary>
@@ -25401,12 +23978,6 @@
             </summary>
             <param name="style">Style to be set.</param>
         </member>
-        <member name="M:Syncfusion.Windows.Shared.DayNameCell.OnCreateAutomationPeer">
-            <summary>
-            Creates an appropriate AutomationPeer for <see cref="T:Syncfusion.Windows.Shared.CalendarEdit"/> 
-            </summary>
-            <returns>Automation peer of <see cref="T:Syncfusion.Windows.Shared.CalendarEdit"/> </returns>
-        </member>
         <member name="P:Syncfusion.Windows.Shared.DayNameCell.CornerRadius">
             <summary>
             Gets or sets m_CornerRadius.
@@ -25450,11 +24021,6 @@
         <member name="M:Syncfusion.Windows.Shared.DayNamesGrid.#ctor">
             <summary>
             Initializes a new instance of the DayNamesGrid class.
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.DayNamesGrid.DayNamesGrid_Loaded(System.Object,System.Windows.RoutedEventArgs)">
-            <summary>
-            Handles the Loaded event of the <see cref="T:Syncfusion.Windows.Shared.DayNamesGrid"/> control.
             </summary>
         </member>
         <member name="M:Syncfusion.Windows.Shared.DayNamesGrid.SetDayNames(System.Globalization.DateTimeFormatInfo)">
@@ -25586,12 +24152,6 @@
             <param name="isAbbreviated">Indicates whether month name should be abbreviated.</param>
             <param name="mode">Visual mode of the <see cref="T:Syncfusion.Windows.Shared.CalendarEdit"/> control.</param>
         </member>
-        <member name="M:Syncfusion.Windows.Shared.MonthButton.OnCreateAutomationPeer">
-            <summary>
-            Creates an appropriate AutomationPeer for <see cref="T:Syncfusion.Windows.Shared.CalendarEdit"/> 
-            </summary>
-            <returns>Automation peer of <see cref="T:Syncfusion.Windows.Shared.CalendarEdit"/> </returns>
-        </member>
         <member name="T:Syncfusion.Windows.Shared.MonthCell">
             <summary>
             Represents a month cell of the <see cref="T:Syncfusion.Windows.Shared.CalendarEdit"/> control.
@@ -25602,16 +24162,10 @@
             Identifies <see cref="P:Syncfusion.Windows.Shared.MonthCell.MonthNumber"/> dependency property.
             </summary>
         </member>
-        <member name="M:Syncfusion.Windows.Shared.MonthCell.#ctor">
+        <member name="M:Syncfusion.Windows.Shared.MonthCell.#cctor">
             <summary>
             Initializes static members of the <see cref="T:Syncfusion.Windows.Shared.MonthCell"/> class.  It overrides some dependency properties.
             </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.MonthCell.OnCreateAutomationPeer">
-            <summary>
-            Creates an appropriate AutomationPeer for <see cref="T:Syncfusion.Windows.Shared.CalendarEdit"/> 
-            </summary>
-            <returns>Automation peer of <see cref="T:Syncfusion.Windows.Shared.CalendarEdit"/> </returns>
         </member>
         <member name="P:Syncfusion.Windows.Shared.MonthCell.MonthNumber">
             <summary>
@@ -25725,12 +24279,6 @@
             <param name="template">Data template to be set to the NavigateButton. If it is
             null the local value of data template would be cleared.</param>
         </member>
-        <member name="M:Syncfusion.Windows.Shared.NavigateButton.OnCreateAutomationPeer">
-            <summary>
-            Creates an appropriate AutomationPeer for <see cref="T:Syncfusion.Windows.Shared.CalendarEdit"/> 
-            </summary>
-            <returns>Automation peer of <see cref="T:Syncfusion.Windows.Shared.CalendarEdit"/> </returns>
-        </member>
         <member name="P:Syncfusion.Windows.Shared.NavigateButton.Enabled">
             <summary>
             Gets or sets a value indicating whether navigate button is enabled.
@@ -25802,12 +24350,6 @@
             Sets style of the cell.
             </summary>
             <param name="style">Style to be set.</param>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.WeekNumberCell.OnCreateAutomationPeer">
-            <summary>
-            Creates an appropriate AutomationPeer for <see cref="T:Syncfusion.Windows.Shared.CalendarEdit"/> 
-            </summary>
-            <returns>Automation peer of <see cref="T:Syncfusion.Windows.Shared.CalendarEdit"/> </returns>
         </member>
         <member name="P:Syncfusion.Windows.Shared.WeekNumberCell.CornerRadius">
             <summary>
@@ -25983,11 +24525,6 @@
             Initializes a new instance of the <see cref="T:Syncfusion.Windows.Shared.WeekNumbersGrid"/> class.
             </summary>
         </member>
-        <member name="M:Syncfusion.Windows.Shared.WeekNumbersGrid.WeekNumbersGrid_Loaded(System.Object,System.Windows.RoutedEventArgs)">
-            <summary>
-            Handles the Loaded event of the <see cref="T:Syncfusion.Windows.Shared.WeekNumbersGrid"/> control.
-            </summary>
-        </member>
         <member name="M:Syncfusion.Windows.Shared.WeekNumbersGrid.SetWeekNumbers(System.Collections.Generic.List{Syncfusion.Windows.Shared.WeekNumberCell})">
             <summary>
             Sets the cell's content.
@@ -26120,12 +24657,6 @@
             Initializes static members of the <see cref="T:Syncfusion.Windows.Shared.YearCell"/> class.  It overrides some dependency properties.
             </summary>
         </member>
-        <member name="M:Syncfusion.Windows.Shared.YearCell.OnCreateAutomationPeer">
-            <summary>
-            Creates an appropriate AutomationPeer for <see cref="T:Syncfusion.Windows.Shared.CalendarEdit"/> 
-            </summary>
-            <returns>Automation peer of <see cref="T:Syncfusion.Windows.Shared.CalendarEdit"/> </returns>
-        </member>
         <member name="P:Syncfusion.Windows.Shared.YearCell.Year">
             <summary>
             Gets or sets the year.
@@ -26251,12 +24782,6 @@
             <summary>
             Initializes static members of the <see cref="T:Syncfusion.Windows.Shared.YearRangeCell"/> class.  It overrides some dependency properties.
             </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.YearRangeCell.OnCreateAutomationPeer">
-            <summary>
-            Creates an appropriate AutomationPeer for <see cref="T:Syncfusion.Windows.Shared.CalendarEdit"/> 
-            </summary>
-            <returns>Automation peer of <see cref="T:Syncfusion.Windows.Shared.CalendarEdit"/> </returns>
         </member>
         <member name="P:Syncfusion.Windows.Shared.YearRangeCell.Years">
             <summary>
@@ -26839,14 +25364,9 @@
             Occurs when the popup hides.
             </summary>
         </member>
-        <member name="F:Syncfusion.Windows.Shared.CalendarVisualMode.All">
+        <member name="T:Syncfusion.Windows.Shared.CalendarVisualMode">
             <summary>
-            All modes are displayed in <see cref="T:Syncfusion.Windows.Shared.CalendarEdit"/> control.
-            </summary>
-        </member>
-        <member name="F:Syncfusion.Windows.Shared.CalendarVisualMode.WeekNumbers">
-            <summary>
-            All the WeekNumbers in a year are displayed in <see cref="T:Syncfusion.Windows.Shared.CalendarEdit"/> control.
+            Specifies visual mode of <see cref="T:Syncfusion.Windows.Shared.CalendarEdit"/> control.
             </summary>
         </member>
         <member name="F:Syncfusion.Windows.Shared.CalendarVisualMode.Days">
@@ -26867,6 +25387,11 @@
         <member name="F:Syncfusion.Windows.Shared.CalendarVisualMode.YearsRange">
             <summary>
             Ten year ranges are displayed in <see cref="T:Syncfusion.Windows.Shared.CalendarEdit"/> control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Shared.CalendarVisualMode.WeekNumbers">
+            <summary>
+            All the WeekNumbers in a year are displayed in <see cref="T:Syncfusion.Windows.Shared.CalendarEdit"/> control.
             </summary>
         </member>
         <member name="T:Syncfusion.Windows.Shared.AnimationDirection">
@@ -28393,21 +26918,6 @@
             </summary>
             <param name="value">if set to <c>true</c> [value].</param>
             <returns>Boolean value.</returns>
-        </member>
-        <member name="T:Syncfusion.Windows.Shared.IconAlignment">
-            <summary>
-            Defines Icon alignment in ChromelessWindow
-            </summary>
-        </member>
-        <member name="F:Syncfusion.Windows.Shared.IconAlignment.Left">
-            <summary>
-            Displays the icon to the left of the Title bar.
-            </summary>
-        </member>
-        <member name="F:Syncfusion.Windows.Shared.IconAlignment.Right">
-            <summary>
-            Displays the icon to the right of the Title bar.
-            </summary>
         </member>
         <member name="T:Syncfusion.Windows.Shared.ChromelessWindowInterop">
             <summary>
@@ -33639,21 +32149,6 @@
             Used to identify the Mouse Left buton down event in Color Edit.
             </summary>
         </member>
-        <member name="F:Syncfusion.Windows.Shared.ColorEdit.toggle">
-            <summary>
-            Holds the toggle button instance for HSV and RGB
-            </summary>
-        </member>
-        <member name="F:Syncfusion.Windows.Shared.ColorEdit.content">
-            <summary>
-            Holds the content presenter instance for HSV and RGB
-            </summary>
-        </member>
-        <member name="F:Syncfusion.Windows.Shared.ColorEdit.colorchangedInternally">
-            <summary>
-            Holds the value which indicates the brush changed internally
-            </summary>
-        </member>
         <member name="F:Syncfusion.Windows.Shared.ColorEdit.m_r">
             <summary>
             Red parameter for RGB model.
@@ -34226,11 +32721,6 @@
             </summary>
             <param name="e">The <see cref="T:System.Windows.DependencyPropertyChangedEventArgs"/> instance containing the event data.</param>
         </member>
-        <member name="M:Syncfusion.Windows.Shared.ColorEdit.removeGradientStoppers">
-            <summary>
-            Remove gradientstop items from CanvasBar
-            </summary>
-        </member>
         <member name="M:Syncfusion.Windows.Shared.ColorEdit.OnBrushModeChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
             <summary>
             Called when [brush mode changed].
@@ -34555,38 +33045,6 @@
             <summary>
             When implemented in a derived class, will be invoked whenever
             application code or internal processes call <see cref="M:System.Windows.FrameworkElement.ApplyTemplate" />.
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.ColorEdit.M_colorPalette_MouseLeave(System.Object,System.Windows.Input.MouseEventArgs)">
-            <summary>
-            Invoked when mouse leave color palette element
-            </summary>
-            <param name="sender"></param>
-            <param name="e"></param>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.ColorEdit.Window_MouseDown(System.Object,System.Windows.Input.MouseButtonEventArgs)">
-            <summary>
-            Invoked when the window clicked
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.ColorEdit.Content_Loaded(System.Object,System.Windows.RoutedEventArgs)">
-            <summary>
-             Invoked when ContentPresenter loaded
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.ColorEdit.Toggle_LostFocus(System.Object,System.Windows.RoutedEventArgs)">
-            <summary>
-            Invoked while toggle button focus lost
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.ColorEdit.Window_LocationChanged(System.Object,System.EventArgs)">
-            <summary>
-            Occurs when the window's location changes.
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.ColorEdit.Window_Deactivated(System.Object,System.EventArgs)">
-            <summary>
-            Occurs when a window becomes a background window.
             </summary>
         </member>
         <member name="M:Syncfusion.Windows.Shared.ColorEdit.SelectedColor_MouseLeftButtonDown(System.Object,System.Windows.Input.MouseEventArgs)">
@@ -35598,11 +34056,6 @@
             Command for open popup.
             </summary>
         </member>
-        <member name="F:Syncfusion.Windows.Shared.ColorPicker.HeaderTemplateProperty">
-            <summary>
-            Identifies the <see cref="P:Syncfusion.Windows.Shared.ColorPicker.HeaderTemplate"/> dependency property.
-            </summary>
-        </member>
         <member name="F:Syncfusion.Windows.Shared.ColorPicker.ColorProperty">
             <summary>
             Identifies ColorPicker.Color dependency property.
@@ -35911,15 +34364,6 @@
             Disposes all the resources. 
             </summary>
         </member>
-        <member name="P:Syncfusion.Windows.Shared.ColorPicker.HeaderTemplate">
-            <summary>
-            Gets or sets the template of the header data.
-            </summary>
-            <value>
-            Type: <see cref="T:System.Windows.DataTemplate"/>
-            </value>
-            <seealso cref="T:System.Windows.DataTemplate"/>
-        </member>
         <member name="P:Syncfusion.Windows.Shared.ColorPicker.Color">
             <summary>
             Gets or sets value of the Color dependency property.
@@ -36088,18 +34532,32 @@
         </member>
         <member name="T:Syncfusion.Windows.Tools.DoubleToPointConverter">
             <summary>
-            Represents a class that converts double to point.
+            Class for double point converter
             </summary>
         </member>
         <member name="M:Syncfusion.Windows.Tools.DoubleToPointConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
             <summary>
-            Converts point to double
+            Converts a value.
             </summary>
+            <param name="value">The value produced by the binding source.</param>
+            <param name="targetType">The type of the binding target property.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value. If the method returns null, the valid null value is used.
+            </returns>
         </member>
         <member name="M:Syncfusion.Windows.Tools.DoubleToPointConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
             <summary>
-            Converts double to Point
+            Converts a value.
             </summary>
+            <param name="value">The value that is produced by the binding target.</param>
+            <param name="targetType">The type to convert to.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value. If the method returns null, the valid null value is used.
+            </returns>
         </member>
         <member name="T:Syncfusion.Windows.Tools.DoubleToPointConverterY">
             <summary>
@@ -36329,11 +34787,6 @@
             An array of values that have been converted from the target value back to the source values.
             </returns>
             <property name="flag" value="Finished"/>
-        </member>
-        <member name="T:Syncfusion.Windows.Tools.BrushToTextConverter">
-            <summary>
-            Converts the brush into header text of the ColorPicker
-            </summary>
         </member>
         <member name="T:Syncfusion.Windows.Shared.HSVBackgroundBrushExtension">
             <summary>
@@ -39167,7 +37620,7 @@
         </member>
         <member name="T:Syncfusion.Windows.Shared.Overview">
             <summary>
-            Represents the class for overview control.
+            
             </summary>
         </member>
         <member name="F:Syncfusion.Windows.Shared.Overview.AllowResizeProperty">
@@ -39615,7 +38068,7 @@
         </member>
         <member name="T:Syncfusion.Windows.Shared.OverviewContentHolder">
             <summary>
-            Represents the class for content holder of the overview control.
+            
             </summary>
         </member>
         <member name="M:Syncfusion.Windows.Shared.OverviewContentHolder.GetOrigin(System.Windows.DependencyObject)">
@@ -40075,14 +38528,14 @@
         </member>
         <member name="T:Syncfusion.Windows.Shared.OverviewContentHolder.OverviewFitPageEventHandler">
             <summary>
-            Represents the method that handles the <see cref="M:Syncfusion.Windows.Shared.OverviewContentHolder.FitToPage"/> event.
+            
             </summary>
-            <param name="sender">The sender contains a overview.</param>
-            <param name="evtArgs">The <see cref="T:Syncfusion.Windows.Shared.OverviewContentHolder.OverViewFitToPageEventArgs"/> that contains the event data.</param>
+            <param name="sender"></param>
+            <param name="evtArgs"></param>
         </member>
         <member name="T:Syncfusion.Windows.Shared.OverviewContentHolder.OverViewFitToPageEventArgs">
             <summary>
-            Provides data for the <see cref="E:Syncfusion.Windows.Shared.OverviewContentHolder.UpdateFitToPage"/> event.
+            
             </summary>
         </member>
         <member name="M:Syncfusion.Windows.Shared.OverviewContentHolder.OverViewFitToPageEventArgs.#ctor(System.Boolean)">
@@ -40098,14 +38551,14 @@
         </member>
         <member name="T:Syncfusion.Windows.Shared.OverviewContentHolder.ExtraPanningEventEventHandler">
             <summary>
-            Represents the method that handles the <see cref="E:Syncfusion.Windows.Shared.OverviewContentHolder.ExtraPanning"/> event.
+            
             </summary>
-            <param name="sender">The sender contains a overview.</param>
-            <param name="evtArgs">The <see cref="T:Syncfusion.Windows.Shared.OverviewContentHolder.ExtraPanningEventEventArgs"/> that contains the event data.</param>
+            <param name="sender"></param>
+            <param name="evtArgs"></param>
         </member>
         <member name="T:Syncfusion.Windows.Shared.OverviewContentHolder.ExtraPanningEventEventArgs">
             <summary>
-            Provides data for the <see cref="F:Syncfusion.Windows.Shared.OverviewContentHolder.ExtraPanningEvent"/>.
+            
             </summary>
         </member>
         <member name="M:Syncfusion.Windows.Shared.OverviewContentHolder.ExtraPanningEventEventArgs.#ctor(System.Boolean)">
@@ -40121,7 +38574,7 @@
         </member>
         <member name="T:Syncfusion.Windows.Shared.OverviewCustomPanel">
             <summary>
-            Represents the class for custom panel of the overview.
+            
             </summary>
         </member>
         <member name="M:Syncfusion.Windows.Shared.OverviewCustomPanel.#ctor">
@@ -40145,7 +38598,7 @@
         </member>
         <member name="T:Syncfusion.Windows.Shared.OverviewResizer">
             <summary>
-            Represents the Overview resizer control.
+            
             </summary>
         </member>
         <member name="M:Syncfusion.Windows.Shared.OverviewResizer.#ctor">
@@ -41652,20 +40105,6 @@
             Initializes a new instance of the <see cref="T:Syncfusion.Windows.Shared.UpDown"/> class.
             </summary>
         </member>
-        <member name="M:Syncfusion.Windows.Shared.UpDown.UpDown_Unloaded(System.Object,System.Windows.RoutedEventArgs)">
-            <summary>
-            Handles the Unloaded event of the UpDown control.
-            </summary>
-            <param name="sender">The source of the event.</param>
-            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.UpDown.UpDown_Loaded(System.Object,System.Windows.RoutedEventArgs)">
-            <summary>
-            Handles the Loaded event of the UpDown control.
-            </summary>
-            <param name="sender">The source of the event.</param>
-            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
-        </member>
         <member name="M:Syncfusion.Windows.Shared.UpDown.UpDown_LostKeyboardFocus(System.Object,System.Windows.Input.KeyboardFocusChangedEventArgs)">
              <summary>
              Called when the keyboard is not focused on this element
@@ -42076,12 +40515,6 @@
             </summary>
             <param name="sender"></param>
             <param name="e"></param>
-        </member>
-        <member name="M:Syncfusion.Windows.Shared.UpDown.OnCreateAutomationPeer">
-            <summary>
-            Creates the automation peer for UpDown Control.
-            </summary>
-            <returns></returns>
         </member>
         <member name="M:Syncfusion.Windows.Shared.UpDown.Animation">
             <summary>
@@ -46197,56 +44630,6 @@
             Gets or sets the close button text in SpellChecker Window.
             </summary>
         </member>
-        <member name="P:Syncfusion.Windows.Shared.Resources.ResourceWrapper.WeekNumbers">
-            <summary>
-            Gets or sets week number text in CalendarEdit control.
-            </summary>
-        </member>
-        <member name="P:Syncfusion.Windows.Shared.Resources.ResourceWrapper.StartPoint">
-            <summary>
-            Gets or sets the start point text in ColorPicker control.
-            </summary>
-        </member>
-        <member name="P:Syncfusion.Windows.Shared.Resources.ResourceWrapper.EndPoint">
-            <summary>
-            Gets or sets the end point text in ColorPicker control.
-            </summary>
-        </member>
-        <member name="P:Syncfusion.Windows.Shared.Resources.ResourceWrapper.GradientOrigin">
-            <summary>
-            Gets or sets the gradient origin text in ColorPicker control.
-            </summary>
-        </member>
-        <member name="P:Syncfusion.Windows.Shared.Resources.ResourceWrapper.Center">
-            <summary>
-            Gets or sets the center text in ColorPicker control.
-            </summary>
-        </member>
-        <member name="P:Syncfusion.Windows.Shared.Resources.ResourceWrapper.Radius">
-            <summary>
-            Gets or sets the radius text in ColorPicker control.
-            </summary>
-        </member>
-        <member name="P:Syncfusion.Windows.Shared.Resources.ResourceWrapper.Solid">
-            <summary>
-            Gets or sets the solid text in ColorPicker control.
-            </summary>
-        </member>
-        <member name="P:Syncfusion.Windows.Shared.Resources.ResourceWrapper.LinearGradient">
-            <summary>
-            Gets or sets the linear gradient text in ColorPicker control.
-            </summary>
-        </member>
-        <member name="P:Syncfusion.Windows.Shared.Resources.ResourceWrapper.RadialGradient">
-            <summary>
-            Gets or sets the a radial gradient text in ColorPicker control.
-            </summary>
-        </member>
-        <member name="F:Syncfusion.Windows.Shared.Resources.SR.resourcefoundInVB">
-            <summary>
-            Indicates the resource found in VB.net
-            </summary>
-        </member>
         <member name="M:Syncfusion.Windows.Shared.Resources.SR.SetDefaultNamespace(System.String)">
             <summary>
             Provide DefaultNamespace to ResourceManager if DefaultNameSpace and AssemblyName are different. 
@@ -46921,7 +45304,7 @@
         </member>
         <member name="T:Syncfusion.Windows.Shared.ISkinStylePropagator">
             <summary>
-            Provides the functionality for style progator of skin manager.
+            
             </summary>
         </member>
         <member name="M:Syncfusion.Windows.Shared.ISkinStylePropagator.OnStyleChanged(System.String)">
@@ -46932,7 +45315,7 @@
         </member>
         <member name="T:Syncfusion.Windows.Shared.ThemeColors">
             <summary>
-            Represents the ThemeColors class.
+            
             </summary>
         </member>
         <member name="P:Syncfusion.Windows.Shared.ThemeColors.HoverBrush">
@@ -47075,195 +45458,6 @@
             differentiates the control represented by this AutomationPeer.
             </summary>
             <returns>The string that contains the name.</returns>
-        </member>
-        <!-- Badly formed XML comment ignored for member "M:Syncfusion.Windows.Automation.Peers.CalendarAutomationPeer.GetChildrenCore" -->
-        <member name="M:Syncfusion.Windows.Automation.Peers.CalendarAutomationPeer.GetCalendarChildrenAutomationPeer(System.DateTime,Syncfusion.Windows.Controls.CalendarMode)">
-            <summary>
-            Gets the automation peer for <see cref="T:Syncfusion.Windows.Controls.Primitives.CalendarDayButton"/> and <see cref="T:Syncfusion.Windows.Controls.Primitives.CalendarButton"/>
-            </summary>
-            <param name="date">date of the current calendar button</param>
-            <param name="displayMode">current display mode of Calendar</param>
-            <returns>Automation peer of CalendarButton and CalendarDayButton</returns>
-        </member>
-        <member name="P:Syncfusion.Windows.Automation.Peers.CalendarAutomationPeer.CalendarChildrenPeers">
-            <summary>
-            Used to cache realized peers. We donot store references to virtualized peers.
-            </summary>
-        </member>
-        <member name="T:Syncfusion.Windows.Automation.Peers.CalendarAutomationPeer.DateTimeCalendarModePair">
-            <summary>
-            Provides AutomationPeer based on date and  <see cref="T:Syncfusion.Windows.Controls.CalendarMode"/> of the Calendar.
-            </summary>
-        </member>
-        <member name="F:Syncfusion.Windows.Automation.Peers.CalendarAutomationPeer.DateTimeCalendarModePair.DisplayMode">
-            <summary>
-            Gets the current  <see cref="T:Syncfusion.Windows.Controls.CalendarMode"/> of the Calendar
-            </summary>
-        </member>
-        <member name="F:Syncfusion.Windows.Automation.Peers.CalendarAutomationPeer.DateTimeCalendarModePair.Date">
-            <summary>
-            Gets the current date
-            </summary>
-        </member>
-        <member name="T:Syncfusion.Windows.Automation.Peers.CalendarChildrenAutomationPeer">
-            <summary>
-            AutomationPeer for <see cref="T:Syncfusion.Windows.Controls.Primitives.CalendarDayButton"/> and <see cref="T:Syncfusion.Windows.Controls.Primitives.CalendarButton"/>
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Automation.Peers.CalendarChildrenAutomationPeer.#ctor(System.DateTime,Syncfusion.Windows.Controls.Calendar,Syncfusion.Windows.Controls.CalendarMode)">
-            <summary>
-            Initializes a new instance of the DateTimeAutomationPeer class.
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Automation.Peers.CalendarChildrenAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)">
-            <summary>
-            Gets the control pattern that is associated with the specified System.Windows.Automation.Peers.PatternInterface.
-            </summary>
-            <param name="patternInterface">A value from the System.Windows.Automation.Peers.PatternInterface enumeration.</param>
-            <returns>The object that supports the specified pattern, or null if unsupported.</returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Automation.Peers.CalendarChildrenAutomationPeer.GetAcceleratorKeyCore">
-            <summary>
-            Gets the accelerator key for the <see cref="T:Syncfusion.Windows.Controls.Primitives.CalendarDayButton"/> and <see cref="T:Syncfusion.Windows.Controls.Primitives.CalendarButton"/> that is associated with this CalendarChildrenPeer. 
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Automation.Peers.CalendarChildrenAutomationPeer.GetAccessKeyCore">
-            <summary>
-            Gets the access key for the <see cref="T:Syncfusion.Windows.Controls.Primitives.CalendarDayButton"/> and <see cref="T:Syncfusion.Windows.Controls.Primitives.CalendarButton"/> that is associated with this CalendarChildrenPeer. 
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Automation.Peers.CalendarChildrenAutomationPeer.GetAutomationControlTypeCore">
-            <summary>
-            Gets the automation control type for <see cref="T:Syncfusion.Windows.Controls.Primitives.CalendarDayButton"/> and <see cref="T:Syncfusion.Windows.Controls.Primitives.CalendarButton"/>
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Automation.Peers.CalendarChildrenAutomationPeer.GetAutomationIdCore">
-            <summary>
-            Gets the automation ID for the <see cref="T:Syncfusion.Windows.Controls.Primitives.CalendarDayButton"/> and <see cref="T:Syncfusion.Windows.Controls.Primitives.CalendarButton"/>
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Automation.Peers.CalendarChildrenAutomationPeer.GetBoundingRectangleCore">
-            <summary>
-            Gets the rectangle bounds for the <see cref="T:Syncfusion.Windows.Controls.Primitives.CalendarDayButton"/> and <see cref="T:Syncfusion.Windows.Controls.Primitives.CalendarButton"/>
-            </summary>
-        </member>
-        <!-- Badly formed XML comment ignored for member "M:Syncfusion.Windows.Automation.Peers.CalendarChildrenAutomationPeer.GetChildrenCore" -->
-        <member name="M:Syncfusion.Windows.Automation.Peers.CalendarChildrenAutomationPeer.GetClassNameCore">
-            <summary>
-            Gets the class name for the <see cref="T:Syncfusion.Windows.Controls.Primitives.CalendarDayButton"/> and <see cref="T:Syncfusion.Windows.Controls.Primitives.CalendarButton"/>
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Automation.Peers.CalendarChildrenAutomationPeer.GetClickablePointCore">
-            <summary>
-            Gets the clickable point for the <see cref="T:Syncfusion.Windows.Controls.Primitives.CalendarDayButton"/> and <see cref="T:Syncfusion.Windows.Controls.Primitives.CalendarButton"/>
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Automation.Peers.CalendarChildrenAutomationPeer.GetHelpTextCore">
-            <summary>
-            Gets the help text for the <see cref="T:Syncfusion.Windows.Controls.Primitives.CalendarDayButton"/> and <see cref="T:Syncfusion.Windows.Controls.Primitives.CalendarButton"/>
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Automation.Peers.CalendarChildrenAutomationPeer.GetItemStatusCore">
-            <summary>
-            Gets the Item Status for the <see cref="T:Syncfusion.Windows.Controls.Primitives.CalendarDayButton"/> and <see cref="T:Syncfusion.Windows.Controls.Primitives.CalendarButton"/>
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Automation.Peers.CalendarChildrenAutomationPeer.GetItemTypeCore">
-            <summary>
-            Gets the Item Type for the  <see cref="T:Syncfusion.Windows.Controls.Primitives.CalendarDayButton"/> and <see cref="T:Syncfusion.Windows.Controls.Primitives.CalendarButton"/>
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Automation.Peers.CalendarChildrenAutomationPeer.GetLabeledByCore">
-            <summary>
-            Gets the label for the  <see cref="T:Syncfusion.Windows.Controls.Primitives.CalendarDayButton"/> and <see cref="T:Syncfusion.Windows.Controls.Primitives.CalendarButton"/>
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Automation.Peers.CalendarChildrenAutomationPeer.HasKeyboardFocusCore">
-            <summary>
-            Gets the value indicating whether the  <see cref="T:Syncfusion.Windows.Controls.Primitives.CalendarDayButton"/> and <see cref="T:Syncfusion.Windows.Controls.Primitives.CalendarButton"/> has keyboard focus
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Automation.Peers.CalendarChildrenAutomationPeer.IsContentElementCore">
-            <summary>
-            Gets the value indicating whether the  <see cref="T:Syncfusion.Windows.Controls.Primitives.CalendarDayButton"/> and <see cref="T:Syncfusion.Windows.Controls.Primitives.CalendarButton"/> is content element
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Automation.Peers.CalendarChildrenAutomationPeer.IsControlElementCore">
-            <summary>
-            Gets the value indicating whether the  <see cref="T:Syncfusion.Windows.Controls.Primitives.CalendarDayButton"/> and <see cref="T:Syncfusion.Windows.Controls.Primitives.CalendarButton"/> is control element
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Automation.Peers.CalendarChildrenAutomationPeer.IsEnabledCore">
-            <summary>
-            Gets the value indicating whether the  <see cref="T:Syncfusion.Windows.Controls.Primitives.CalendarDayButton"/> and <see cref="T:Syncfusion.Windows.Controls.Primitives.CalendarButton"/> is Enabled or not.
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Automation.Peers.CalendarChildrenAutomationPeer.IsKeyboardFocusableCore">
-            <summary>
-            Gets the value indicating whether the  <see cref="T:Syncfusion.Windows.Controls.Primitives.CalendarDayButton"/> and <see cref="T:Syncfusion.Windows.Controls.Primitives.CalendarButton"/> has keyboard focus
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Automation.Peers.CalendarChildrenAutomationPeer.IsOffscreenCore">
-            <summary>
-            Gets the value indicating whether the  <see cref="T:Syncfusion.Windows.Controls.Primitives.CalendarDayButton"/> and <see cref="T:Syncfusion.Windows.Controls.Primitives.CalendarButton"/> is on the screen or not;
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Automation.Peers.CalendarChildrenAutomationPeer.IsPasswordCore">
-            <summary>
-            Gets a value that indicates whether the  <see cref="T:Syncfusion.Windows.Controls.Primitives.CalendarDayButton"/> and <see cref="T:Syncfusion.Windows.Controls.Primitives.CalendarButton"/> that is associated with this AutomationPeer contains protected content.
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Automation.Peers.CalendarChildrenAutomationPeer.IsRequiredForFormCore">
-            <summary>
-            Gets a value that indicates whether the  <see cref="T:Syncfusion.Windows.Controls.Primitives.CalendarDayButton"/> and <see cref="T:Syncfusion.Windows.Controls.Primitives.CalendarButton"/> that is associated with this AutomationPeer is required to be completed on a form
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:Syncfusion.Windows.Automation.Peers.CalendarChildrenAutomationPeer.SetFocusCore">
-            <summary>
-            Sets the keyboard input focus on the  <see cref="T:Syncfusion.Windows.Controls.Primitives.CalendarDayButton"/> and <see cref="T:Syncfusion.Windows.Controls.Primitives.CalendarButton"/> that is associated with this AutomationPeer.
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Automation.Peers.CalendarChildrenAutomationPeer.GetOrientationCore">
-            <summary>
-            Gets a value that indicates whether the  <see cref="T:Syncfusion.Windows.Controls.Primitives.CalendarDayButton"/> and <see cref="T:Syncfusion.Windows.Controls.Primitives.CalendarButton"/> that is associated with this AutomationPeer is laid out in a specific direction
-            </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Automation.Peers.CalendarChildrenAutomationPeer.GetNameCore">
-            <summary>
-            Gets the text label of the  <see cref="T:Syncfusion.Windows.Controls.Primitives.CalendarDayButton"/> and <see cref="T:Syncfusion.Windows.Controls.Primitives.CalendarButton"/> that is associated with this AutomationPeer
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="P:Syncfusion.Windows.Automation.Peers.CalendarChildrenAutomationPeer.OwningCalendar">
-            <summary>
-            Gets or Sets the popup calendar used in the DateTimeEdit
-            </summary>
-        </member>
-        <member name="P:Syncfusion.Windows.Automation.Peers.CalendarChildrenAutomationPeer.Date">
-            <summary>
-            Gets or sets the current date of the <see cref="T:Syncfusion.Windows.Controls.Calendar"/>
-            </summary>
-        </member>
-        <member name="P:Syncfusion.Windows.Automation.Peers.CalendarChildrenAutomationPeer.DisplayMode">
-            <summary>
-            Gets or Sets the current <see cref="T:Syncfusion.Windows.Controls.CalendarMode"/> of the Calendar
-            </summary>
-        </member>
-        <member name="P:Syncfusion.Windows.Automation.Peers.CalendarChildrenAutomationPeer.IsCalendarDayButton">
-            <summary>
-            Gets the value indicating whether the current is <see cref="T:Syncfusion.Windows.Controls.Primitives.CalendarDayButton"/>  or not.
-            </summary>
-        </member>
-        <member name="P:Syncfusion.Windows.Automation.Peers.CalendarChildrenAutomationPeer.OwningButton">
-            <summary>
-            Gets the Calendar button based on the <see cref="T:Syncfusion.Windows.Controls.CalendarMode"/>
-            </summary>
-        </member>
-        <member name="P:Syncfusion.Windows.Automation.Peers.CalendarChildrenAutomationPeer.CalendarChildrenPeer">
-            <summary>
-            Gets the automation peer for the <see cref="T:Syncfusion.Windows.Controls.Primitives.CalendarDayButton"/> and <see cref="T:Syncfusion.Windows.Controls.Primitives.CalendarButton"/>
-            </summary>
         </member>
         <member name="T:Syncfusion.Windows.Automation.Peers.CalendarButtonAutomationPeer">
             <summary>
@@ -47603,12 +45797,6 @@
             </summary>
             <returns>A text representation of the selected date, or an empty string if SelectedDate is a null reference.</returns>
         </member>
-        <member name="M:Syncfusion.Windows.Controls.Calendar.OnPreviewMouseWheel(System.Windows.Input.MouseWheelEventArgs)">
-            <summary>
-            Invoked when an unhandled <see cref="E:System.Windows.Input.Mouse.PreviewMouseWheel"/> attached event reaches an element in its route that is derived from this class. Implement this method to add class handling for this event.
-            </summary>
-            <param name="e">The <see cref="T:System.Windows.Input.MouseWheelEventArgs"/> that contains the event data.</param>
-        </member>
         <member name="M:Syncfusion.Windows.Controls.Calendar.OnSelectedDatesChanged(System.Windows.Controls.SelectionChangedEventArgs)">
             <summary>
             
@@ -47665,12 +45853,6 @@
             <summary>
                 Called when this element gets focus.
             </summary>
-        </member>
-        <member name="M:Syncfusion.Windows.Controls.Calendar.ClosePopup(System.Nullable{System.DateTime})">
-            <summary>
-            Helps to close the calendar popup in DateTimeEdit while pressing calendar button when display mode is year.
-            </summary>
-            <param name="newDate">The DateTime</param>
         </member>
         <member name="E:Syncfusion.Windows.Controls.Calendar.SelectedDatesChanged">
             <summary>
@@ -54499,7 +52681,7 @@
         </member>
         <member name="T:Syncfusion.Windows.Shared.SkinTypeAttribute">
             <summary>
-            Represents a custom Attribute for mentioning all kind of theming dictionaries in <see cref="T:Syncfusion.Windows.Shared.SkinManager"/>.
+            Custom Attribute for mentioning theming dictionary,
             </summary>
         </member>
         <member name="M:Syncfusion.Windows.Shared.SkinTypeAttribute.#ctor">
