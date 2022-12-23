@@ -23,7 +23,9 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfTreeGrid_WPF/SfTreeGrid_Filtering_Feature
-                    development'
+                    development
+                    null
+                    true'
     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -47,7 +49,9 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfTreeGrid_WPF/SfTreeGrid_Jira_2019 
-                    development'
+                    development
+                    null
+                    false'
     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -71,7 +75,9 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfTreeGrid_WPF/SfTreeGrid_Jira_2022 
-                    development' 
+                    development
+                    null
+                    false' 
                     
   - task: PublishBuildArtifacts@1
     inputs:
