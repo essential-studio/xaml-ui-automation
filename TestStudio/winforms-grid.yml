@@ -24,7 +24,7 @@ jobs:
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Grid_WF/GGC_Jira_MT_2019
                     development
-                    null
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null
                     false'
     
   - task: PublishBuildArtifacts@1
@@ -100,7 +100,7 @@ jobs:
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Grid_WF/GridGroupingControl_Jira_2019 
                     development
-                    null
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null
                     false'
                     
   - task: PublishBuildArtifacts@1
