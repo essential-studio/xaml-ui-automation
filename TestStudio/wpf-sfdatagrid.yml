@@ -95,7 +95,9 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfDataGrid_WPF/SfDataGrid_Jira_2019 
-                    development'
+                    development
+                    null
+                    false'
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -119,7 +121,9 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfDataGrid_WPF/SfDataGrid_Jira_2021 
-                    development'
+                    development
+                    null
+                    false'
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -143,7 +147,9 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfDataGrid_WPF/SfDataPager_Jira_2019 
-                    development'
+                    development
+                    null
+                    false'
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -167,7 +173,9 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfDataGrid_WPF/SfMultiColumnDropDown_Jira_2019 
-                    development'
+                    development
+                    null
+                    false'
                     
   - task: PublishBuildArtifacts@1
     inputs:

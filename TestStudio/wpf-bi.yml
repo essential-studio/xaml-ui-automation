@@ -23,7 +23,9 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/BI_WPF/OlapChart/OlapChart_JIRA_2019_Vol1
-                    development'
+                    development
+                    null
+                    false'
     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -71,7 +73,9 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/BI_WPF/PivotGrid/PivotGrid_JIRA_2019 
-                    development' 
+                    development
+                    null
+                    false' 
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -95,7 +99,9 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/BI_WPF/PivotGrid/PivotGrid_JIRA_2019_Vol1 
-                    development'
+                    development
+                    null
+                    false'
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -119,7 +125,9 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/BI_WPF/PivotGrid/PivotGrid_JIRA_2019_Vol1_1 
-                    development'
+                    development
+                    null
+                    false'
                     
   - task: PublishBuildArtifacts@1
     inputs:
