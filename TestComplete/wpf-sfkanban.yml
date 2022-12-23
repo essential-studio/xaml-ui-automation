@@ -6,7 +6,7 @@
 trigger: none
 
 jobs:
-- job: SfTreeGrid_Filtering_Feature
+- job: IR_1_Kanban
   timeoutInMinutes: 0
   pool:
     name: "Desktop-xaml-vmss"
@@ -15,24 +15,22 @@ jobs:
   - task: ScreenResolutionUtility@1
     inputs:
         displaySettings: 'specific'
-        width: '1366'
-        height: '768'
+        width: '1280'
+        height: '1024'
 
   - task: CmdLine@1
     inputs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
-        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfTreeGrid_WPF/SfTreeGrid_Filtering_Feature
-                    development
-                    null
-                    true'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/SfKanban_WPF/IR_1_Kanban
+                    development'
     
   - task: PublishBuildArtifacts@1
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
-        ArtifactName: SfTreeGrid_Filtering_Feature
-
-- job: SfTreeGrid_Jira_2019
+        ArtifactName: IR_1_Kanban
+        
+- job: Kanban_WPF
   timeoutInMinutes: 0
   pool:
     name: "Desktop-xaml-vmss"
@@ -41,24 +39,22 @@ jobs:
   - task: ScreenResolutionUtility@1
     inputs:
         displaySettings: 'specific'
-        width: '1366'
-        height: '768'
+        width: '1280'
+        height: '1024'
 
   - task: CmdLine@1
     inputs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
-        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfTreeGrid_WPF/SfTreeGrid_Jira_2019 
-                    development
-                    null
-                    false'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/SfKanban_WPF/Kanban_WPF
+                    development'
     
   - task: PublishBuildArtifacts@1
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
-        ArtifactName: SfTreeGrid_Jira_2019
+        ArtifactName: Kanban_WPF 
 
-- job: SfTreeGrid_Jira_2022
+- job: Localization-Kanban
   timeoutInMinutes: 0
   pool:
     name: "Desktop-xaml-vmss"
@@ -67,19 +63,18 @@ jobs:
   - task: ScreenResolutionUtility@1
     inputs:
         displaySettings: 'specific'
-        width: '1366'
-        height: '768'
+        width: '1280'
+        height: '1024'
 
   - task: CmdLine@1
     inputs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
-        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfTreeGrid_WPF/SfTreeGrid_Jira_2022 
-                    development
-                    null
-                    false' 
-                    
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TrunkAutomation/SfKanban_WPF/Localization-Kanban
+                    development'
+    
   - task: PublishBuildArtifacts@1
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
-        ArtifactName: SfTreeGrid_Jira_2022
+        ArtifactName: Localization-Kanban        
+        
