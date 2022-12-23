@@ -23,9 +23,7 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfTreeGrid_WPF/SfTreeGrid_Filtering_Feature
-                    development
-                    null
-                    true'
+                    development'
     
   - task: PublishBuildArtifacts@1
     inputs:
