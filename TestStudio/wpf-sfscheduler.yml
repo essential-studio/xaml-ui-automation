@@ -6,7 +6,7 @@
 trigger: none
 
 jobs:
-- job: 2021_Volume1_Features
+- job: 2021Volume1Features
   timeoutInMinutes: 0
   pool:
     name: "Desktop-xaml-vmss"
@@ -28,9 +28,9 @@ jobs:
   - task: PublishBuildArtifacts@1
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
-        ArtifactName: 2021_Volume1_Features
+        ArtifactName: 2021Volume1Features
 
-- job: 2021_Volume2_Features
+- job: 2021Volume2Features
   timeoutInMinutes: 0
   pool:
     name: "Desktop-xaml-vmss"
@@ -54,9 +54,9 @@ jobs:
   - task: PublishBuildArtifacts@1
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
-        ArtifactName: 2021_Volume2_Features
+        ArtifactName: 2021Volume2Features
 
-- job: 2021_Volume3_Features
+- job: 2021Volume3Features
   timeoutInMinutes: 0
   pool:
     name: "Desktop-xaml-vmss"
@@ -80,7 +80,7 @@ jobs:
   - task: PublishBuildArtifacts@1
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
-        ArtifactName: 2021_Volume3_Features
+        ArtifactName: 2021Volume3Features
 
 - job: AllDaySpanAppointments
   timeoutInMinutes: 0
@@ -131,7 +131,7 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: AppointmentArrangementOnDayViews
 
-- job: AppointmentBoder_selection
+- job: AppointmentBoderselection
   timeoutInMinutes: 0
   pool:
     name: "Desktop-xaml-vmss"
@@ -153,7 +153,7 @@ jobs:
   - task: PublishBuildArtifacts@1
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
-        ArtifactName: AppointmentBoder_selection
+        ArtifactName: AppointmentBoderselection
 
 - job: AppointmentDisplayCountCustomization
   timeoutInMinutes: 0
