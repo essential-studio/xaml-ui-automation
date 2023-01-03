@@ -6,7 +6,7 @@
 trigger: none
 
 jobs:
-- job: 2021Volume1Features
+- job: Volume1Features
   timeoutInMinutes: 0
   pool:
     name: "Desktop-xaml-vmss"
@@ -28,9 +28,9 @@ jobs:
   - task: PublishBuildArtifacts@1
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
-        ArtifactName: 2021Volume1Features
+        ArtifactName: Volume1Features
 
-- job: 2021Volume2Features
+- job: Volume2Features
   timeoutInMinutes: 0
   pool:
     name: "Desktop-xaml-vmss"
@@ -54,9 +54,9 @@ jobs:
   - task: PublishBuildArtifacts@1
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
-        ArtifactName: 2021Volume2Features
+        ArtifactName: Volume2Features
 
-- job: 2021Volume3Features
+- job: Volume3Features
   timeoutInMinutes: 0
   pool:
     name: "Desktop-xaml-vmss"
@@ -80,7 +80,7 @@ jobs:
   - task: PublishBuildArtifacts@1
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
-        ArtifactName: 2021Volume3Features
+        ArtifactName: Volume3Features
 
 - job: AllDaySpanAppointments
   timeoutInMinutes: 0
