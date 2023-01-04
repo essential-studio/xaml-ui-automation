@@ -17,18 +17,6 @@ jobs:
         displaySettings: 'specific'
         width: '1366'
         height: '768'
-
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\AutomationReports'
-      Contents: '**/*'
-      RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
-      Contents: '**/*'
-      RemoveSourceFolder: true
        
   - task: CmdLine@1
     inputs:
@@ -41,6 +29,18 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: AutoComplete_Jira_2019
+        
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true
+      
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\SVN'
+      Contents: '**/*'
+      RemoveSourceFolder: true
 
 - job: ButtonAdv_Jira_2019
   timeoutInMinutes: 0
