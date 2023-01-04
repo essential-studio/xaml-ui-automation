@@ -6,7 +6,7 @@
 trigger: none
 
 jobs:
-- job: 2021_Volume1_SchedulerFeatures
+- job: Volume1Features
   timeoutInMinutes: 0
   pool:
     name: "Desktop-xaml-vmss"
@@ -22,15 +22,15 @@ jobs:
     inputs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
-        arguments: 'https://svn.syncfusion.com/svn/company/trunk/work_area/SfScheduler/TestAutomation/2021_Volume1_SchedulerFeatures
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfScheduler_WPF/2021_Volume1_Features
                     development'
     
   - task: PublishBuildArtifacts@1
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
-        ArtifactName: 2021_Volume1_SchedulerFeatures
+        ArtifactName: Volume1Features
 
-- job: 2021_Volume2_SchedulerFeatures
+- job: Volume2Features
   timeoutInMinutes: 0
   pool:
     name: "Desktop-xaml-vmss"
@@ -46,7 +46,7 @@ jobs:
     inputs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
-        arguments: 'https://svn.syncfusion.com/svn/company/trunk/work_area/SfScheduler/TestAutomation/2021_Volume2_SchedulerFeatures 
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfScheduler_WPF/2021_Volume2_Features
                     development
                     null
                     false'
@@ -54,9 +54,9 @@ jobs:
   - task: PublishBuildArtifacts@1
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
-        ArtifactName: 2021_Volume2_SchedulerFeatures
+        ArtifactName: Volume2Features
 
-- job: 2021_Volume3_SchedulerFeatures
+- job: Volume3Features
   timeoutInMinutes: 0
   pool:
     name: "Desktop-xaml-vmss"
@@ -72,7 +72,7 @@ jobs:
     inputs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
-        arguments: 'https://svn.syncfusion.com/svn/company/trunk/work_area/SfScheduler/TestAutomation/2021_Volume3_SchedulerFeatures 
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfScheduler_WPF/2021_Volume3_Features
                     development
                     null
                     false'
@@ -80,7 +80,7 @@ jobs:
   - task: PublishBuildArtifacts@1
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
-        ArtifactName: 2021_Volume3_SchedulerFeatures
+        ArtifactName: Volume3Features
 
 - job: AllDaySpanAppointments
   timeoutInMinutes: 0
@@ -98,7 +98,7 @@ jobs:
     inputs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
-        arguments: 'https://svn.syncfusion.com/svn/company/trunk/work_area/SfScheduler/TestAutomation/AllDaySpanAppointments 
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfScheduler_WPF/AllDaySpanAppointments
                     development'
                     
   - task: PublishBuildArtifacts@1
@@ -106,29 +106,6 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: AllDaySpanAppointments
 
-- job: AllowedViews & DatePicker Testing
-  timeoutInMinutes: 0
-  pool:
-    name: "Desktop-xaml-vmss"
-
-  steps:
-  - task: ScreenResolutionUtility@1
-    inputs:
-        displaySettings: 'specific'
-        width: '1366'
-        height: '768'
-
-  - task: CmdLine@1
-    inputs:
-        filename: 'UIAutomationConsole.exe'
-        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
-        arguments: 'https://svn.syncfusion.com/svn/company/trunk/work_area/SfScheduler/TestAutomation/AllowedViews & DatePicker Testing 
-                    development'
-                    
-  - task: PublishBuildArtifacts@1
-    inputs:
-        pathtoPublish: 'D:\AutomationReports\'
-        ArtifactName: AllowedViews & DatePicker Testing
 
 - job: AppointmentArrangementOnDayViews
   timeoutInMinutes: 0
@@ -146,7 +123,7 @@ jobs:
     inputs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
-        arguments: 'https://svn.syncfusion.com/svn/company/trunk/work_area/SfScheduler/TestAutomation/AppointmentArrangementOnDayViews 
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfScheduler_WPF/AppointmentArrangementOnDayViews
                     development'
                     
   - task: PublishBuildArtifacts@1
@@ -154,7 +131,7 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: AppointmentArrangementOnDayViews
 
-- job: AppointmentBoder_selection
+- job: AppointmentBoderselection
   timeoutInMinutes: 0
   pool:
     name: "Desktop-xaml-vmss"
@@ -170,13 +147,13 @@ jobs:
     inputs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
-        arguments: 'https://svn.syncfusion.com/svn/company/trunk/work_area/SfScheduler/TestAutomation/AppointmentBoder_selection 
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfScheduler_WPF/AppointmentBoder_selection
                     development'
                     
   - task: PublishBuildArtifacts@1
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
-        ArtifactName: AppointmentBoder_selection
+        ArtifactName: AppointmentBoderselection
 
 - job: AppointmentDisplayCountCustomization
   timeoutInMinutes: 0
@@ -194,7 +171,7 @@ jobs:
     inputs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
-        arguments: 'https://svn.syncfusion.com/svn/company/trunk/work_area/SfScheduler/TestAutomation/AppointmentDisplayCountCustomization 
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfScheduler_WPF/AppointmentDisplayCountCustomization
                     development'
                     
   - task: PublishBuildArtifacts@1
@@ -218,7 +195,7 @@ jobs:
     inputs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
-        arguments: 'https://svn.syncfusion.com/svn/company/trunk/work_area/SfScheduler/TestAutomation/AppointmentEditor 
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfScheduler_WPF/AppointmentEditor 
                     development' 
                     
   - task: PublishBuildArtifacts@1
@@ -242,7 +219,7 @@ jobs:
     inputs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
-        arguments: 'https://svn.syncfusion.com/svn/company/trunk/work_area/SfScheduler/TestAutomation/AppointmentEditorTimeFormat 
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfScheduler_WPF/AppointmentEditorTimeFormat 
                     development'
                     
   - task: PublishBuildArtifacts@1
@@ -266,7 +243,7 @@ jobs:
     inputs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
-        arguments: 'https://svn.syncfusion.com/svn/company/trunk/work_area/SfScheduler/TestAutomation/AppointmentIdTesting 
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfScheduler_WPF/AppointmentIdTesting 
                     development'
                     
   - task: PublishBuildArtifacts@1
@@ -290,7 +267,7 @@ jobs:
     inputs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
-        arguments: 'https://svn.syncfusion.com/svn/company/trunk/work_area/SfScheduler/TestAutomation/AppointmentOverlappingOnDayViews
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfScheduler_WPF/AppointmentOverlappingOnDayViews
                     development'
     
   - task: PublishBuildArtifacts@1
@@ -314,7 +291,7 @@ jobs:
     inputs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
-        arguments: 'https://svn.syncfusion.com/svn/company/trunk/work_area/SfScheduler/TestAutomation/CalendarIdentifierTesting 
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfScheduler_WPF/CalendarIdentifierTesting
                     development'
     
   - task: PublishBuildArtifacts@1
@@ -338,7 +315,7 @@ jobs:
     inputs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
-        arguments: 'https://svn.syncfusion.com/svn/company/trunk/work_area/SfScheduler/TestAutomation/CustomAppointmentEditing 
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfScheduler_WPF/CustomAppointmentEditing
                     development' 
                     
   - task: PublishBuildArtifacts@1
@@ -346,29 +323,6 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: CustomAppointmentEditing
 
-- job: CustomerBugs
-  timeoutInMinutes: 0
-  pool:
-    name: "Desktop-xaml-vmss"
-
-  steps:
-  - task: ScreenResolutionUtility@1
-    inputs:
-        displaySettings: 'specific'
-        width: '1366'
-        height: '768'
-
-  - task: CmdLine@1
-    inputs:
-        filename: 'UIAutomationConsole.exe'
-        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
-        arguments: 'https://svn.syncfusion.com/svn/company/trunk/work_area/SfScheduler/TestAutomation/CustomerBugs 
-                    development'
-                    
-  - task: PublishBuildArtifacts@1
-    inputs:
-        pathtoPublish: 'D:\AutomationReports\'
-        ArtifactName: CustomerBugs
 
 - job: DayViewsSettings
   timeoutInMinutes: 0
@@ -386,7 +340,7 @@ jobs:
     inputs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
-        arguments: 'https://svn.syncfusion.com/svn/company/trunk/work_area/SfScheduler/TestAutomation/DayViewsSettings 
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfScheduler_WPF/DayViewsSettings
                     development'
                     
   - task: PublishBuildArtifacts@1
@@ -410,7 +364,7 @@ jobs:
     inputs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
-        arguments: 'https://svn.syncfusion.com/svn/company/trunk/work_area/SfScheduler/TestAutomation/DragDropTesting 
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfScheduler_WPF/DragDropTesting
                     development'
                     
   - task: PublishBuildArtifacts@1
@@ -434,7 +388,7 @@ jobs:
     inputs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
-        arguments: 'https://svn.syncfusion.com/svn/company/trunk/work_area/SfScheduler/TestAutomation/LoadOnDemandTesting 
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfScheduler_WPF/LoadOnDemandTesting
                     development'
                     
   - task: PublishBuildArtifacts@1
@@ -458,7 +412,7 @@ jobs:
     inputs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
-        arguments: 'https://svn.syncfusion.com/svn/company/trunk/work_area/SfScheduler/TestAutomation/MonthCellAppointmentRendering 
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfScheduler_WPF/MonthCellAppointmentRendering
                     development
                     null
                     false'
@@ -484,7 +438,7 @@ jobs:
     inputs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
-        arguments: 'https://svn.syncfusion.com/svn/company/trunk/work_area/SfScheduler/TestAutomation/MonthViewSettings 
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfScheduler_WPF/MonthViewSettings
                     development' 
                     
   - task: PublishBuildArtifacts@1
@@ -508,13 +462,37 @@ jobs:
     inputs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
-        arguments: 'https://svn.syncfusion.com/svn/company/trunk/work_area/SfScheduler/TestAutomation/RecurrenceHelperMethodsTesting 
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfScheduler_WPF/RecurrenceHelperMethodsTesting
                     development'
                     
   - task: PublishBuildArtifacts@1
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: RecurrenceHelperMethodsTesting
+
+- job: ResourceDynamicChanges
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfScheduler_WPF/ResourceDynamicChanges
+                    development'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: ResourceDynamicChanges
 
 - job: ResourceMapping
   timeoutInMinutes: 0
@@ -532,7 +510,7 @@ jobs:
     inputs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
-        arguments: 'https://svn.syncfusion.com/svn/company/trunk/work_area/SfScheduler/TestAutomation/ResourceMapping 
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfScheduler_WPF/ResourceMapping
                     development'
                     
   - task: PublishBuildArtifacts@1
@@ -556,7 +534,7 @@ jobs:
     inputs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
-        arguments: 'https://svn.syncfusion.com/svn/company/trunk/work_area/SfScheduler/TestAutomation/ScheduleAppAndCustomAppEditing
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfScheduler_WPF/ScheduleAppAndCustomAppEditing
                     development'
     
   - task: PublishBuildArtifacts@1
@@ -580,7 +558,7 @@ jobs:
     inputs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
-        arguments: 'https://svn.syncfusion.com/svn/company/trunk/work_area/SfScheduler/TestAutomation/SchedulerKeyBoardInteraction 
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfScheduler_WPF/SchedulerKeyBoardInteraction 
                     development'
     
   - task: PublishBuildArtifacts@1
@@ -604,7 +582,7 @@ jobs:
     inputs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
-        arguments: 'https://svn.syncfusion.com/svn/company/trunk/work_area/SfScheduler/TestAutomation/SchedulerKeyInteraction 
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfScheduler_WPF/SchedulerKeyInteraction 
                     development' 
                     
   - task: PublishBuildArtifacts@1
@@ -628,7 +606,7 @@ jobs:
     inputs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
-        arguments: 'https://svn.syncfusion.com/svn/company/trunk/work_area/SfScheduler/TestAutomation/SchedulerResource 
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfScheduler_WPF/SchedulerResource
                     development
                     null
                     false'
@@ -654,7 +632,7 @@ jobs:
     inputs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
-        arguments: 'https://svn.syncfusion.com/svn/company/trunk/work_area/SfScheduler/TestAutomation/SfScheduler_CR_2021 
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfScheduler_WPF/SfScheduler_CR_2021 
                     development'
                     
   - task: PublishBuildArtifacts@1
@@ -678,7 +656,7 @@ jobs:
     inputs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
-        arguments: 'https://svn.syncfusion.com/svn/company/trunk/work_area/SfScheduler/TestAutomation/SpecialTimeRegionsTesting 
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfScheduler_WPF/SpecialTimeRegionsTesting 
                     development'
                     
   - task: PublishBuildArtifacts@1
@@ -686,7 +664,7 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: SpecialTimeRegionsTesting
 
-- job: SpecialTimeRegionTesting
+- job: SpecialTimeRegionsDynamicChanges
   timeoutInMinutes: 0
   pool:
     name: "Desktop-xaml-vmss"
@@ -702,13 +680,37 @@ jobs:
     inputs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
-        arguments: 'https://svn.syncfusion.com/svn/company/trunk/work_area/SfScheduler/TestAutomation/SpecialTimeRegionTesting 
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfScheduler_WPF/SpecialTimeRegionsDynamicChanges
                     development'
                     
   - task: PublishBuildArtifacts@1
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
-        ArtifactName: SpecialTimeRegionTesting
+        ArtifactName: SpecialTimeRegionsDynamicChanges
+
+- job: SpecialTimeRegionsWithTimeIntervalHeight
+  timeoutInMinutes: 0
+  pool:
+    name: "Desktop-xaml-vmss"
+
+  steps:
+  - task: ScreenResolutionUtility@1
+    inputs:
+        displaySettings: 'specific'
+        width: '1366'
+        height: '768'
+
+  - task: CmdLine@1
+    inputs:
+        filename: 'UIAutomationConsole.exe'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfScheduler_WPF/SpecialTimeRegionsWithTimeIntervalHeight
+                    development'
+                    
+  - task: PublishBuildArtifacts@1
+    inputs:
+        pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: SpecialTimeRegionsWithTimeIntervalHeight
 
 - job: Timeintervalsize
   timeoutInMinutes: 0
@@ -726,7 +728,7 @@ jobs:
     inputs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
-        arguments: 'https://svn.syncfusion.com/svn/company/trunk/work_area/SfScheduler/TestAutomation/Timeintervalsize 
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfScheduler_WPF/Timeintervalsize 
                     development'
                     
   - task: PublishBuildArtifacts@1
@@ -750,7 +752,7 @@ jobs:
     inputs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
-        arguments: 'https://svn.syncfusion.com/svn/company/trunk/work_area/SfScheduler/TestAutomation/TimelineViewsSettings 
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfScheduler_WPF/TimelineViewsSettings
                     development' 
                     
   - task: PublishBuildArtifacts@1
@@ -774,7 +776,7 @@ jobs:
     inputs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
-        arguments: 'https://svn.syncfusion.com/svn/company/trunk/work_area/SfScheduler/TestAutomation/ViewChangedTesting 
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfScheduler_WPF/ViewChangedTesting 
                     development'
                     
   - task: PublishBuildArtifacts@1
@@ -782,7 +784,7 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: ViewChangedTesting
 
-- job: WPFSchedulerViewNavigationDemo
+- job: SchedulerViewNavigation 
   timeoutInMinutes: 0
   pool:
     name: "Desktop-xaml-vmss"
@@ -798,10 +800,10 @@ jobs:
     inputs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
-        arguments: 'https://svn.syncfusion.com/svn/company/trunk/work_area/SfScheduler/TestAutomation/WPFSchedulerViewNavigationDemo 
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfScheduler_WPF/SchedulerViewNavigation 
                     development'
                     
   - task: PublishBuildArtifacts@1
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
-        ArtifactName: WPFSchedulerViewNavigationDemo
+        ArtifactName: SchedulerViewNavigation
