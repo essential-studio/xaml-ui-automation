@@ -47,9 +47,7 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WPF/ButtonAdv_Jira_2019 
-                    development
-                    null
-                    false'
+                    development'
     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -73,9 +71,7 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WPF/CalendarEdit_Jira_2019 
-                    development
-                    null
-                    false' 
+                    development' 
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -123,9 +119,7 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WPF/Carousel_Jira_2020 
-                    development
-                    null
-                    false'
+                    development'
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -149,9 +143,7 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WPF/CheckListBox_Jira_2019 
-                    development
-                    null
-                    false'
+                    development'
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -223,9 +215,7 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WPF/ColorPicker_Jira_2019 
-                    development
-                    null
-                    false' 
+                    development' 
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -249,9 +239,7 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WPF/ColorPickerPalette_Jira_2019 
-                    development
-                    null
-                    false'
+                    development'
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -275,9 +263,7 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WPF/ComboBoxAdv_Jira_2019 
-                    development
-                    null
-                    false'
+                    development'
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -301,9 +287,7 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WPF/CurrencyTextBox_Jira_2019
-                    development
-                    null
-                    false'
+                    development'
     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -327,9 +311,7 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WPF/DateTimeEdit_Jira_2019 
-                    development
-                    null
-                    false'
+                    development'
     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -353,9 +335,7 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WPF/DockingManager_Jira_2019 
-                    development
-                    null
-                    false' 
+                    development' 
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -403,9 +383,7 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WPF/DoubleTextBox_Jira_2019 
-                    development
-                    null
-                    false'
+                    development'
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -429,9 +407,7 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WPF/DropDownButtonAdv_Jira_2019 
-                    development
-                    null
-                    false'
+                    development'
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -455,9 +431,7 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WPF/EditControl_Jira_2019 
-                    development
-                    null
-                    false'
+                    development'
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -481,9 +455,7 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WPF/EditcontrolWPF_jira_2019 
-                    development
-                    null
-                    false'
+                    development'
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -531,9 +503,7 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WPF/GroupBar_Jira_2019 
-                    development
-                    null
-                    false'
+                    development'
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -557,9 +527,7 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WPF/IntegerTextBox_Jira_2019 
-                    development
-                    null
-                    false'
+                    development'
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -583,9 +551,7 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WPF/Localization_Jira_2019
-                    development
-                    null
-                    false'
+                    development'
     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -657,9 +623,7 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WPF/PercentTextBox_Jira_2019 
-                    development
-                    null
-                    false'
+                    development'
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -683,9 +647,7 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WPF/PropertyGrid_Jira_2019 
-                    development
-                    null
-                    false'
+                    development'
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -709,9 +671,7 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WPF/Ribbon_Jira_2019 
-                    development
-                    null
-                    false'
+                    development'
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -735,9 +695,7 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WPF/RibbonThemes_jira_2020 
-                    development
-                    null
-                    false'
+                    development'
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -809,9 +767,7 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WPF/SfBusyIndicator 
-                    development
-                    null
-                    false'
+                    development'
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -835,9 +791,7 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WPF/SfCalculator_jira_2019 
-                    development
-                    null
-                    false'
+                    development'
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -861,9 +815,7 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WPF/SfDatePicker_Jira_2019
-                    development
-                    null
-                    false'
+                    development'
     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -911,9 +863,7 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WPF/SfMaskedEdit_Jira_2019 
-                    development
-                    null
-                    false' 
+                    development' 
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -961,9 +911,7 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WPF/SfRadialMenu 
-                    development
-                    null
-                    false'
+                    development'
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -1011,9 +959,7 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WPF/SfSchedule_Jira_2019 
-                    development
-                    null
-                    false'
+                    development'
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -1037,9 +983,7 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WPF/SfSkinManager_Jira_2019 
-                    development
-                    null
-                    false'
+                    development'
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -1063,9 +1007,7 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WPF/SfSpellChecker_Jira_2020 
-                    development
-                    null
-                    false' 
+                    development' 
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -1089,9 +1031,7 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WPF/SfTextboxExt 
-                    development
-                    null
-                    false'
+                    development'
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -1139,9 +1079,7 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WPF/SfTreeNavigator_Jira_2019
-                    development
-                    null
-                    false'
+                    development'
     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -1189,9 +1127,7 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WPF/TabControlExt_Jira_2019 
-                    development
-                    null
-                    false' 
+                    development' 
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -1215,9 +1151,7 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WPF/TabNavigationControl_Jira_2019 
-                    development
-                    null
-                    false'
+                    development'
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -1265,9 +1199,7 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WPF/TaskBar_Jira_2019 
-                    development
-                    null
-                    false'
+                    development'
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -1291,9 +1223,7 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WPF/TileView_Jira_2019 
-                    development
-                    null
-                    false'
+                    development'
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -1341,9 +1271,7 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WPF/ToolBarAdv_Jira_2020 
-                    development
-                    null
-                    false' 
+                    development' 
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -1367,9 +1295,7 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WPF/TreeViewAdv_Jira_2019 
-                    development
-                    null
-                    false'
+                    development'
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -1393,9 +1319,7 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WPF/UpDown_Jira_2019 
-                    development
-                    null
-                    false'
+                    development'
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -1419,9 +1343,7 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WPF/WizardControl
-                    development
-                    null
-                    false'
+                    development'
     
   - task: PublishBuildArtifacts@1
     inputs:

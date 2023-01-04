@@ -263,9 +263,7 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfTreeView_WPF/SfTreeView_HierarchyPropertyDescriptorDemo 
-                    development
-                    null
-                    false'
+                    development'
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -337,9 +335,7 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfTreeView_WPF/SfTreeView_LoadOnDemandDemo 
-                    development
-                    null
-                    false'
+                    development'
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -435,9 +431,7 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfTreeView_WPF/SfTreeView_SelectedStateMapping 
-                    development
-                    null
-                    false'
+                    development'
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -461,9 +455,7 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfTreeView_WPF/SfTreeView_UnboundDemo 
-                    development
-                    null
-                    false'
+                    development'
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -487,9 +479,7 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfTreeView_WPF/SfTreeViewUnboundModeEditing 
-                    development
-                    null
-                    false'
+                    development'
                     
   - task: PublishBuildArtifacts@1
     inputs:
