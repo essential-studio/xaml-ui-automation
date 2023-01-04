@@ -20,13 +20,15 @@ jobs:
 
   - task: DeleteFiles@1
     inputs:
-       SourceFolder: 'D:\AutomationReports'
-       RemoveSourceFolder: true
-  
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true
+      
   - task: DeleteFiles@1
     inputs:
-       SourceFolder: 'D:\SVN'
-       RemoveSourceFolder: true
+      SourceFolder: 'D:\SVN'
+      Contents: '**/*'
+      RemoveSourceFolder: true
        
   - task: CmdLine@1
     inputs:
