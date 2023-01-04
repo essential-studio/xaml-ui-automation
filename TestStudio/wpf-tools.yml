@@ -65,6 +65,18 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: ButtonAdv_Jira_2019
+        
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true
+      
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\SVN'
+      Contents: '**/*'
+      RemoveSourceFolder: true
 
 - job: CalendarEdit_Jira_2019
   timeoutInMinutes: 0
@@ -89,6 +101,18 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: CalendarEdit_Jira_2019
+        
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true
+      
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\SVN'
+      Contents: '**/*'
+      RemoveSourceFolder: true
 
 - job: CardView_Jira_2019
   timeoutInMinutes: 0
@@ -113,6 +137,18 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: CardView_Jira_2019
+      
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true
+      
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\SVN'
+      Contents: '**/*'
+      RemoveSourceFolder: true
 
 - job: Carousel_Jira_2020
   timeoutInMinutes: 0
@@ -137,6 +173,18 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: Carousel_Jira_2020
+        
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true
+      
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\SVN'
+      Contents: '**/*'
+      RemoveSourceFolder: true
 
 - job: CheckListBox_Jira_2019
   timeoutInMinutes: 0
@@ -161,6 +209,18 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: CheckListBox_Jira_2019
+      
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true
+      
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\SVN'
+      Contents: '**/*'
+      RemoveSourceFolder: true
 
 - job: ChromelessWindow_Jira_2019
   timeoutInMinutes: 0
@@ -185,6 +245,18 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: ChromelessWindow_Jira_2019
+      
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true
+      
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\SVN'
+      Contents: '**/*'
+      RemoveSourceFolder: true
 
 - job: ColorEdit_Jira_2019
   timeoutInMinutes: 0
@@ -209,6 +281,18 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: ColorEdit_Jira_2019
+      
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true
+      
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\SVN'
+      Contents: '**/*'
+      RemoveSourceFolder: true
 
 - job: ColorPicker_Jira_2019
   timeoutInMinutes: 0
@@ -233,6 +317,18 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: ColorPicker_Jira_2019
+      
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true
+      
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\SVN'
+      Contents: '**/*'
+      RemoveSourceFolder: true
 
 - job: ColorPickerPalette_Jira_2019
   timeoutInMinutes: 0
@@ -257,6 +353,18 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: ColorPickerPalette_Jira_2019
+      
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true
+      
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\SVN'
+      Contents: '**/*'
+      RemoveSourceFolder: true
 
 - job: ComboBoxAdv_Jira_2019
   timeoutInMinutes: 0
@@ -281,6 +389,18 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: ComboBoxAdv_Jira_2019
+      
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true
+      
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\SVN'
+      Contents: '**/*'
+      RemoveSourceFolder: true
 
 - job: CurrencyTextBox_Jira_2019
   timeoutInMinutes: 0
@@ -305,6 +425,18 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: CurrencyTextBox_Jira_2019
+        
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true
+      
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\SVN'
+      Contents: '**/*'
+      RemoveSourceFolder: true
 
 - job: DateTimeEdit_Jira_2019
   timeoutInMinutes: 0
@@ -329,6 +461,18 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: DateTimeEdit_Jira_2019
+        
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true
+      
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\SVN'
+      Contents: '**/*'
+      RemoveSourceFolder: true
 
 - job: DockingManager_Jira_2019
   timeoutInMinutes: 0
