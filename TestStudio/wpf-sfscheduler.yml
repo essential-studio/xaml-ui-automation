@@ -47,9 +47,8 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfScheduler_WPF/2021_Volume2_Features
-                    development
-                    null
-                    false'
+                    development'
+                   
     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -73,9 +72,7 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfScheduler_WPF/2021_Volume3_Features
-                    development
-                    null
-                    false'
+                    development'
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -413,9 +410,7 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfScheduler_WPF/MonthCellAppointmentRendering
-                    development
-                    null
-                    false'
+                    development'
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -511,7 +506,7 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfScheduler_WPF/ResourceMapping
-                    
+                    development'
   - task: PublishBuildArtifacts@1
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
@@ -606,9 +601,7 @@ jobs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfScheduler_WPF/SchedulerResource
-                    development
-                    null
-                    false'
+                    development'
                     
   - task: PublishBuildArtifacts@1
     inputs:
