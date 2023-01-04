@@ -74,8 +74,7 @@ jobs:
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfDataGrid_WF/SfDataGrid_Jira_2019 
                     development
-                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null
-                    false'
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null' 
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -100,8 +99,7 @@ jobs:
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfDataGrid_WF/SfDataGrid_jira_2019-2 
                     development
-                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null
-                    false'
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -126,8 +124,7 @@ jobs:
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfDataGrid_WF/SfDataGrid_jira_2019-3 
                     development
-                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null
-                    false'
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -152,8 +149,7 @@ jobs:
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfDataGrid_WF/SfDataGrid_jira_2019-4 
                     development
-                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null
-                    false'
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -228,8 +224,7 @@ jobs:
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfDataGrid_WF/SfForm_Jira_2019 
                     development
-                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null
-                    false' 
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null' 
                     
   - task: PublishBuildArtifacts@1
     inputs:
@@ -304,11 +299,9 @@ jobs:
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/SfDataGrid_WF/SfDataGrid_Jira_2022
                     development
-                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null
-                    false'
+                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
                     
   - task: PublishBuildArtifacts@1
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: SfDataGrid_Jira_2022
-
