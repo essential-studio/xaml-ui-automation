@@ -31,6 +31,12 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: Autocomplete_Jira_2019
 
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
 - job: AutoLabel_Jira_2019
   timeoutInMinutes: 0
   pool:
@@ -55,6 +61,12 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: AutoLabel_Jira_2019
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
 
 - job: ButtonAdv_Jira_2019
   timeoutInMinutes: 0
@@ -81,6 +93,12 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: ButtonAdv_Jira_2019
 
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
 - job: Carousel_Jira_2020
   timeoutInMinutes: 0
   pool:
@@ -105,6 +123,12 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: Carousel_Jira_2020
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
 
 - job: CheckBoxAdv_Jira_2019
   timeoutInMinutes: 0
@@ -131,6 +155,12 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: CheckBoxAdv_Jira_2019
 
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
 - job: ColorPickerButton_Jira_2019
   timeoutInMinutes: 0
   pool:
@@ -155,6 +185,12 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: ColorPickerButton_Jira_2019
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
 
 - job: ColorPickerUIAdv_Jira_2019
   timeoutInMinutes: 0
@@ -181,6 +217,12 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: ColorPickerUIAdv_Jira_2019
 
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
 - job: ColorUIControl_Jira_2019
   timeoutInMinutes: 0
   pool:
@@ -205,6 +247,12 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: ColorUIControl_Jira_2019
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
 
 - job: ComboBoxAdv_Jira_2019
   timeoutInMinutes: 0
@@ -231,6 +279,12 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: ComboBoxAdv_Jira_2019
 
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
 - job: Combodropdown_jira_2019
   timeoutInMinutes: 0
   pool:
@@ -255,6 +309,12 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: Combodropdown_jira_2019
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
 
 - job: CommandBarController_Jira_2019
   timeoutInMinutes: 0
@@ -281,6 +341,12 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: CommandBarController_Jira_2019
 
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
 - job: CurrencyEdit_Jira_2019
   timeoutInMinutes: 0
   pool:
@@ -305,6 +371,12 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: CurrencyEdit_Jira_2019
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
 
 - job: DateTimeEdit_Jira_2019
   timeoutInMinutes: 0
@@ -331,6 +403,12 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: DateTimeEdit_Jira_2019
 
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
 - job: DateTimePickerAdv_Jira_2019
   timeoutInMinutes: 0
   pool:
@@ -355,6 +433,12 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: DateTimePickerAdv_Jira_2019
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
 
 - job: DigitalGauge_jira_2019
   timeoutInMinutes: 0
@@ -381,6 +465,12 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: DigitalGauge_jira_2019
 
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
 - job: DockingManager_Jira_2019
   timeoutInMinutes: 0
   pool:
@@ -405,6 +495,12 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: DockingManager_Jira_2019
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
 
 - job: DomainUpDownExt_Jira_2019
   timeoutInMinutes: 0
@@ -431,6 +527,12 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: DomainUpDownExt_Jira_2019
 
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
 - job: DoubleTextBox_Jira_2020
   timeoutInMinutes: 0
   pool:
@@ -455,6 +557,12 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: DoubleTextBox_Jira_2020
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
 
 - job: EditControl_Jira_2019
   timeoutInMinutes: 0
@@ -481,6 +589,12 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: EditControl_Jira_2019
 
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
 - job: FontListBox_Jira_2019
   timeoutInMinutes: 0
   pool:
@@ -505,6 +619,12 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: FontListBox_Jira_2019
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
 
 - job: GradientPanelExt_Jira_2019
   timeoutInMinutes: 0
@@ -531,6 +651,12 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: GradientPanelExt_Jira_2019
 
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
 - job: GroupView_Jira_2019
   timeoutInMinutes: 0
   pool:
@@ -555,6 +681,12 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: GroupView_Jira_2019
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
 
 - job: ImageStreamer_Jira_2019
   timeoutInMinutes: 0
@@ -581,6 +713,12 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: ImageStreamer_Jira_2019
 
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
 - job: InputControls_HighContrastSupport
   timeoutInMinutes: 0
   pool:
@@ -605,6 +743,12 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: InputControls_HighContrastSupport
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
 
 - job: InputControls_Office2019ThemeSupport
   timeoutInMinutes: 0
@@ -631,6 +775,12 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: InputControls_Office2019ThemeSupport
 
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
 - job: LinearGauge_Jira_2019
   timeoutInMinutes: 0
   pool:
@@ -655,6 +805,12 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: LinearGauge_Jira_2019
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
 
 - job: MainFrameBarManager_Jira_2019
   timeoutInMinutes: 0
@@ -681,6 +837,12 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: MainFrameBarManager_Jira_2019
 
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
 - job: MessageBoxAdv_Jira_2020
   timeoutInMinutes: 0
   pool:
@@ -705,6 +867,12 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: MessageBoxAdv_Jira_2020
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
 
 - job: MetroForm_Jira_2019
   timeoutInMinutes: 0
@@ -731,6 +899,12 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: MetroForm_Jira_2019
 
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
 - job: MultiColumnComboBox_Jira_2020
   timeoutInMinutes: 0
   pool:
@@ -755,6 +929,12 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: MultiColumnComboBox_Jira_2020
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
 
 - job: MultiColumnTreeView_HighContrastSupport
   timeoutInMinutes: 0
@@ -781,6 +961,12 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: MultiColumnTreeView_HighContrastSupport
 
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
 - job: MultiColumnTreeView_Jira_2019
   timeoutInMinutes: 0
   pool:
@@ -805,6 +991,12 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: MultiColumnTreeView_Jira_2019
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
 
 - job: MultiColumnTreeview_Office2019ThemeSupport
   timeoutInMinutes: 0
@@ -831,6 +1023,12 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: MultiColumnTreeview_Office2019ThemeSupport
 
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
 - job: MultiSelectionComboBox_Jira_2019
   timeoutInMinutes: 0
   pool:
@@ -855,6 +1053,12 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: MultiSelectionComboBox_Jira_2019
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
 
 - job: NavigationDrawer_Jira_2019
   timeoutInMinutes: 0
@@ -881,6 +1085,12 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: NavigationDrawer_Jira_2019
 
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
 - job: NavigationView_FontIcon
   timeoutInMinutes: 0
   pool:
@@ -905,6 +1115,12 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: NavigationView_FontIcon
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
 
 - job: NumericUpDownExt_Jira_2019
   timeoutInMinutes: 0
@@ -931,6 +1147,12 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: NumericUpDownExt_Jira_2019
 
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
 - job: PercentTextBox_Jira_2019
   timeoutInMinutes: 0
   pool:
@@ -955,6 +1177,12 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: PercentTextBox_Jira_2019
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
 
 - job: PopupMenu_Jira_2019
   timeoutInMinutes: 0
@@ -981,6 +1209,12 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: PopupMenu_Jira_2019
 
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
 - job: ProgressBarAdv_Jira_2019
   timeoutInMinutes: 0
   pool:
@@ -1005,6 +1239,12 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: ProgressBarAdv_Jira_2019
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
 
 - job: RadialGauge_Jira_2019
   timeoutInMinutes: 0
@@ -1031,6 +1271,12 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: RadialGauge_Jira_2019
 
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
 - job: RadialMenu_Jira_2021
   timeoutInMinutes: 0
   pool:
@@ -1055,6 +1301,12 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: RadialMenu_Jira_2021
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
 
 - job: RadialSlider_Jira_2019
   timeoutInMinutes: 0
@@ -1081,6 +1333,12 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: RadialSlider_Jira_2019
 
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
 - job: RangeSlider_Jira_2019
   timeoutInMinutes: 0
   pool:
@@ -1105,6 +1363,12 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: RangeSlider_Jira_2019
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
 
 - job: RatingControl_Jira_2019
   timeoutInMinutes: 0
@@ -1131,6 +1395,12 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: RatingControl_Jira_2019
 
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
 - job: Ribbon_HighContrastSupport
   timeoutInMinutes: 0
   pool:
@@ -1155,6 +1425,12 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: Ribbon_HighContrastSupport
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
 
 - job: Ribbon_Office2019ThemeSupport
   timeoutInMinutes: 0
@@ -1181,6 +1457,12 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: Ribbon_Office2019ThemeSupport
 
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
 - job: Ribbon_Standardize_features_Jira
   timeoutInMinutes: 0
   pool:
@@ -1205,6 +1487,12 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: Ribbon_Standardize_features_Jira
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
 
 - job: RibbonControlAdv_BackStage_Jira
   timeoutInMinutes: 0
@@ -1231,6 +1519,12 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: RibbonControlAdv_BackStage_Jira
 
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
 - job: RibbonControlAdv_ImageMode
   timeoutInMinutes: 0
   pool:
@@ -1255,6 +1549,12 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: RibbonControlAdv_ImageMode
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
 
 - job: RibbonControlAdv_Jira_2019
   timeoutInMinutes: 0
@@ -1281,30 +1581,11 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: RibbonControlAdv_Jira_2019
 
-- job: SelfAutomationConsoleUtility
-  timeoutInMinutes: 0
-  pool:
-    name: "Desktop-xaml-vmss"
-
-  steps:
-  - task: ScreenResolutionUtility@1
+  - task: DeleteFiles@1
     inputs:
-        displaySettings: 'specific'
-        width: '1366'
-        height: '768'
-
-  - task: CmdLine@1
-    inputs:
-        filename: 'UIAutomationConsole.exe'
-        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
-        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Tools_WF/SelfAutomationConsoleUtility 
-                    development
-                    democommon-windows,null;syncfusion.highcontrasttheme.winforms,null'
-                    
-  - task: PublishBuildArtifacts@1
-    inputs:
-        pathtoPublish: 'D:\AutomationReports\'
-        ArtifactName: SelfAutomationConsoleUtility
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
 
 - job: SfButtonAdv_Jira_2019
   timeoutInMinutes: 0
@@ -1331,6 +1612,12 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: SfButtonAdv_Jira_2019
 
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
 - job: SfCalendar_Jira_2019
   timeoutInMinutes: 0
   pool:
@@ -1355,6 +1642,12 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: SfCalendar_Jira_2019
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
 
 - job: SfComboBox_Testcases
   timeoutInMinutes: 0
@@ -1381,6 +1674,12 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: SfComboBox_Testcases
 
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
 - job: SfDateTimeEdit_Jira_2019
   timeoutInMinutes: 0
   pool:
@@ -1405,6 +1704,12 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: SfDateTimeEdit_Jira_2019
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
 
 - job: SfListView_Jira_2019
   timeoutInMinutes: 0
@@ -1431,6 +1736,12 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: SfListView_Jira_2019
 
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
 - job: SNumericTextBox_Jira_2019
   timeoutInMinutes: 0
   pool:
@@ -1455,6 +1766,12 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: SNumericTextBox_Jira_2019
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
 
 - job: SpellCheckerAdv_Jira_2019
   timeoutInMinutes: 0
@@ -1481,6 +1798,12 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: SpellCheckerAdv_Jira_2019
 
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
 - job: SplashPanel_Jira_2019
   timeoutInMinutes: 0
   pool:
@@ -1505,6 +1828,12 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: SplashPanel_Jira_2019
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
 
 - job: SplitButton_Jira_2020
   timeoutInMinutes: 0
@@ -1531,6 +1860,12 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: SplitButton_Jira_2020
 
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
 - job: SplitContainerAdv_Jira_2019
   timeoutInMinutes: 0
   pool:
@@ -1555,6 +1890,12 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: SplitContainerAdv_Jira_2019
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
 
 - job: StatusStripEx_Jira_2019
   timeoutInMinutes: 0
@@ -1581,6 +1922,12 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: StatusStripEx_Jira_2019
 
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
 - job: SuperToolTip_Jira_2019
   timeoutInMinutes: 0
   pool:
@@ -1605,6 +1952,12 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: SuperToolTip_Jira_2019
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
 
 - job: TabbedMDIManager_Jira_2019
   timeoutInMinutes: 0
@@ -1631,6 +1984,12 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: TabbedMDIManager_Jira_2019
 
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
 - job: TabControlAdv_Jira_2019
   timeoutInMinutes: 0
   pool:
@@ -1655,6 +2014,12 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: TabControlAdv_Jira_2019
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
 
 - job: TextBoxExt_Jira_2019
   timeoutInMinutes: 0
@@ -1681,6 +2046,12 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: TextBoxExt_Jira_2019
 
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
 - job: TrackBarEx_Jira_2019
   timeoutInMinutes: 0
   pool:
@@ -1705,6 +2076,12 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: TrackBarEx_Jira_2019
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
 
 - job: TreeNavigator_HighContrastSupport
   timeoutInMinutes: 0
@@ -1731,6 +2108,12 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: TreeNavigator_HighContrastSupport
 
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
 - job: TreeNavigator_Jira2019
   timeoutInMinutes: 0
   pool:
@@ -1755,6 +2138,12 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: TreeNavigator_Jira2019
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
 
 - job: TreeNavigator_Office2019ThemeSupport
   timeoutInMinutes: 0
@@ -1781,6 +2170,12 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: TreeNavigator_Office2019ThemeSupport
 
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
 - job: TreeViewAdv_DataBinding_Jira_2019
   timeoutInMinutes: 0
   pool:
@@ -1805,6 +2200,12 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: TreeViewAdv_DataBinding_Jira_2019
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
 
 - job: TreeViewAdv_HighContrastSupport
   timeoutInMinutes: 0
@@ -1831,6 +2232,12 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: TreeViewAdv_HighContrastSupport
 
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
 - job: TreeViewAdv_Jira_2019
   timeoutInMinutes: 0
   pool:
@@ -1855,6 +2262,12 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: TreeViewAdv_Jira_2019
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
 
 - job: TreeViewAdv_Office2019ThemeSupport
   timeoutInMinutes: 0
@@ -1881,6 +2294,12 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: TreeViewAdv_Office2019ThemeSupport
 
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
 - job: XPTaskBar_Jira_2019
   timeoutInMinutes: 0
   pool:
@@ -1906,6 +2325,12 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: XPTaskBar_Jira_2019
 
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
 - job: XPToolBar_Jira_2021
   timeoutInMinutes: 0
   pool:
@@ -1930,3 +2355,9 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: XPToolBar_Jira_2021
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      

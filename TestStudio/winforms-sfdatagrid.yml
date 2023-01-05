@@ -30,6 +30,12 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: BusyIndicator_Jira2019
 
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
 - job: SfComboBox_Jira_2019
   timeoutInMinutes: 0
   pool:
@@ -53,6 +59,12 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: SfComboBox_Jira_2019
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
 
 - job: SfDataGrid_Jira_2019
   timeoutInMinutes: 0
@@ -78,6 +90,12 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: SfDataGrid_Jira_2019
 
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
 - job: SfDataGrid_jira_2019_2
   timeoutInMinutes: 0
   pool:
@@ -101,6 +119,12 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: SfDataGrid_jira_2019_2
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
 
 - job: SfDataGrid_jira_2019_3
   timeoutInMinutes: 0
@@ -126,6 +150,12 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: SfDataGrid_jira_2019_3
 
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
 - job: SfDataGrid_jira_2019_4
   timeoutInMinutes: 0
   pool:
@@ -149,6 +179,12 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: SfDataGrid_jira_2019_4
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
 
 - job: SfDataGrid_Jira_2021
   timeoutInMinutes: 0
@@ -174,6 +210,12 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: SfDataGrid_Jira_2021
 
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
 - job: SfDataPager_Jira_2019
   timeoutInMinutes: 0
   pool:
@@ -197,6 +239,12 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: SfDataPager_Jira_2019
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
 
 - job: SfForm_Jira_2019
   timeoutInMinutes: 0
@@ -222,6 +270,12 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: SfForm_Jira_2019
 
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
 - job: SfScrollFrame_Jira_2019
   timeoutInMinutes: 0
   pool:
@@ -245,6 +299,12 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: SfScrollFrame_Jira_2019
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
 
 - job: TabbedForm_Jira_2019
   timeoutInMinutes: 0
@@ -270,6 +330,12 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: TabbedForm_Jira_2019
 
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
 - job: SfDataGrid_Jira_2022
   timeoutInMinutes: 0
   pool:
@@ -293,3 +359,9 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: SfDataGrid_Jira_2022
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      

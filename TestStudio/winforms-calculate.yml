@@ -30,3 +30,9 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: Calculate_WF_Jira_2019
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
