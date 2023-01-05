@@ -29,8 +29,8 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: Volume1Features
-- task: DeleteFiles@1
-  inputs:
+  - task: DeleteFiles@1
+    inputs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
@@ -60,8 +60,8 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: Volume2Features
-- task: DeleteFiles@1
-  inputs:
+  - task: DeleteFiles@1
+    inputs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
@@ -91,8 +91,8 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: Volume3Features
-- task: DeleteFiles@1
-  inputs:
+  - task: DeleteFiles@1
+    inputs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
@@ -121,8 +121,8 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: AllDaySpanAppointments
-- task: DeleteFiles@1
-  inputs:
+  - task: DeleteFiles@1
+    inputs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
@@ -152,8 +152,8 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: AppointmentArrangementOnDayViews
-- task: DeleteFiles@1
-  inputs:
+  - task: DeleteFiles@1
+    inputs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
@@ -182,8 +182,8 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: AppointmentBoderselection
-- task: DeleteFiles@1
-  inputs:
+  - task: DeleteFiles@1
+    inputs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
@@ -212,8 +212,8 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: AppointmentDisplayCountCustomization
-- task: DeleteFiles@1
-  inputs:
+  - task: DeleteFiles@1
+    inputs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
@@ -242,8 +242,8 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: AppointmentEditor
-- task: DeleteFiles@1
-  inputs:
+  - task: DeleteFiles@1
+    inputs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
@@ -272,8 +272,8 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: AppointmentEditorTimeFormat
-- task: DeleteFiles@1
-  inputs:
+  - task: DeleteFiles@1
+    inputs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
@@ -302,8 +302,8 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: AppointmentIdTesting
-- task: DeleteFiles@1
-  inputs:
+  - task: DeleteFiles@1
+    inputs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
@@ -332,8 +332,8 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: AppointmentOverlappingOnDayViews
-- task: DeleteFiles@1
-  inputs:
+  - task: DeleteFiles@1
+    inputs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
@@ -362,8 +362,8 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: CalendarIdentifierTesting
-- task: DeleteFiles@1
-  inputs:
+  - task: DeleteFiles@1
+    inputs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
@@ -392,8 +392,8 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: CustomAppointmentEditing
-- task: DeleteFiles@1
-  inputs:
+  - task: DeleteFiles@1
+    inputs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
@@ -421,8 +421,8 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: DayViewsSettings
-- task: DeleteFiles@1
-  inputs:
+  - task: DeleteFiles@1
+    inputs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
@@ -451,8 +451,8 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: DragDropTesting
-- task: DeleteFiles@1
-  inputs:
+  - task: DeleteFiles@1
+    inputs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
@@ -481,8 +481,8 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: LoadOnDemandTesting
-- task: DeleteFiles@1
-  inputs:
+  - task: DeleteFiles@1
+    inputs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
@@ -513,8 +513,8 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: MonthCellAppointmentRendering
-- task: DeleteFiles@1
-  inputs:
+  - task: DeleteFiles@1
+    inputs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
@@ -543,8 +543,8 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: MonthViewSettings
-- task: DeleteFiles@1
-  inputs:
+  - task: DeleteFiles@1
+    inputs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
@@ -573,8 +573,8 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: RecurrenceHelperMethodsTesting
-- task: DeleteFiles@1
-  inputs:
+  - task: DeleteFiles@1
+    inputs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
@@ -603,8 +603,8 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: ResourceDynamicChanges
-- task: DeleteFiles@1
-  inputs:
+  - task: DeleteFiles@1
+    inputs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
@@ -633,8 +633,8 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: ResourceMapping
-- task: DeleteFiles@1
-  inputs:
+  - task: DeleteFiles@1
+    inputs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
@@ -663,8 +663,8 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: ScheduleAppAndCustomAppEditing
-- task: DeleteFiles@1
-  inputs:
+  - task: DeleteFiles@1
+    inputs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
@@ -693,8 +693,8 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: SchedulerKeyBoardInteraction
-- task: DeleteFiles@1
-  inputs:
+  - task: DeleteFiles@1
+    inputs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
@@ -723,8 +723,8 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: SchedulerKeyInteraction
-- task: DeleteFiles@1
-  inputs:
+  - task: DeleteFiles@1
+    inputs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
@@ -755,8 +755,8 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: SchedulerResource
-- task: DeleteFiles@1
-  inputs:
+  - task: DeleteFiles@1
+    inputs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
@@ -785,8 +785,8 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: SfScheduler_CR_2021
-- task: DeleteFiles@1
-  inputs:
+  - task: DeleteFiles@1
+    inputs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
@@ -815,8 +815,8 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: SpecialTimeRegionsTesting
-- task: DeleteFiles@1
-  inputs:
+  - task: DeleteFiles@1
+    inputs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
@@ -845,8 +845,8 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: SpecialTimeRegionsDynamicChanges
-- task: DeleteFiles@1
-  inputs:
+  - task: DeleteFiles@1
+    inputs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
@@ -875,8 +875,8 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: SpecialTimeRegionsWithTimeIntervalHeight
-- task: DeleteFiles@1
-  inputs:
+  - task: DeleteFiles@1
+    inputs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
@@ -905,8 +905,8 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: Timeintervalsize
-- task: DeleteFiles@1
-  inputs:
+  - task: DeleteFiles@1
+    inputs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
@@ -935,8 +935,8 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: TimelineViewsSettings
-- task: DeleteFiles@1
-  inputs:
+  - task: DeleteFiles@1
+    inputs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
@@ -965,8 +965,8 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: ViewChangedTesting
-- task: DeleteFiles@1
-  inputs:
+  - task: DeleteFiles@1
+    inputs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
@@ -995,8 +995,8 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: SchedulerViewNavigation
-- task: DeleteFiles@1
-  inputs:
+  - task: DeleteFiles@1
+    inputs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
