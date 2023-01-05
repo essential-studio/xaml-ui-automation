@@ -35,13 +35,7 @@ jobs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
-      Contents: '**/*'
-      RemoveSourceFolder: true
-
+ 
 - job: ButtonAdv_Jira_2019
   timeoutInMinutes: 0
   pool:
@@ -69,12 +63,6 @@ jobs:
   - task: DeleteFiles@1
     inputs:
       SourceFolder: 'D:\AutomationReports'
-      Contents: '**/*'
-      RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
       Contents: '**/*'
       RemoveSourceFolder: true
 
@@ -107,12 +95,6 @@ jobs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
-      Contents: '**/*'
-      RemoveSourceFolder: true
 
 - job: CardView_Jira_2019
   timeoutInMinutes: 0
@@ -141,12 +123,6 @@ jobs:
   - task: DeleteFiles@1
     inputs:
       SourceFolder: 'D:\AutomationReports'
-      Contents: '**/*'
-      RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
       Contents: '**/*'
       RemoveSourceFolder: true
 
@@ -179,12 +155,6 @@ jobs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
-      Contents: '**/*'
-      RemoveSourceFolder: true
 
 - job: CheckListBox_Jira_2019
   timeoutInMinutes: 0
@@ -213,12 +183,6 @@ jobs:
   - task: DeleteFiles@1
     inputs:
       SourceFolder: 'D:\AutomationReports'
-      Contents: '**/*'
-      RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
       Contents: '**/*'
       RemoveSourceFolder: true
 
@@ -251,12 +215,6 @@ jobs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
-      Contents: '**/*'
-      RemoveSourceFolder: true
 
 - job: ColorEdit_Jira_2019
   timeoutInMinutes: 0
@@ -285,12 +243,6 @@ jobs:
   - task: DeleteFiles@1
     inputs:
       SourceFolder: 'D:\AutomationReports'
-      Contents: '**/*'
-      RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
       Contents: '**/*'
       RemoveSourceFolder: true
 
@@ -323,12 +275,6 @@ jobs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
-      Contents: '**/*'
-      RemoveSourceFolder: true
 
 - job: ColorPickerPalette_Jira_2019
   timeoutInMinutes: 0
@@ -357,12 +303,6 @@ jobs:
   - task: DeleteFiles@1
     inputs:
       SourceFolder: 'D:\AutomationReports'
-      Contents: '**/*'
-      RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
       Contents: '**/*'
       RemoveSourceFolder: true
 
@@ -395,12 +335,6 @@ jobs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
-      Contents: '**/*'
-      RemoveSourceFolder: true
 
 - job: CurrencyTextBox_Jira_2019
   timeoutInMinutes: 0
@@ -429,12 +363,6 @@ jobs:
   - task: DeleteFiles@1
     inputs:
       SourceFolder: 'D:\AutomationReports'
-      Contents: '**/*'
-      RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
       Contents: '**/*'
       RemoveSourceFolder: true
 
@@ -467,12 +395,6 @@ jobs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
-      Contents: '**/*'
-      RemoveSourceFolder: true
 
 - job: DockingManager_Jira_2019
   timeoutInMinutes: 0
@@ -501,12 +423,6 @@ jobs:
   - task: DeleteFiles@1
     inputs:
       SourceFolder: 'D:\AutomationReports'
-      Contents: '**/*'
-      RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
       Contents: '**/*'
       RemoveSourceFolder: true
 
@@ -539,12 +455,6 @@ jobs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
-      Contents: '**/*'
-      RemoveSourceFolder: true
 
 - job: DoubleTextBox_Jira_2019
   timeoutInMinutes: 0
@@ -573,12 +483,6 @@ jobs:
   - task: DeleteFiles@1
     inputs:
       SourceFolder: 'D:\AutomationReports'
-      Contents: '**/*'
-      RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
       Contents: '**/*'
       RemoveSourceFolder: true
 
@@ -611,12 +515,6 @@ jobs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
-      Contents: '**/*'
-      RemoveSourceFolder: true
 
 - job: EditControl_Jira_2019
   timeoutInMinutes: 0
@@ -645,12 +543,6 @@ jobs:
   - task: DeleteFiles@1
     inputs:
       SourceFolder: 'D:\AutomationReports'
-      Contents: '**/*'
-      RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
       Contents: '**/*'
       RemoveSourceFolder: true
 
@@ -683,12 +575,6 @@ jobs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
-      Contents: '**/*'
-      RemoveSourceFolder: true
 
 - job: FontListBox_Jira_2019
   timeoutInMinutes: 0
@@ -717,12 +603,6 @@ jobs:
   - task: DeleteFiles@1
     inputs:
       SourceFolder: 'D:\AutomationReports'
-      Contents: '**/*'
-      RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
       Contents: '**/*'
       RemoveSourceFolder: true
 
@@ -755,12 +635,6 @@ jobs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
-      Contents: '**/*'
-      RemoveSourceFolder: true
 
 - job: IntegerTextBox_Jira_2019
   timeoutInMinutes: 0
@@ -789,12 +663,6 @@ jobs:
   - task: DeleteFiles@1
     inputs:
       SourceFolder: 'D:\AutomationReports'
-      Contents: '**/*'
-      RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
       Contents: '**/*'
       RemoveSourceFolder: true
 
@@ -827,12 +695,6 @@ jobs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
-      Contents: '**/*'
-      RemoveSourceFolder: true
 
 - job: MaskedTextBox_Jira_2019
   timeoutInMinutes: 0
@@ -861,12 +723,6 @@ jobs:
   - task: DeleteFiles@1
     inputs:
       SourceFolder: 'D:\AutomationReports'
-      Contents: '**/*'
-      RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
       Contents: '**/*'
       RemoveSourceFolder: true
 
@@ -899,12 +755,6 @@ jobs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
-      Contents: '**/*'
-      RemoveSourceFolder: true
 
 - job: PercentTextBox_Jira_2019
   timeoutInMinutes: 0
@@ -933,12 +783,6 @@ jobs:
   - task: DeleteFiles@1
     inputs:
       SourceFolder: 'D:\AutomationReports'
-      Contents: '**/*'
-      RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
       Contents: '**/*'
       RemoveSourceFolder: true
 
@@ -971,12 +815,6 @@ jobs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
-      Contents: '**/*'
-      RemoveSourceFolder: true
 
 - job: Ribbon_Jira_2019
   timeoutInMinutes: 0
@@ -1005,12 +843,6 @@ jobs:
   - task: DeleteFiles@1
     inputs:
       SourceFolder: 'D:\AutomationReports'
-      Contents: '**/*'
-      RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
       Contents: '**/*'
       RemoveSourceFolder: true
 
@@ -1043,12 +875,6 @@ jobs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
-      Contents: '**/*'
-      RemoveSourceFolder: true
 
 - job: SfAccordion_Jira_2019
   timeoutInMinutes: 0
@@ -1077,12 +903,6 @@ jobs:
   - task: DeleteFiles@1
     inputs:
       SourceFolder: 'D:\AutomationReports'
-      Contents: '**/*'
-      RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
       Contents: '**/*'
       RemoveSourceFolder: true
 
@@ -1115,12 +935,6 @@ jobs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
-      Contents: '**/*'
-      RemoveSourceFolder: true
 
 - job: SfBusyIndicator
   timeoutInMinutes: 0
@@ -1149,12 +963,6 @@ jobs:
   - task: DeleteFiles@1
     inputs:
       SourceFolder: 'D:\AutomationReports'
-      Contents: '**/*'
-      RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
       Contents: '**/*'
       RemoveSourceFolder: true
 
@@ -1187,12 +995,6 @@ jobs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
-      Contents: '**/*'
-      RemoveSourceFolder: true
 
 - job: SfDatePicker_Jira_2019
   timeoutInMinutes: 0
@@ -1221,12 +1023,6 @@ jobs:
   - task: DeleteFiles@1
     inputs:
       SourceFolder: 'D:\AutomationReports'
-      Contents: '**/*'
-      RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
       Contents: '**/*'
       RemoveSourceFolder: true
 
@@ -1259,12 +1055,6 @@ jobs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
-      Contents: '**/*'
-      RemoveSourceFolder: true
 
 - job: SfMaskedEdit_Jira_2019
   timeoutInMinutes: 0
@@ -1293,12 +1083,6 @@ jobs:
   - task: DeleteFiles@1
     inputs:
       SourceFolder: 'D:\AutomationReports'
-      Contents: '**/*'
-      RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
       Contents: '**/*'
       RemoveSourceFolder: true
 
@@ -1331,12 +1115,6 @@ jobs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
-      Contents: '**/*'
-      RemoveSourceFolder: true
 
 - job: SfRadialMenu
   timeoutInMinutes: 0
@@ -1365,12 +1143,6 @@ jobs:
   - task: DeleteFiles@1
     inputs:
       SourceFolder: 'D:\AutomationReports'
-      Contents: '**/*'
-      RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
       Contents: '**/*'
       RemoveSourceFolder: true
 
@@ -1403,12 +1175,6 @@ jobs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
-      Contents: '**/*'
-      RemoveSourceFolder: true
 
 - job: SfSchedule_Jira_2019
   timeoutInMinutes: 0
@@ -1437,12 +1203,6 @@ jobs:
   - task: DeleteFiles@1
     inputs:
       SourceFolder: 'D:\AutomationReports'
-      Contents: '**/*'
-      RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
       Contents: '**/*'
       RemoveSourceFolder: true
 
@@ -1475,12 +1235,6 @@ jobs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
-      Contents: '**/*'
-      RemoveSourceFolder: true
 
 - job: SfSpellChecker_Jira_2020
   timeoutInMinutes: 0
@@ -1509,12 +1263,6 @@ jobs:
   - task: DeleteFiles@1
     inputs:
       SourceFolder: 'D:\AutomationReports'
-      Contents: '**/*'
-      RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
       Contents: '**/*'
       RemoveSourceFolder: true
 
@@ -1547,12 +1295,6 @@ jobs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
-      Contents: '**/*'
-      RemoveSourceFolder: true
 
 - job: SfTimePicker_Jira_2019
   timeoutInMinutes: 0
@@ -1581,12 +1323,6 @@ jobs:
   - task: DeleteFiles@1
     inputs:
       SourceFolder: 'D:\AutomationReports'
-      Contents: '**/*'
-      RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
       Contents: '**/*'
       RemoveSourceFolder: true
 
@@ -1619,12 +1355,6 @@ jobs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
-      Contents: '**/*'
-      RemoveSourceFolder: true
 
 - job: SplitButtonAdv_Jira_2019
   timeoutInMinutes: 0
@@ -1653,12 +1383,6 @@ jobs:
   - task: DeleteFiles@1
     inputs:
       SourceFolder: 'D:\AutomationReports'
-      Contents: '**/*'
-      RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
       Contents: '**/*'
       RemoveSourceFolder: true
 
@@ -1691,12 +1415,6 @@ jobs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
-      Contents: '**/*'
-      RemoveSourceFolder: true
 
 - job: TabNavigationControl_Jira_2019
   timeoutInMinutes: 0
@@ -1725,12 +1443,6 @@ jobs:
   - task: DeleteFiles@1
     inputs:
       SourceFolder: 'D:\AutomationReports'
-      Contents: '**/*'
-      RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
       Contents: '**/*'
       RemoveSourceFolder: true
 
@@ -1763,12 +1475,6 @@ jobs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
-      Contents: '**/*'
-      RemoveSourceFolder: true
 
 - job: TaskBar_Jira_2019
   timeoutInMinutes: 0
@@ -1797,12 +1503,6 @@ jobs:
   - task: DeleteFiles@1
     inputs:
       SourceFolder: 'D:\AutomationReports'
-      Contents: '**/*'
-      RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
       Contents: '**/*'
       RemoveSourceFolder: true
 
@@ -1835,12 +1535,6 @@ jobs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
-      Contents: '**/*'
-      RemoveSourceFolder: true
 
 - job: TimeSpanEdit_Jira_2021
   timeoutInMinutes: 0
@@ -1869,12 +1563,6 @@ jobs:
   - task: DeleteFiles@1
     inputs:
       SourceFolder: 'D:\AutomationReports'
-      Contents: '**/*'
-      RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
       Contents: '**/*'
       RemoveSourceFolder: true
 
@@ -1907,12 +1595,6 @@ jobs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
-      Contents: '**/*'
-      RemoveSourceFolder: true
 
 - job: TreeViewAdv_Jira_2019
   timeoutInMinutes: 0
@@ -1941,12 +1623,6 @@ jobs:
   - task: DeleteFiles@1
     inputs:
       SourceFolder: 'D:\AutomationReports'
-      Contents: '**/*'
-      RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
       Contents: '**/*'
       RemoveSourceFolder: true
 
@@ -1979,12 +1655,6 @@ jobs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
-      Contents: '**/*'
-      RemoveSourceFolder: true
 
 - job: WizardControl
   timeoutInMinutes: 0
@@ -2013,11 +1683,5 @@ jobs:
   - task: DeleteFiles@1
     inputs:
       SourceFolder: 'D:\AutomationReports'
-      Contents: '**/*'
-      RemoveSourceFolder: true
-      
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: 'D:\SVN'
       Contents: '**/*'
       RemoveSourceFolder: true
