@@ -30,6 +30,12 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: GridCheckBoxSelectorColumn
 
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true
+      
 - job: GridDataControl_Jira_2019
   timeoutInMinutes: 0
   pool:
@@ -54,6 +60,12 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: GridDataControl_Jira_2019
 
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true
+      
 - job: GridTreeControl_Jira_2019
   timeoutInMinutes: 0
   pool:
@@ -78,6 +90,12 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: GridTreeControl_Jira_2019
 
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true
+      
 - job: SfDataGrid_Jira_2019
   timeoutInMinutes: 0
   pool:
@@ -102,6 +120,12 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: SfDataGrid_Jira_2019
 
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true
+      
 - job: SfDataGrid_Jira_2021
   timeoutInMinutes: 0
   pool:
@@ -125,6 +149,12 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: SfDataGrid_Jira_2021
+        
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true        
 
 - job: SfDataPager_Jira_2019
   timeoutInMinutes: 0
@@ -150,6 +180,12 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: SfDataPager_Jira_2019
 
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true
+      
 - job: SfMultiColumnDropDown_Jira_2019
   timeoutInMinutes: 0
   pool:
@@ -173,3 +209,9 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: SfMultiColumnDropDown_Jira_2019
+        
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true        

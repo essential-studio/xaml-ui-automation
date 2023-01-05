@@ -30,6 +30,12 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: OlapChart_JIRA_2019_Vol1
 
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true
+      
 - job: OlapClient_JIRA_2019
   timeoutInMinutes: 0
   pool:
@@ -53,4 +59,10 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: OlapClient_JIRA_2019
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true        
 
