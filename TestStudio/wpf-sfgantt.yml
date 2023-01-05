@@ -29,8 +29,9 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: SFGantt
-- task: DeleteFiles@1
-  inputs:
+
+  - task: DeleteFiles@1
+    inputs:
       SourceFolder: 'D:\AutomationReports'
       Contents: '**/*'
       RemoveSourceFolder: true
