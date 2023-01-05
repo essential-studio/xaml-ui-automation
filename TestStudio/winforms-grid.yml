@@ -30,6 +30,12 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: GGC_Jira_MT_2019
 
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
 - job: GridControl_Jira_2019
   timeoutInMinutes: 0
   pool:
@@ -53,6 +59,12 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: GridControl_Jira_2019
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
 
 - job: GridGrouping_Jira_2019
   timeoutInMinutes: 0
@@ -78,6 +90,12 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: GridGrouping_Jira_2019
 
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
 - job: GridGroupingControl_Jira_2019
   timeoutInMinutes: 0
   pool:
@@ -101,6 +119,12 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: GridGroupingControl_Jira_2019
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
 
 - job: ScheduleControl_Jira_2019
   timeoutInMinutes: 0
@@ -126,6 +150,12 @@ jobs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: ScheduleControl_Jira_2019
 
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
+
 - job: WF_CR_2019
   timeoutInMinutes: 0
   pool:
@@ -149,3 +179,9 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
         ArtifactName: WF_CR_2019
+
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: 'D:\AutomationReports'
+      Contents: '**/*'
+      RemoveSourceFolder: true      
