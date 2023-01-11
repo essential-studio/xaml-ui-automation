@@ -22,7 +22,7 @@ jobs:
     inputs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
-        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/BI_WPF/OlapChart/OlapChart_JIRA_2019_Vol1
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Olap_WPF/OlapChart/OlapChart_JIRA_2019_Vol1
                     development'
     
   - task: PublishBuildArtifacts@1
@@ -52,7 +52,7 @@ jobs:
     inputs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
-        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/BI_WPF/OlapClient/OlapClient_JIRA_2019 
+        arguments: 'https://svn.syncfusion.com/svn/studio/Source/Testing/Automation/TestCases_Automation/TestStudioAutomation/Olap_WPF/OlapClient/OlapClient_JIRA_2019 
                     development'
     
   - task: PublishBuildArtifacts@1
